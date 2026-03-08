@@ -23,8 +23,8 @@ const testimonials = [
     text: "Over the last 5 years I have tried many prostate tablets from different companies, but none have worked as well as yours. Ever since I did my 6 month trial with Prostate Miracle, I sleep right through the night with no get ups.",
   },
   {
-    name: "Donn D.",
-    location: "USA",
+    name: "Donn Davenport",
+    location: "Verified Customer",
     text: "I have taken only been taking Prostate Miracle pills for 4 days and have already noticed a significant improvement. What I have experienced in only 4 days in a word is a 'miracle.'",
   },
   {
