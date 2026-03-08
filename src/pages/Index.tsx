@@ -5,6 +5,7 @@ import { MarqueeStrip } from "@/components/MarqueeStrip";
 import { ProductSection } from "@/components/ProductSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
+import { FAQSection } from "@/components/FAQSection";
 import { FooterSection } from "@/components/FooterSection";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <TestimonialsSection />
       <MarqueeStrip />
       <BenefitsSection />
+      <FAQSection />
       <FooterSection />
     </div>
   );
