@@ -2,24 +2,39 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Robert M.",
-    text: "I didn't expect dramatic results, but this product really surprised me. After about a month, I noticed improved comfort and fewer nighttime trips. My overall energy has improved and I feel more confident about my health.",
+    name: "Fran",
+    location: "London, England",
+    text: "Your Prostate Miracle keeps me alive, keeps me asleep at night and enables me to function as a man at the age of 77. I cheated the surgeons who wanted to steal my prostate maybe 25 or 30 years ago.",
   },
   {
-    name: "David K.",
-    text: "I've struggled with prostate discomfort for years. Since starting this product, I've noticed a real difference in urinary flow and comfort. It's not an overnight miracle, but the gradual improvement feels very real and sustainable.",
+    name: "Nick W.",
+    location: "Richmond, VA",
+    text: "Your product has been very impressive. I'll sum it up and very frankly say that I feel like a teenager again! Simply put, I forgot what it was like to have a good pee. You have another convinced and satisfied life-long customer.",
   },
   {
-    name: "Thomas W.",
-    text: "This has become part of my daily routine. I've noticed better comfort throughout the day and fewer interruptions at night. I honestly didn't expect a natural supplement to make this much of a difference.",
+    name: "Wilfred B.P. Martin",
+    location: "New Zealand",
+    text: "Over the last 5 years I have tried many prostate tablets from different companies, but none have worked as well as yours. Ever since I did my 6 month trial with Prostate Miracle, I sleep right through the night with no get ups.",
   },
   {
-    name: "Richard S.",
-    text: "After a few weeks of consistent use, I started noticing better urinary flow and improved comfort. I feel more confident knowing my body has daily support, and I don't worry as much about my prostate health.",
+    name: "Donn D.",
+    location: "USA",
+    text: "I have taken only been taking Prostate Miracle pills for 4 days and have already noticed a significant improvement. What I have experienced in only 4 days in a word is a 'miracle.'",
   },
   {
-    name: "William H.",
-    text: "I've tried several supplements over the years, but this is the first one where I truly noticed a difference. I feel more balanced, my energy feels steadier throughout the day, and I don't get up as often at night.",
+    name: "Dave Osborne",
+    location: "USA",
+    text: "I've been taking Prostate Miracle for about 6 months and recently had another PSA blood test — the number improved to .50. My doctor said 'That is as good as it gets'. I am of course a customer for life.",
+  },
+  {
+    name: "Glen",
+    location: "Valencia, CA",
+    text: "Prostate Miracle is amazing — I enjoyed improvements within the first week! Thanks for making such an outstanding product.",
+  },
+  {
+    name: "Jack C. Moore",
+    location: "USA",
+    text: "After the quick results, I have ordered 4 times over the last year. Today I got the results from the doctor — my PSA is 0.7. I was so happy. It really does work.",
   },
 ];
 
