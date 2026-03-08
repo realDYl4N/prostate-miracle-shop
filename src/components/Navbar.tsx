@@ -11,7 +11,7 @@ export const Navbar = () => {
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground uppercase tracking-wider">
           <a href="/" className="hover:text-foreground transition-colors border-b-2 border-primary text-foreground pb-0.5">Home</a>
-          <a href="#product" className="hover:text-foreground transition-colors">Product</a>
+          <a href="#product" className="hover:text-foreground transition-colors">Prostate Miracle</a>
           <a href="#benefits" className="hover:text-foreground transition-colors">Benefits</a>
         </nav>
         <CartDrawer />
