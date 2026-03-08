@@ -1,4 +1,4 @@
-import heroBg from "@/assets/hero-bg.jpg";
+import productBottle from "@/assets/product-bottle.jpg";
 import { Button } from "@/components/ui/button";
 import { Star, ShieldCheck } from "lucide-react";
 
