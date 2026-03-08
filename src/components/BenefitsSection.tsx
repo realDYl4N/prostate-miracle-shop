@@ -4,7 +4,7 @@ const benefits = [
   { icon: Shield, title: "Prostate Health", desc: "Supports normal prostate function and healthy urinary flow." },
   { icon: Leaf, title: "Natural Ingredients", desc: "Formulated with clinically-studied botanical extracts." },
   { icon: Moon, title: "Restful Nights", desc: "Helps reduce nighttime bathroom trips for better sleep." },
-  { icon Heart, title: "Overall Wellness", desc: "Promotes overall vitality and daily comfort." },
+  { icon: Heart, title: "Overall Wellness", desc: "Promotes overall vitality and daily comfort." },
   { icon: Droplets, title: "Urinary Comfort", desc: "Supports healthy bladder function and urinary flow." },
   { icon: Zap, title: "Daily Energy", desc: "Helps maintain energy levels throughout the day." },
 ];
