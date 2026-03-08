@@ -1,32 +1,61 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { Star, ShieldCheck } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="Natural supplement capsule" className="w-full h-full object-cover" />
-        <div className="absolute inset-0" style={{ background: "var(--hero-overlay)" }} />
-      </div>
-      <div className="relative z-10 container mx-auto px-4 text-center">
-        <p className="text-sm uppercase tracking-[0.3em] text-primary-foreground/70 mb-4 animate-fade-in-up font-body font-medium">
-          Advanced Prostate Support
-        </p>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold text-primary-foreground leading-[0.95] mb-6 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-          Prostate<br />Miracle
-        </h1>
-        <p className="max-w-lg mx-auto text-lg text-primary-foreground/80 mb-10 animate-fade-in-up font-body font-light" style={{ animationDelay: "0.2s" }}>
-          Clinically-inspired, naturally-sourced ingredients designed to support your prostate health and daily comfort.
-        </p>
-        <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-          <Button
-            size="lg"
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-body font-semibold px-8 py-6 text-base rounded-full shadow-lg"
-            onClick={() => document.getElementById("product")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            Shop Now <ArrowDown className="ml-2 h-4 w-4" />
-          </Button>
+    <section className="pt-24 pb-12 md:pb-0 md:pt-20 bg-background min-h-[90vh] flex items-center">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+          {/* Left: Text Content */}
+          <div className="order-2 md:order-1">
+            {/* Rating Badge */}
+            <div className="flex items-center gap-3 mb-6">
+              <div className="flex items-center gap-0.5">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                ))}
+              </div>
+              <span className="text-sm font-medium text-foreground">Rated 4.8 / 5</span>
+              <span className="text-sm text-muted-foreground">Trusted By 50K+</span>
+            </div>
+
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground leading-[1.05] mb-6">
+              The <span className="text-primary">#1 Prostate Formula</span>{" "}
+              For Everyday Comfort & Support
+            </h1>
+
+            <p className="text-lg text-muted-foreground mb-8 font-body font-light max-w-lg leading-relaxed">
+              Support prostate health and urinary comfort with clinically-inspired,
+              naturally-sourced ingredients designed for powerful daily support.
+            </p>
+
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-body font-semibold px-10 py-6 text-base rounded-md shadow-lg mb-5"
+              onClick={() => document.getElementById("product")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Shop Now
+            </Button>
+
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <ShieldCheck className="h-5 w-5 text-primary" />
+              <span className="font-medium text-foreground">90-Day Satisfaction Guarantee</span>
+              <span>·</span>
+              <span>Simple Daily Routine</span>
+            </div>
+          </div>
+
+          {/* Right: Product Image */}
+          <div className="order-1 md:order-2 flex justify-center">
+            <div className="relative w-full max-w-md">
+              <img
+                src={heroBg}
+                alt="Prostate Miracle supplement"
+                className="w-full h-auto rounded-2xl object-cover shadow-[var(--shadow-elevated)]"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
