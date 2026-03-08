@@ -76,13 +76,52 @@ export const ProductSection = () => {
     <section id="product" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start max-w-6xl mx-auto">
-          {/* Left: Product Image */}
-          <div className="bg-muted/30 rounded-2xl p-8 flex items-center justify-center sticky top-24">
-            <img
-              src={product?.node.images.edges[0]?.node.url || productBottle}
-              alt="Prostate Miracle Advanced Formula"
-              className="w-full max-w-sm h-auto object-contain drop-shadow-xl"
-            />
+          {/* Left: Product Images */}
+          <div className="sticky top-24 space-y-3">
+            <div className="bg-muted/30 rounded-2xl p-8 flex items-center justify-center relative overflow-hidden aspect-square">
+              <img
+                src={images[selectedImage]?.node.url || productBottle}
+                alt={images[selectedImage]?.node.altText || "Prostate Miracle Advanced Formula"}
+                className="w-full h-full object-contain drop-shadow-xl"
+              />
+              {images.length > 1 && (
+                <>
+                  <button
+                    onClick={() => setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
+                    className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors"
+                  >
+                    <ChevronLeft className="h-4 w-4 text-foreground" />
+                  </button>
+                  <button
+                    onClick={() => setSelectedImage((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
+                    className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors"
+                  >
+                    <ChevronRight className="h-4 w-4 text-foreground" />
+                  </button>
+                </>
+              )}
+            </div>
+            {images.length > 1 && (
+              <div className="grid grid-cols-5 gap-2">
+                {images.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setSelectedImage(i)}
+                    className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
+                      selectedImage === i
+                        ? "border-primary ring-1 ring-primary"
+                        : "border-border hover:border-primary/40"
+                    }`}
+                  >
+                    <img
+                      src={img.node.url}
+                      alt={img.node.altText || `Product image ${i + 1}`}
+                      className="w-full h-full object-contain bg-muted/30"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Right: Product Details */}
