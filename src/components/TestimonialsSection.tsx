@@ -24,12 +24,12 @@ const testimonials = [
   },
   {
     name: "Donn Davenport",
-    location: "Verified Customer",
+    location: "USA",
     text: "I have taken only been taking Prostate Miracle pills for 4 days and have already noticed a significant improvement. What I have experienced in only 4 days in a word is a 'miracle.'",
   },
   {
     name: "Dave Osborne",
-    location: "Verified Customer",
+    location: "USA",
     text: "I've been taking Prostate Miracle for about 6 months and recently had another PSA blood test — the number improved to .50. My doctor said 'That is as good as it gets'. I am of course a customer for life.",
   },
   {
@@ -39,7 +39,7 @@ const testimonials = [
   },
   {
     name: "Jack C. Moore",
-    location: "Verified Customer",
+    location: "USA",
     text: "After the quick results, I have ordered 4 times over the last year. Today I got the results from the doctor — my PSA is 0.7. I was so happy. It really does work.",
   },
 ];
