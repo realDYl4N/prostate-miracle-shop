@@ -10,7 +10,7 @@ const benefits = [
   "Protects prostate cells from oxidative stress",
   "Supports hormonal balance naturally",
   "Relieves urgency and frequency discomfort",
-  "Gentle vegetable capsules with no harsh additives",
+  
 ];
 
 export const ProductBenefitsChecklist = () => {
