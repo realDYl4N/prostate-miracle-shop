@@ -24,7 +24,7 @@ const testimonials = [
   },
   {
     name: "Donn Davenport",
-    location: "Verified Customer",
+    location: "USA",
     text: "I have taken only been taking Prostate Miracle pills for 4 days and have already noticed a significant improvement. What I have experienced in only 4 days in a word is a 'miracle.'",
   },
   {
