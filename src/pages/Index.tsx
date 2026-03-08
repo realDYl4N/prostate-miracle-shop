@@ -7,19 +7,34 @@ import { MarqueeStrip } from "@/components/MarqueeStrip";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { FooterSection } from "@/components/FooterSection";
+import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <TrustBar />
-      <SocialProofStrip />
-      <TestimonialsSection />
-      <MarqueeStrip />
-      <BenefitsSection />
-      <FAQSection />
-      <FooterSection />
+      <ScrollFadeIn>
+        <TrustBar />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
+        <SocialProofStrip />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
+        <TestimonialsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <MarqueeStrip />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
+        <BenefitsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
+        <FAQSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
+        <FooterSection />
+      </ScrollFadeIn>
     </div>
   );
 };
