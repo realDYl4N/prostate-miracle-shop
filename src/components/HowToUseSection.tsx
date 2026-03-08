@@ -11,7 +11,7 @@ export const HowToUseSection = () => {
           </h2>
         </div>
         <p className="text-muted-foreground font-body leading-relaxed text-lg">
-          – <strong>Take 2 vegetable capsules daily</strong> with water, preferably with your largest meal. 
+          <strong>Take 2 vegetable capsules daily</strong> with water, preferably with your largest meal. 
           For enhanced support, may be taken up to 3 times daily. Most customers report noticeable 
           improvement in urinary comfort within 2–4 weeks, with optimal prostate support after 60 days 
           of consistent use.
