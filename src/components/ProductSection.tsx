@@ -49,9 +49,11 @@ export const ProductSection = () => {
   const addItem = useCartStore((state) => state.addItem);
   const cartLoading = useCartStore((state) => state.isLoading);
   const [selectedTier, setSelectedTier] = useState(1);
+  const [selectedImage, setSelectedImage] = useState(0);
 
   const product = products?.[0];
   const variant = product?.node.variants.edges[0]?.node;
+  const images = product?.node.images.edges || [];
 
   const handleAddToCart = async () => {
     if (!product || !variant) return;
