@@ -1,4 +1,10 @@
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 import sp1 from "@/assets/social-proof-1.jpg";
 import sp2 from "@/assets/social-proof-2.jpg";
 import sp3 from "@/assets/social-proof-3.jpg";
@@ -15,23 +21,27 @@ export const SocialProofStrip = () => (
       </h2>
     </div>
 
-    {/* Scrolling photo strip */}
-    <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide px-4 justify-center">
-      {images.map((img, i) => (
-        <div
-          key={i}
-          className="w-[200px] h-[260px] flex-shrink-0 rounded-xl overflow-hidden snap-start"
-        >
-          <img
-            src={img}
-            alt={`Happy customer ${i + 1}`}
-            className="w-full h-full object-cover"
-          />
-        </div>
-      ))}
+    <div className="max-w-4xl mx-auto px-4">
+      <Carousel
+        opts={{ align: "center", loop: true }}
+        plugins={[Autoplay({ delay: 2500, stopOnInteraction: false })]}
+      >
+        <CarouselContent className="-ml-4">
+          {images.map((img, i) => (
+            <CarouselItem key={i} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
+              <div className="w-full h-[260px] rounded-xl overflow-hidden">
+                <img
+                  src={img}
+                  alt={`Happy customer ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
 
-    {/* Rating summary below */}
     <div className="text-center mt-8">
       <div className="flex items-center justify-center gap-1 mb-2">
         {[...Array(5)].map((_, i) => (
