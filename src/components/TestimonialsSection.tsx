@@ -1,4 +1,10 @@
 import { Star } from "lucide-react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -41,14 +47,12 @@ const testimonials = [
 export const TestimonialsSection = () => (
   <section className="py-20 bg-background">
     <div className="container mx-auto px-4">
-      {/* Section heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
           Trusted By <span className="text-primary">Thousands</span>
         </h2>
       </div>
 
-      {/* Rating summary */}
       <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-1 mb-2">
           {[...Array(5)].map((_, i) => (
@@ -59,36 +63,42 @@ export const TestimonialsSection = () => (
         <p className="text-sm text-muted-foreground">Trusted by 50K+</p>
       </div>
 
-      {/* Testimonial cards - horizontal scroll */}
-      <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
-        {testimonials.map((t) => (
-          <div
-            key={t.name}
-            className="bg-card border border-border rounded-xl p-6 shadow-[var(--shadow-card)] min-w-[320px] max-w-[360px] flex-shrink-0 snap-start flex flex-col"
-          >
-            <div className="flex gap-0.5 mb-4">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-              ))}
-            </div>
-            <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6 flex-1">
-              "{t.text}"
-            </p>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                <span className="text-sm font-bold text-primary">
-                  {t.name.charAt(0)}
-                </span>
+      <Carousel
+        opts={{ align: "start", loop: true }}
+        plugins={[Autoplay({ delay: 3500, stopOnInteraction: false })]}
+      >
+        <CarouselContent className="-ml-5">
+          {testimonials.map((t) => (
+            <CarouselItem
+              key={t.name}
+              className="pl-5 basis-[85%] sm:basis-[45%] lg:basis-[33%]"
+            >
+              <div className="bg-card border border-border rounded-xl p-6 shadow-[var(--shadow-card)] flex flex-col h-full">
+                <div className="flex gap-0.5 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6 flex-1">
+                  "{t.text}"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <span className="text-sm font-bold text-primary">
+                      {t.name.charAt(0)}
+                    </span>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground text-sm">{t.name}</p>
+                    <p className="text-xs text-muted-foreground">{t.location}</p>
+                    <p className="text-xs text-primary font-medium">✓ Verified Buyer</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <p className="font-semibold text-foreground text-sm">{t.name}</p>
-                <p className="text-xs text-muted-foreground">{t.location}</p>
-                <p className="text-xs text-primary font-medium">✓ Verified Buyer</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+      </Carousel>
     </div>
   </section>
 );
