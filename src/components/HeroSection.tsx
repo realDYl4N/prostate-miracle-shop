@@ -50,7 +50,7 @@ export const HeroSection = () => {
           <div className="order-1 md:order-2 flex justify-center">
             <div className="relative w-full max-w-md">
               <img
-                src={heroBg}
+                src={productBottle}
                 alt="Prostate Miracle supplement"
                 className="w-full h-auto rounded-2xl object-cover shadow-[var(--shadow-elevated)]"
               />
