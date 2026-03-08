@@ -9,10 +9,10 @@ export const Navbar = () => {
             PROSTATE MIRACLE
           </span>
         </a>
-        <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground uppercase tracking-wider">
-          <a href="/" className="hover:text-foreground transition-colors border-b-2 border-primary text-foreground pb-0.5">Home</a>
-          <a href="#product" className="hover:text-foreground transition-colors">Prostate Miracle</a>
-          <a href="#benefits" className="hover:text-foreground transition-colors">Benefits</a>
+        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider h-full">
+          <a href="/" className="text-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-transparent hover:border-primary">Home</a>
+          <a href="#product" className="text-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-primary">Prostate Miracle</a>
+          <a href="#benefits" className="text-muted-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-transparent hover:border-primary">Benefits</a>
         </nav>
         <CartDrawer />
       </div>
