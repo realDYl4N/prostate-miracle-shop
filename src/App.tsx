@@ -5,6 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useCartSync } from "@/hooks/useCartSync";
 import Index from "./pages/Index";
+import ProstateMiraclePage from "./pages/ProstateMiraclePage";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
