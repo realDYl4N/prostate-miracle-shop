@@ -94,6 +94,7 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.6s ease-out forwards",
         shimmer: "shimmer 2s linear infinite",
+        marquee: "marquee 20s linear infinite",
       },
     },
   },
