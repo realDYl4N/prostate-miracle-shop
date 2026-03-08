@@ -29,7 +29,7 @@ const testimonials = [
   },
   {
     name: "Dave Osborne",
-    location: "USA",
+    location: "Verified Customer",
     text: "I've been taking Prostate Miracle for about 6 months and recently had another PSA blood test — the number improved to .50. My doctor said 'That is as good as it gets'. I am of course a customer for life.",
   },
   {
