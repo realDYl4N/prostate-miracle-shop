@@ -39,7 +39,7 @@ const testimonials = [
   },
   {
     name: "Jack C. Moore",
-    location: "Verified Customer",
+    location: "USA",
     text: "After the quick results, I have ordered 4 times over the last year. Today I got the results from the doctor — my PSA is 0.7. I was so happy. It really does work.",
   },
 ];
