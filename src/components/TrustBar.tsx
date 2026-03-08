@@ -7,19 +7,21 @@ const trustItems = [
 ];
 
 export const TrustBar = () => (
-  <section className="bg-primary py-8">
+  <section className="py-4">
     <div className="container mx-auto px-4">
-      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
-        {trustItems.map((item) => (
-          <div key={item.label} className="flex flex-col items-center gap-3">
-            <div className="w-12 h-12 rounded-full border-2 border-primary-foreground/30 flex items-center justify-center">
-              <item.icon className="h-6 w-6 text-primary-foreground" />
+      <div className="bg-primary rounded-2xl py-8 px-6">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-20">
+          {trustItems.map((item) => (
+            <div key={item.label} className="flex flex-col items-center gap-3">
+              <div className="w-14 h-14 rounded-full border-2 border-primary-foreground/20 flex items-center justify-center">
+                <item.icon className="h-6 w-6 text-primary-foreground/80" />
+              </div>
+              <span className="text-sm font-semibold text-primary-foreground tracking-wide">
+                {item.label}
+              </span>
             </div>
-            <span className="text-sm font-medium text-primary-foreground tracking-wide">
-              {item.label}
-            </span>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </section>

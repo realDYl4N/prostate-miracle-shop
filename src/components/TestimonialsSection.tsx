@@ -17,12 +17,24 @@ const testimonials = [
     name: "Richard S.",
     text: "After a few weeks of consistent use, I started noticing better urinary flow and improved comfort. I feel more confident knowing my body has daily support, and I don't worry as much about my prostate health.",
   },
+  {
+    name: "William H.",
+    text: "I've tried several supplements over the years, but this is the first one where I truly noticed a difference. I feel more balanced, my energy feels steadier throughout the day, and I don't get up as often at night.",
+  },
 ];
 
 export const TestimonialsSection = () => (
   <section className="py-20 bg-background">
     <div className="container mx-auto px-4">
-      <div className="text-center mb-4">
+      {/* Section heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          Trusted By <span className="text-primary">Thousands</span>
+        </h2>
+      </div>
+
+      {/* Rating summary */}
+      <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-1 mb-2">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="h-5 w-5 fill-accent text-accent" />
@@ -32,13 +44,19 @@ export const TestimonialsSection = () => (
         <p className="text-sm text-muted-foreground">Trusted by 50K+</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mt-10">
+      {/* Testimonial cards - horizontal scroll */}
+      <div className="flex gap-5 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
         {testimonials.map((t) => (
           <div
             key={t.name}
-            className="bg-card border border-border rounded-xl p-6 shadow-[var(--shadow-card)]"
+            className="bg-card border border-border rounded-xl p-6 shadow-[var(--shadow-card)] min-w-[320px] max-w-[360px] flex-shrink-0 snap-start flex flex-col"
           >
-            <p className="text-lg text-muted-foreground font-body leading-relaxed mb-6 italic">
+            <div className="flex gap-0.5 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+              ))}
+            </div>
+            <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6 flex-1">
               "{t.text}"
             </p>
             <div className="flex items-center gap-3">
