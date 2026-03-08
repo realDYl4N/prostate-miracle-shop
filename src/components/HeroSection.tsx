@@ -33,7 +33,7 @@ export const HeroSection = () => {
             <Button
               size="lg"
               className="bg-foreground text-background hover:bg-foreground/90 font-body font-semibold px-10 py-6 text-base rounded-md shadow-lg mb-5"
-              onClick={() => document.getElementById("product")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => window.location.href = "/prostate-miracle"}
             >
               Shop Now
             </Button>
