@@ -5,6 +5,7 @@ import { WhyYouNeedSection } from "@/components/WhyYouNeedSection";
 import { ProductBenefitsChecklist } from "@/components/ProductBenefitsChecklist";
 import { IngredientsSection } from "@/components/IngredientsSection";
 import { StatsSection } from "@/components/StatsSection";
+import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { GuaranteeCTA } from "@/components/GuaranteeCTA";
 import { ProductPageFAQ } from "@/components/ProductPageFAQ";
 import { FooterSection } from "@/components/FooterSection";
@@ -31,6 +32,9 @@ const ProstateMiraclePage = () => {
       </ScrollFadeIn>
       <ScrollFadeIn>
         <StatsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
+        <TestimonialsSection />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
         <GuaranteeCTA />
