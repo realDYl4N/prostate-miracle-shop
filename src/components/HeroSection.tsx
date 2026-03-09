@@ -27,11 +27,15 @@ export const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-lg">20+ years. One mission. A prostate supplement that actually works
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-base">20+ years. One mission. 
 
 
+A prostate supplement that actually works Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. 
 
-Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula pairs beta-sitosterol with a targeted blend designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms. Trusted by thousands of men since 2003.</p>
+
+Our formula pairs beta-sitosterol with a targeted blend designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms.
+ 
+Trusted by thousands of men since 2003.</p>
 
             {/* CTA */}
             <a href="/prostate-miracle">
@@ -51,14 +55,10 @@ Prostate Miracle was built for men who've tried the generic stuff off the shelf 
 
           {/* Right image */}
           <div className="flex-1 flex justify-center">
-            <img
-              src={productBottle}
-              alt="Prostate Miracle supplement bottle"
-              className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl" />
+            <img src={productBottle} alt="Prostate Miracle supplement bottle" className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl" />
             
           </div>
         </div>
       </div>
     </section>);
-
 };
