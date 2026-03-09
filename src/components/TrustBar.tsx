@@ -1,4 +1,4 @@
-import { Microscope, ShieldCheck, Leaf } from "lucide-react";
+import { DollarSign, ShieldCheck, Leaf } from "lucide-react";
 
 const trustItems = [
   { icon: Microscope, label: "GMP Certified Labs (USA)" },
