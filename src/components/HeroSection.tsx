@@ -47,7 +47,7 @@ export const HeroSection = () => {
             <div className="flex items-center gap-2 mt-5">
               <ShieldCheck className="h-5 w-5 text-primary flex-shrink-0" />
               <span className="text-sm font-medium text-foreground">
-                90-Day Satisfaction Guarantee · Simple Daily Routine
+                60-Day Satisfaction Guarantee 
               </span>
             </div>
           </div>
