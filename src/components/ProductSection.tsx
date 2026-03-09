@@ -124,8 +124,8 @@ export const ProductSection = () => {
 
           {/* Right: Product Details */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">
-              Prostate Miracle Advanced Formula
+            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-3">Prostate Miracle Advanced Formula
+
             </h2>
 
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
@@ -139,7 +139,7 @@ export const ProductSection = () => {
 
             {/* Urgency */}
             <div className="text-center mb-4">
-              <span className="text-sm font-bold text-destructive">Low Stock Available!</span>
+              <span className="text-sm font-bold text-destructive">60-Day Money-Back Guarantee — Try It Risk-Free</span>
             </div>
 
             {/* Pricing Tiers */}
