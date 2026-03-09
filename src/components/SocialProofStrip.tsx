@@ -14,25 +14,5 @@ import sp5 from "@/assets/social-proof-5.jpg";
 const images = [sp1, sp2, sp3, sp4, sp5];
 
 export const SocialProofStrip = () => {
-  return;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  return null;
 };
