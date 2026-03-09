@@ -1,7 +1,7 @@
 import supplementComparison from "@/assets/supplement-comparison.jpg";
 
-export const BenefitsSection = () => (
-  <section id="benefits" className="py-20 bg-secondary/30">
+export const BenefitsSection = () =>
+<section id="benefits" className="py-20 bg-secondary/30">
     <div className="container mx-auto px-4">
       <div className="text-center mb-14">
         <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
@@ -18,7 +18,7 @@ export const BenefitsSection = () => (
             Here's the math most brands don't want you to see: you would need to take roughly <span className="text-foreground font-semibold">2,000 to 3,000 capsules</span> of saw palmetto powder to get the same amount of beta-sitosterol in a single capsule of Prostate Miracle® Advanced Formula. Even the best saw palmetto extracts only deliver a fraction of what clinical research suggests is effective.
           </p>
           <p className="text-primary font-display text-lg font-semibold italic">
-            That's not a supplement — that's a rounding error.
+            That's not a supplement. That's a rounding error.
           </p>
           <p className="text-muted-foreground font-body text-base leading-relaxed">
             Prostate Miracle® cuts straight to the source: <span className="text-foreground font-semibold">300mg of pure beta-sitosterol per capsule</span>, extracted from non-GMO pine in France, guaranteed 99% pure. No middleman herbs. No fillers pretending to be active ingredients.
@@ -27,13 +27,12 @@ export const BenefitsSection = () => (
         {/* Image */}
         <div className="lg:w-2/5">
           <img
-            src={supplementComparison}
-            alt="Comparison: thousands of saw palmetto capsules versus one Prostate Miracle capsule"
-            className="rounded-2xl shadow-[var(--shadow-card)] w-full"
-            loading="lazy"
-          />
+          src={supplementComparison}
+          alt="Comparison: thousands of saw palmetto capsules versus one Prostate Miracle capsule"
+          className="rounded-2xl shadow-[var(--shadow-card)] w-full"
+          loading="lazy" />
+        
         </div>
       </div>
     </div>
-  </section>
-);
+  </section>;
