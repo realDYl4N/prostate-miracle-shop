@@ -27,7 +27,7 @@ export const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-muted-foreground font-body leading-relaxed mb-8 max-w-md">20+ years. One mission. A prostate supplement that actually works
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-lg">20+ years. One mission. A prostate supplement that actually works
 
 
 
