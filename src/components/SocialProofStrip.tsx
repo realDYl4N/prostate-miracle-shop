@@ -15,11 +15,6 @@ const images = [sp1, sp2, sp3, sp4, sp5];
 
 export const SocialProofStrip = () => (
   <section className="py-16 bg-background overflow-hidden">
-    <div className="text-center mb-10">
-      <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
-        Tested By <span className="text-primary">Thousands</span>
-      </h2>
-    </div>
 
     <div className="max-w-4xl mx-auto px-4">
       <Carousel
