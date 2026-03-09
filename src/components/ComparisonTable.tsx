@@ -26,7 +26,7 @@ export const ComparisonTable = () => {
           <table className="w-full">
             <thead>
               <tr className="bg-primary/10">
-                <th className="text-left font-display font-bold text-foreground px-6 py-4 w-[35%]">Feature</th>
+                <th className="text-left font-display font-bold text-foreground px-6 py-4 w-[35%]"></th>
                 <th className="text-center font-display font-bold text-primary px-6 py-4 w-[32.5%]">Prostate Miracle®</th>
                 <th className="text-center font-display font-bold text-muted-foreground px-6 py-4 w-[32.5%]">Typical Competitor</th>
               </tr>
