@@ -34,10 +34,11 @@ export const Navbar = () => {
             Prostate Miracle
           </a>
           <a
-            href="/#benefits"
+            href="https://www.trackmyorder.today"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-transparent hover:border-primary">
-            
-            Benefits
+            Track Order
           </a>
         </nav>
         <CartDrawer />
