@@ -17,7 +17,7 @@ export const FooterSection = () => {
               PROSTATE MIRACLE
             </h3>
             <p className="text-sm text-primary-foreground/70 font-body leading-relaxed">
-              Clinically-dosed beta-sitosterol in an easy-to-take capsule, designed to support your prostate health naturally.
+              Clinically-studied beta-sitosterol from non-GMO European pine, supporting prostate health since 2003.
             </p>
             <div className="flex items-center gap-2 text-sm text-primary-foreground/70">
               <Mail className="h-4 w-4" />
