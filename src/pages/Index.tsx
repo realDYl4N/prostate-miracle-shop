@@ -19,6 +19,9 @@ const Index = () => {
         <TrustBar />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
+        <BenefitsSection />
+      </ScrollFadeIn>
+      <ScrollFadeIn delay={0.05}>
         <SocialProofStrip />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
@@ -26,9 +29,6 @@ const Index = () => {
       </ScrollFadeIn>
       <ScrollFadeIn>
         <MarqueeStrip />
-      </ScrollFadeIn>
-      <ScrollFadeIn delay={0.05}>
-        <BenefitsSection />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
         <FAQSection />
