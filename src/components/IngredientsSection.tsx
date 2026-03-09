@@ -17,7 +17,7 @@ const ingredients = [
   icon: Shield,
   name: "Selenium",
   description:
-  "Traditionally used for centuries to soothe urinary discomfort and support healthy prostate tissue."
+  "Selenium is a trace mineral with unique biochemical properties that researchers have been investigating for its potential role in prostate health. Prostate Miracle® uses Albion® Selenium Glycinate Complex, a patented, bioavailable form that's far superior to the generic \"selenium amino acid chelates\" most brands use. Soil depletion means many men aren't getting enough selenium from food alone."
 },
 {
   icon: Beaker,
