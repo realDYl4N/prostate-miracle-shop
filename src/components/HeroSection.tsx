@@ -12,12 +12,12 @@ export const HeroSection = () => {
             {/* Rating bar */}
             <div className="flex items-center gap-3 mb-6">
               <div className="flex gap-0.5">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-accent text-accent" />
-                ))}
+                {[...Array(5)].map((_, i) =>
+                <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                )}
               </div>
               <span className="text-sm font-semibold text-foreground">Rated 4.8 / 5</span>
-              <span className="text-sm text-muted-foreground">Trusted By 50K+</span>
+              <span className="text-sm text-muted-foreground">Trusted By 50K+ Happy Customers </span>
             </div>
 
             {/* Headline */}
@@ -54,11 +54,11 @@ export const HeroSection = () => {
             <img
               src={productBottle}
               alt="Prostate Miracle supplement bottle"
-              className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl"
-            />
+              className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl" />
+            
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
