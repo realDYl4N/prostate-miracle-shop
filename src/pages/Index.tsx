@@ -6,6 +6,7 @@ import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { MarqueeStrip } from "@/components/MarqueeStrip";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { FAQSection } from "@/components/FAQSection";
+import { BottomCTA } from "@/components/BottomCTA";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 
