@@ -61,7 +61,9 @@ export const CartDrawer = () => {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h4 className="font-medium truncate">{item.product.node.title}</h4>
-                        <p className="text-sm text-muted-foreground">{item.selectedOptions.map(o => o.value).join(' • ')}</p>
+                        {item.selectedOptions.filter(o => o.value !== 'Default Title').length > 0 && (
+                          <p className="text-sm text-muted-foreground">{item.selectedOptions.filter(o => o.value !== 'Default Title').map(o => o.value).join(' • ')}</p>
+                        )}
                         <p className="font-semibold">{item.price.currencyCode} {parseFloat(item.price.amount).toFixed(2)}</p>
                       </div>
                       <div className="flex flex-col items-end gap-2 flex-shrink-0">
