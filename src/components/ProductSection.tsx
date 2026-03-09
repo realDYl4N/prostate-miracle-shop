@@ -18,7 +18,7 @@ const pricingTiers = [
   freeShipping: true
 },
 {
-  label: "Buy 2",
+  label: "Buy Two",
   badge: "Most Popular",
   savings: "Save 40%",
   price: "$53.99",
