@@ -26,16 +26,7 @@ export const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-base">20+ years. One mission.  
-
-
-A prostate supplement that actually works.
-
-
-Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula is designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms.   
-
-
-Trusted by thousands of men since 2003.</p>
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-base">20+ years. One mission. A prostate supplement that actually works. Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula is designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms. Trusted by thousands of men since 2003.</p>
 
             {/* CTA */}
             <a href="/prostate-miracle">
