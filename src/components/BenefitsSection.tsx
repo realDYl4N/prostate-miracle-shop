@@ -1,4 +1,4 @@
-import supplementComparison from "@/assets/supplement-comparison.jpg";
+
 
 export const BenefitsSection = () =>
 <section id="benefits" className="py-20 bg-secondary/30">
