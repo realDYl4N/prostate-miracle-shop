@@ -37,11 +37,9 @@ const pricingTiers = [
 
 
 const benefitTags = [
-"Supports Healthy Urinary Flow",
-"Promotes Prostate Comfort",
-"Natural Ingredients",
-"Gentle Vegetable Capsules",
-"Clinically-Studied Formula"];
+"Clinically-Studied Ingredients",
+"Fewer Nighttime Bathroom Trips",
+"Trusted by Men Since 2003"];
 
 
 export const ProductSection = () => {
