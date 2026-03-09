@@ -2,7 +2,7 @@ import { Leaf } from "lucide-react";
 
 const badges = [
   "Gentle on Stomach",
-  "Gluten-Free Formula",
+  "Trusted by Men Since 2003",
   "Non-GMO Ingredients",
   "Clinically-Studied Ingredients",
   "Clinically Studied",
