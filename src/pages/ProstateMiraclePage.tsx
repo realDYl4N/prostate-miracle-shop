@@ -41,6 +41,8 @@ const ProstateMiraclePage = () => {
         <GuaranteeCTA />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
+        <ComparisonTable />
+      <ScrollFadeIn delay={0.05}>
         <ProductPageFAQ />
       </ScrollFadeIn>
       <FooterSection />
