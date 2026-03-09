@@ -21,7 +21,7 @@ const pricingTiers = [
   label: "Buy Two",
   badge: "Most Popular",
   savings: "Save 40%",
-  price: "$80.85",
+  price: "$55.90",
   originalPrice: "$73.90",
   quantity: 2,
   variantOption: "Buy Two",
