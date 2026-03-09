@@ -13,7 +13,7 @@ export const HeroSection = () => {
             <div className="flex items-center gap-3 mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) =>
-                <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+                <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                 )}
               </div>
               <span className="text-sm font-semibold text-foreground">Rated 4.8 / 5</span>
