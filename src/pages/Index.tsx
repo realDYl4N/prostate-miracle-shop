@@ -34,6 +34,9 @@ const Index = () => {
         <FAQSection />
       </ScrollFadeIn>
       <ScrollFadeIn>
+        <BottomCTA />
+      </ScrollFadeIn>
+      <ScrollFadeIn>
         <FooterSection />
       </ScrollFadeIn>
     </div>
