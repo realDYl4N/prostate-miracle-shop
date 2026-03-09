@@ -27,11 +27,11 @@ export const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-muted-foreground font-body leading-relaxed mb-8 max-w-md">
-              Support prostate health and urinary comfort with a clinically-studied
-              blend of natural ingredients, carefully formulated for powerful daily
-              support.
-            </p>
+            <p className="text-base md:text-lg text-muted-foreground font-body leading-relaxed mb-8 max-w-md">20+ years. One mission. A prostate supplement that actually works
+
+
+
+Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula pairs beta-sitosterol with a targeted blend designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms. Trusted by thousands of men since 2003.</p>
 
             {/* CTA */}
             <a href="/prostate-miracle">
