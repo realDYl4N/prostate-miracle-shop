@@ -23,7 +23,7 @@ const ingredients = [
   icon: Beaker,
   name: "Zinc & Selenium Blend",
   description:
-  "Essential minerals that protect prostate cells from oxidative stress while supporting hormonal balance."
+  "The prostate contains a higher concentration of zinc than any other soft tissue in the body, which tells you it's not there by accident. Research shows that men with prostate issues typically have significantly lower zinc levels than men without them. Prostate Miracle® delivers 15mg daily as zinc citrate for optimal absorption, providing 100% of your daily value."
 }];
 
 
