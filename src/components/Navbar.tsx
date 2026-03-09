@@ -1,5 +1,6 @@
 import { CartDrawer } from "./CartDrawer";
 import { useLocation } from "react-router-dom";
+import nhsLogo from "@/assets/nhs-logo.png";
 
 export const Navbar = () => {
   const location = useLocation();
@@ -10,6 +11,7 @@ export const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="/" className="flex items-center gap-2">
+          <img src={nhsLogo} alt="Nature's Health Supply" className="h-10 w-10 object-contain" />
           <span className="font-display text-xl font-bold tracking-tight text-foreground">
             PROSTATE MIRACLE
           </span>
