@@ -12,7 +12,7 @@ export const BenefitsSection = () =>
         {/* Text */}
         <div className="lg:w-3/5 space-y-5">
           <p className="text-muted-foreground font-body text-base leading-relaxed">
-            If you've been buying saw palmetto, pygeum, lycopene, or pumpkin seed oil from the supplement aisle, you're not alone. Millions of men take these every year. The problem? They contain almost no beta-sitosterol — the one ingredient that actually matters for prostate health.
+            If you've been buying saw palmetto, pygeum, lycopene, or pumpkin seed oil from the supplement aisle, you're not alone. Millions of men take these every year. The problem? They contain almost no beta-sitosterol, the one ingredient that actually matters for prostate health.
           </p>
           <p className="text-muted-foreground font-body text-base leading-relaxed">
             Here's the math most brands don't want you to see: you would need to take roughly <span className="text-foreground font-semibold">2,000 to 3,000 capsules</span> of saw palmetto powder to get the same amount of beta-sitosterol in a single capsule of Prostate Miracle® Advanced Formula. Even the best saw palmetto extracts only deliver a fraction of what clinical research suggests is effective.
