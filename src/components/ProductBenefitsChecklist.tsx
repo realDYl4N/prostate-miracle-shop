@@ -41,9 +41,12 @@ export const ProductBenefitsChecklist = () => {
             </div>
           </div>
           <div className="flex items-center justify-center">
-            <img
-              src={secondImage}
-              alt={altText}
+            <video
+              src="/videos/Stop_Guessing_on_Potency_version_1.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-full max-w-md h-auto object-contain rounded-2xl"
             />
           </div>
