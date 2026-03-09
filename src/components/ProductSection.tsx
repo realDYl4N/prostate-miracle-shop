@@ -57,15 +57,23 @@ export const ProductSection = () => {
   const images = product?.node.images.edges || [];
 
   const handleAddToCart = async () => {
-    if (!product || !variant) return;
+    if (!product) return;
     const tier = pricingTiers[selectedTier];
+    
+    // Find the matching variant by option title, fallback to first variant
+    const matchedVariant = tier.variantOption
+      ? product.node.variants.edges.find(v => v.node.title === tier.variantOption)?.node || variant
+      : variant;
+    
+    if (!matchedVariant) return;
+    
     await addItem({
       product,
-      variantId: variant.id,
-      variantTitle: variant.title,
-      price: variant.price,
+      variantId: matchedVariant.id,
+      variantTitle: matchedVariant.title,
+      price: matchedVariant.price,
       quantity: tier.quantity,
-      selectedOptions: variant.selectedOptions || []
+      selectedOptions: matchedVariant.selectedOptions || []
     });
     toast.success("Added to cart", {
       description: `${tier.quantity}x Prostate Miracle`,
