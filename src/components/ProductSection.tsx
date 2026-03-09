@@ -13,7 +13,8 @@ const pricingTiers = [
   savings: "Save 46%",
   price: "$80.99",
   originalPrice: "$110.85",
-  quantity: 5,
+  quantity: 3,
+  variantOption: "Buy Three",
   freeShipping: true
 },
 {
@@ -22,7 +23,8 @@ const pricingTiers = [
   savings: "Save 40%",
   price: "$53.99",
   originalPrice: "$73.90",
-  quantity: 3,
+  quantity: 2,
+  variantOption: "Buy Two",
   freeShipping: true
 },
 {
@@ -32,6 +34,7 @@ const pricingTiers = [
   price: "$33.95",
   originalPrice: "$29.99",
   quantity: 1,
+  variantOption: null,
   freeShipping: false
 }];
 
@@ -54,15 +57,23 @@ export const ProductSection = () => {
   const images = product?.node.images.edges || [];
 
   const handleAddToCart = async () => {
-    if (!product || !variant) return;
+    if (!product) return;
     const tier = pricingTiers[selectedTier];
+    
+    // Find the matching variant by option title, fallback to first variant
+    const matchedVariant = tier.variantOption
+      ? product.node.variants.edges.find(v => v.node.title === tier.variantOption)?.node || variant
+      : variant;
+    
+    if (!matchedVariant) return;
+    
     await addItem({
       product,
-      variantId: variant.id,
-      variantTitle: variant.title,
-      price: variant.price,
+      variantId: matchedVariant.id,
+      variantTitle: matchedVariant.title,
+      price: matchedVariant.price,
       quantity: tier.quantity,
-      selectedOptions: variant.selectedOptions || []
+      selectedOptions: matchedVariant.selectedOptions || []
     });
     toast.success("Added to cart", {
       description: `${tier.quantity}x Prostate Miracle`,
