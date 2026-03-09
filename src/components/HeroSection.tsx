@@ -22,11 +22,20 @@ export const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold leading-[1.1] mb-5 text-muted-foreground">
-              The Prostate Formula <span className="text-primary">10,000+</span> Men Won't Stop Reordering
+              The <span className="text-primary">10,000+</span> For
+              Everyday Comfort & Support
             </h1>
 
             {/* Description */}
-            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-base">20+ years. One mission. A prostate supplement that actually works. Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula is designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms. Trusted by thousands of men since 2003.</p>
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 max-w-md md:text-base">20+ years. One mission.  A prostate supplement that actually works. Prostate Miracle was built for men who've tried the generic stuff off the shelf and felt zero difference. Our formula is designed for urinary comfort, healthy flow, and fewer midnight trips, so you can get back to living on your terms. Trusted by thousands of men since 2003.
+
+
+
+
+
+
+
+            </p>
 
             {/* CTA */}
             <a href="/prostate-miracle">
