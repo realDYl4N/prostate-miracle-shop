@@ -21,8 +21,8 @@ export const FooterSection = () => {
             </p>
             <div className="flex items-center gap-2 text-sm text-secondary-foreground/70">
               <Mail className="h-4 w-4" />
-              <a href="mailto:support@prostatemiracle.com" className="hover:text-secondary-foreground transition-colors">
-                support@prostatemiracle.com
+              <a className="hover:text-secondary-foreground transition-colors" href="mailto:hello@prostatemiracle.com">
+                hello@prostatemiracle.com
               </a>
             </div>
           </div>
@@ -56,22 +56,22 @@ export const FooterSection = () => {
               Promotions, new products and sales. Directly to your inbox.
             </p>
             <form
-              onSubmit={(e) => { e.preventDefault(); setEmail(""); }}
-              className="space-y-3"
-            >
+              onSubmit={(e) => {e.preventDefault();setEmail("");}}
+              className="space-y-3">
+              
               <Input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email"
                 className="bg-transparent border-secondary-foreground/30 text-secondary-foreground placeholder:text-secondary-foreground/40 h-11"
-                required
-              />
+                required />
+              
               <Button
                 type="submit"
                 variant="default"
-                className="font-display font-bold uppercase tracking-wider text-sm"
-              >
+                className="font-display font-bold uppercase tracking-wider text-sm">
+                
                 Subscribe
               </Button>
             </form>
@@ -90,6 +90,6 @@ export const FooterSection = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
