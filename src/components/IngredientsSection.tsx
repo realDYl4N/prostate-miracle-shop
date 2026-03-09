@@ -3,7 +3,7 @@ import { Leaf, Sun, Shield, Beaker } from "lucide-react";
 const ingredients = [
 {
   icon: Leaf,
-  name: "Saw Palmetto Extract",
+  name: "Beta-Sitosterol Complex",
   description:
   "The gold standard for prostate support — clinically studied to promote healthy urinary flow and reduce nighttime trips."
 },
