@@ -24,13 +24,13 @@ export const SocialProofStrip = () =>
         <CarouselContent className="-ml-4">
           {images.map((img, i) =>
         <CarouselItem key={i} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
-              <div className="w-full h-[260px] rounded-xl overflow-hidden">
-                
+              
 
 
 
-            
-              </div>
+
+
+          
             </CarouselItem>
         )}
         </CarouselContent>
