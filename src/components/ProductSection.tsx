@@ -13,7 +13,8 @@ const pricingTiers = [
   savings: "Save 46%",
   price: "$80.99",
   originalPrice: "$110.85",
-  quantity: 5,
+  quantity: 3,
+  variantOption: "Buy Three",
   freeShipping: true
 },
 {
@@ -22,7 +23,8 @@ const pricingTiers = [
   savings: "Save 40%",
   price: "$53.99",
   originalPrice: "$73.90",
-  quantity: 3,
+  quantity: 2,
+  variantOption: "Buy Two",
   freeShipping: true
 },
 {
@@ -32,6 +34,7 @@ const pricingTiers = [
   price: "$33.95",
   originalPrice: "$29.99",
   quantity: 1,
+  variantOption: null,
   freeShipping: false
 }];
 
