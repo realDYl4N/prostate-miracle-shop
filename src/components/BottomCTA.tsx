@@ -2,7 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Shield, Truck, Factory } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
-export const BottomCTA = () => (
+export const BottomCTA = () => {
+  const navigate = useNavigate();
+  return (
   <section className="py-24 bg-primary text-primary-foreground">
     <div className="container mx-auto px-4 max-w-3xl text-center">
       <h2 className="text-3xl md:text-5xl font-display font-bold leading-tight mb-6">
@@ -15,7 +17,7 @@ export const BottomCTA = () => (
         size="lg"
         variant="secondary"
         className="text-lg px-10 py-6 font-display font-semibold shadow-lg hover:scale-105 transition-transform"
-        onClick={() => document.getElementById("product")?.scrollIntoView({ behavior: "smooth" })}
+        onClick={() => navigate("/prostate-miracle")}
       >
         Try Prostate Miracle® Risk-Free
       </Button>
