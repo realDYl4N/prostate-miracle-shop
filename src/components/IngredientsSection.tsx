@@ -5,7 +5,7 @@ const ingredients = [
   icon: Leaf,
   name: "Beta-Sitosterol Complex",
   description:
-  "The gold standard for prostate support — clinically studied to promote healthy urinary flow and reduce nighttime trips."
+  "The star of the formula. Beta-sitosterol is a plant sterol found in trace amounts in saw palmetto, stinging nettles, and pumpkin seeds, but the concentration in those herbs is tiny. Prostate Miracle® uses a highly concentrated phytosterol complex extracted from non-GMO European pine, imported from France, guaranteed 99% pure with not less than 70% beta-sitosterol."
 },
 {
   icon: Sun,
