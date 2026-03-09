@@ -1,9 +1,9 @@
 import { Microscope, ShieldCheck, Leaf } from "lucide-react";
 
 const trustItems = [
-  { icon: Microscope, label: "Verified By Testing" },
-  { icon: ShieldCheck, label: "Certified Product" },
-  { icon: Leaf, label: "Natural Formula" },
+  { icon: Microscope, label: "GMP Certified Labs (USA)" },
+  { icon: ShieldCheck, label: "60-Day Money-Back Guarantee" },
+  { icon: Leaf, label: "Beta-Sitosterol from France" },
 ];
 
 export const TrustBar = () => (
