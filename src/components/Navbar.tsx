@@ -1,5 +1,6 @@
 import { CartDrawer } from "./CartDrawer";
 import { useLocation } from "react-router-dom";
+import { Phone } from "lucide-react";
 import nhsLogo from "@/assets/nhs-logo.png";
 
 export const Navbar = () => {
