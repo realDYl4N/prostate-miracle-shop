@@ -1,4 +1,4 @@
-import { Leaf, Droplets, Shield, Beaker } from "lucide-react";
+import { Leaf, Sun, Shield, Beaker } from "lucide-react";
 
 const ingredients = [
 {
