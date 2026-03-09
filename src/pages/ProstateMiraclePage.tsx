@@ -7,6 +7,7 @@ import { IngredientsSection } from "@/components/IngredientsSection";
 import { StatsSection } from "@/components/StatsSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { GuaranteeCTA } from "@/components/GuaranteeCTA";
+import { ComparisonTable } from "@/components/ComparisonTable";
 import { ProductPageFAQ } from "@/components/ProductPageFAQ";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
