@@ -20,19 +20,19 @@ export const SocialProofStrip = () => {
         <Carousel
           opts={{ align: "start", loop: true }}
           plugins={[Autoplay({ delay: 3000, stopOnInteraction: false })]}
-          className="w-full"
-        >
+          className="w-full">
+          
           <CarouselContent className="-ml-4">
-            {images.map((img, i) => (
-              <CarouselItem key={i} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+            {images.map((img, i) =>
+            <CarouselItem key={i} className="pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
                 <div className="overflow-hidden rounded-xl shadow-md">
-                  <img src={img} alt={`Customer review ${i + 1}`} className="w-full h-auto object-cover" loading="lazy" />
+                  
                 </div>
               </CarouselItem>
-            ))}
+            )}
           </CarouselContent>
         </Carousel>
       </div>
-    </section>
-  );
+    </section>);
+
 };
