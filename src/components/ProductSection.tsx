@@ -10,7 +10,7 @@ const pricingTiers = [
 {
   label: "Buy Three",
   badge: "Best Value",
-  savings: "Save 46%",
+  savings: "Save 27%",
   price: "$80.85",
   originalPrice: "$110.85",
   quantity: 3,
