@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useCartSync } from "@/hooks/useCartSync";
 import Index from "./pages/Index";
 import ProstateMiraclePage from "./pages/ProstateMiraclePage";
+import TrackOrderPage from "./pages/TrackOrderPage";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
@@ -18,6 +19,7 @@ const AppContent = () => {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/prostate-miracle" element={<ProstateMiraclePage />} />
+        <Route path="/track-order" element={<TrackOrderPage />} />
         <Route path="/product/:handle" element={<ProductDetail />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
