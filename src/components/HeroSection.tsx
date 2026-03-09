@@ -21,7 +21,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold leading-[1.1] text-foreground mb-5">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.4rem] font-display font-bold leading-[1.1] mb-5 text-primary">
               The <span className="text-primary">#1 Prostate Formula</span> For
               Everyday Comfort & Support
             </h1>
