@@ -32,7 +32,7 @@ const pricingTiers = [
   badge: null,
   savings: null,
   price: "$33.95",
-  originalPrice: "$29.99",
+  originalPrice: "$36.95",
   quantity: 1,
   variantOption: null,
   freeShipping: false
