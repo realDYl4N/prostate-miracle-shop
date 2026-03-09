@@ -26,11 +26,14 @@ export const BenefitsSection = () =>
         </div>
         {/* Image */}
         <div className="lg:w-2/5">
-          <img
-          src={supplementComparison}
-          alt="Comparison: thousands of saw palmetto capsules versus one Prostate Miracle capsule"
-          className="rounded-2xl shadow-[var(--shadow-card)] w-full"
-          loading="lazy" />
+          <video
+              src="/videos/The_Gold_Standard.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="rounded-2xl shadow-[var(--shadow-card)] w-full"
+            />
         
         </div>
       </div>
