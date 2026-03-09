@@ -17,7 +17,7 @@ export const HeroSection = () => {
                 )}
               </div>
               <span className="text-sm font-semibold text-foreground">Rated 4.8 / 5</span>
-              <span className="text-sm text-muted-foreground">Trusted By 50K+ Happy Customers </span>
+              <span className="text-sm text-muted-foreground">Trusted By 100K+ Happy Customers </span>
             </div>
 
             {/* Headline */}
