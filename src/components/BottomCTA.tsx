@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Truck, Factory } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export const BottomCTA = () => (
   <section className="py-24 bg-primary text-primary-foreground">
