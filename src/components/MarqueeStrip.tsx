@@ -4,7 +4,7 @@ const badges = [
   "Gentle on Stomach",
   "Gluten-Free Formula",
   "Non-GMO Ingredients",
-  "Vegetable Capsules",
+  "Clinically-Studied Ingredients",
   "Clinically Studied",
   "Made in the USA",
 ];
