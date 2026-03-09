@@ -21,7 +21,7 @@ const pricingTiers = [
   badge: "Most Popular",
   savings: "Save 40%",
   price: "$53.99",
-  originalPrice: "$89.97",
+  originalPrice: "$73.90",
   quantity: 3,
   freeShipping: true
 },
