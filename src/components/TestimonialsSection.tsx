@@ -131,7 +131,7 @@ export const TestimonialsSection = () => (
       <div className="text-center mb-10">
         <div className="flex items-center justify-center gap-1 mb-2">
           {[...Array(5)].map((_, i) => (
-            <Star key={i} className="h-5 w-5 fill-accent text-accent" />
+            <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
           ))}
         </div>
         <p className="text-sm font-medium text-foreground">Rated 4.8 / 5</p>
