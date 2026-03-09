@@ -7,42 +7,42 @@ import { toast } from "sonner";
 import productBottle from "@/assets/product-bottle.png";
 
 const pricingTiers = [
-  {
-    label: "Buy 3, Get 2 Free",
-    badge: "Best Value",
-    savings: "Save 46%",
-    price: "$80.99",
-    originalPrice: "$149.95",
-    quantity: 5,
-    freeShipping: true,
-  },
-  {
-    label: "Buy 2, Get 1 Free",
-    badge: "Most Popular",
-    savings: "Save 40%",
-    price: "$53.99",
-    originalPrice: "$89.97",
-    quantity: 3,
-    freeShipping: true,
-  },
-  {
-    label: "Buy One",
-    badge: null,
-    savings: null,
-    price: "$26.99",
-    originalPrice: "$29.99",
-    quantity: 1,
-    freeShipping: false,
-  },
-];
+{
+  label: "Buy 3, Get 2 Free",
+  badge: "Best Value",
+  savings: "Save 46%",
+  price: "$80.99",
+  originalPrice: "$149.95",
+  quantity: 5,
+  freeShipping: true
+},
+{
+  label: "Buy 2, Get 1 Free",
+  badge: "Most Popular",
+  savings: "Save 40%",
+  price: "$53.99",
+  originalPrice: "$89.97",
+  quantity: 3,
+  freeShipping: true
+},
+{
+  label: "Buy One",
+  badge: null,
+  savings: null,
+  price: "$26.99",
+  originalPrice: "$29.99",
+  quantity: 1,
+  freeShipping: false
+}];
+
 
 const benefitTags = [
-  "Supports Healthy Urinary Flow",
-  "Promotes Prostate Comfort",
-  "Natural Ingredients",
-  "Gentle Vegetable Capsules",
-  "Clinically-Studied Formula",
-];
+"Supports Healthy Urinary Flow",
+"Promotes Prostate Comfort",
+"Natural Ingredients",
+"Gentle Vegetable Capsules",
+"Clinically-Studied Formula"];
+
 
 export const ProductSection = () => {
   const { data: products, isLoading: productsLoading } = useProducts();
@@ -64,11 +64,11 @@ export const ProductSection = () => {
       variantTitle: variant.title,
       price: variant.price,
       quantity: tier.quantity,
-      selectedOptions: variant.selectedOptions || [],
+      selectedOptions: variant.selectedOptions || []
     });
     toast.success("Added to cart", {
       description: `${tier.quantity}x Prostate Miracle`,
-      position: "top-center",
+      position: "top-center"
     });
   };
 
@@ -82,46 +82,46 @@ export const ProductSection = () => {
               <img
                 src={images[selectedImage]?.node.url || productBottle}
                 alt={images[selectedImage]?.node.altText || "Prostate Miracle Advanced Formula"}
-                className="w-full h-full object-contain drop-shadow-xl"
-              />
-              {images.length > 1 && (
-                <>
+                className="w-full h-full object-contain drop-shadow-xl" />
+              
+              {images.length > 1 &&
+              <>
                   <button
-                    onClick={() => setSelectedImage((prev) => (prev === 0 ? images.length - 1 : prev - 1))}
-                    className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors"
-                  >
+                  onClick={() => setSelectedImage((prev) => prev === 0 ? images.length - 1 : prev - 1)}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors">
+                  
                     <ChevronLeft className="h-4 w-4 text-foreground" />
                   </button>
                   <button
-                    onClick={() => setSelectedImage((prev) => (prev === images.length - 1 ? 0 : prev + 1))}
-                    className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors"
-                  >
+                  onClick={() => setSelectedImage((prev) => prev === images.length - 1 ? 0 : prev + 1)}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-background/80 border border-border flex items-center justify-center hover:bg-background transition-colors">
+                  
                     <ChevronRight className="h-4 w-4 text-foreground" />
                   </button>
                 </>
-              )}
+              }
             </div>
-            {images.length > 1 && (
-              <div className="grid grid-cols-5 gap-2">
-                {images.map((img, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setSelectedImage(i)}
-                    className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
-                      selectedImage === i
-                        ? "border-primary ring-1 ring-primary"
-                        : "border-border hover:border-primary/40"
-                    }`}
-                  >
+            {images.length > 1 &&
+            <div className="grid grid-cols-5 gap-2">
+                {images.map((img, i) =>
+              <button
+                key={i}
+                onClick={() => setSelectedImage(i)}
+                className={`aspect-square rounded-lg overflow-hidden border-2 transition-all ${
+                selectedImage === i ?
+                "border-primary ring-1 ring-primary" :
+                "border-border hover:border-primary/40"}`
+                }>
+                
                     <img
-                      src={img.node.url}
-                      alt={img.node.altText || `Product image ${i + 1}`}
-                      className="w-full h-full object-contain bg-muted/30"
-                    />
+                  src={img.node.url}
+                  alt={img.node.altText || `Product image ${i + 1}`}
+                  className="w-full h-full object-contain bg-muted/30" />
+                
                   </button>
-                ))}
+              )}
               </div>
-            )}
+            }
           </div>
 
           {/* Right: Product Details */}
@@ -131,7 +131,7 @@ export const ProductSection = () => {
             </h2>
 
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              Clinically-inspired, naturally-sourced ingredients in easy-to-take vegetable capsules, designed to support your prostate health and daily comfort without harsh additives or fillers.
+              Built with beta-sitosterol and a targeted blend of plant-based ingredients backed by real clinical research. Every vegetable capsule is free from fillers, artificial additives, and the unnecessary junk most brands hide behind proprietary labels. Just clean, direct prostate support for fewer nighttime trips and better daily comfort.
             </p>
 
             {/* Benefit Tags */}
@@ -146,86 +146,86 @@ export const ProductSection = () => {
 
             {/* Pricing Tiers */}
             <div className="space-y-3 mb-6">
-              {pricingTiers.map((tier, i) => (
-                <button
-                  key={i}
-                  onClick={() => setSelectedTier(i)}
-                  className={`w-full relative rounded-xl border-2 p-4 text-left transition-all ${
-                    selectedTier === i
-                      ? "border-primary bg-primary/5"
-                      : "border-border hover:border-primary/30"
-                  }`}
-                >
-                  {tier.badge && (
-                    <span className="absolute -top-2.5 right-4 bg-primary text-primary-foreground text-xs font-bold px-3 py-0.5 rounded-full">
+              {pricingTiers.map((tier, i) =>
+              <button
+                key={i}
+                onClick={() => setSelectedTier(i)}
+                className={`w-full relative rounded-xl border-2 p-4 text-left transition-all ${
+                selectedTier === i ?
+                "border-primary bg-primary/5" :
+                "border-border hover:border-primary/30"}`
+                }>
+                
+                  {tier.badge &&
+                <span className="absolute -top-2.5 right-4 bg-primary text-primary-foreground text-xs font-bold px-3 py-0.5 rounded-full">
                       {tier.badge}
                     </span>
-                  )}
+                }
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                          selectedTier === i
-                            ? "border-primary"
-                            : "border-muted-foreground/30"
-                        }`}
-                      >
-                        {selectedTier === i && (
-                          <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-                        )}
+                      className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
+                      selectedTier === i ?
+                      "border-primary" :
+                      "border-muted-foreground/30"}`
+                      }>
+                      
+                        {selectedTier === i &&
+                      <div className="w-2.5 h-2.5 rounded-full bg-primary" />
+                      }
                       </div>
                       <div>
                         <div className="flex items-center gap-2">
                           <span className="font-semibold text-foreground text-sm">
                             {tier.label}
                           </span>
-                          {tier.savings && (
-                            <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-0.5 rounded">
+                          {tier.savings &&
+                        <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-0.5 rounded">
                               {tier.savings}
                             </span>
-                          )}
+                        }
                         </div>
-                        {tier.freeShipping && (
-                          <span className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5">
+                        {tier.freeShipping &&
+                      <span className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5">
                             <Truck className="h-3 w-3" /> Free Shipping
                           </span>
-                        )}
+                      }
                       </div>
                     </div>
                     <div className="text-right">
                       <span className="font-bold text-foreground text-lg">{tier.price}</span>
-                      {tier.originalPrice && (
-                        <span className="text-sm text-muted-foreground line-through ml-2">
+                      {tier.originalPrice &&
+                    <span className="text-sm text-muted-foreground line-through ml-2">
                           {tier.originalPrice}
                         </span>
-                      )}
+                    }
                     </div>
                   </div>
                 </button>
-              ))}
+              )}
             </div>
 
             {/* Add to Cart */}
             <Button
               size="lg"
               onClick={handleAddToCart}
-              disabled={cartLoading || (!productsLoading && !variant)}
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-7 text-lg font-bold shadow-lg"
-            >
-              {cartLoading ? (
-                <Loader2 className="h-5 w-5 animate-spin" />
-              ) : (
-                <>
+              disabled={cartLoading || !productsLoading && !variant}
+              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-7 text-lg font-bold shadow-lg">
+              
+              {cartLoading ?
+              <Loader2 className="h-5 w-5 animate-spin" /> :
+
+              <>
                   <ShoppingCart className="h-5 w-5 mr-2" /> Add To Cart
                 </>
-              )}
+              }
             </Button>
 
-            {productsLoading && (
-              <div className="flex justify-center py-4">
+            {productsLoading &&
+            <div className="flex justify-center py-4">
                 <Loader2 className="h-5 w-5 animate-spin text-primary" />
               </div>
-            )}
+            }
 
             {/* Guarantee Banner */}
             <div className="mt-6 bg-primary rounded-xl p-5 flex items-start gap-4">
@@ -242,6 +242,6 @@ export const ProductSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
