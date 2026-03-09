@@ -8,7 +8,7 @@ import productBottle from "@/assets/product-bottle.png";
 
 const pricingTiers = [
 {
-  label: "Buy 3, Get 2 Free",
+  label: "Buy Three",
   badge: "Best Value",
   savings: "Save 46%",
   price: "$80.99",
