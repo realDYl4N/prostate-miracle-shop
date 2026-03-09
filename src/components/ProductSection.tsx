@@ -29,7 +29,7 @@ const pricingTiers = [
   label: "Buy One",
   badge: null,
   savings: null,
-  price: "$26.99",
+  price: "$33.95",
   originalPrice: "$29.99",
   quantity: 1,
   freeShipping: false
