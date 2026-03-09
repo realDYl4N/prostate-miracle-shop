@@ -87,7 +87,7 @@ export const ProductSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start max-w-6xl mx-auto">
           {/* Left: Product Images */}
           <div className="sticky top-24 space-y-3">
-            <div className="bg-muted/30 rounded-2xl p-8 flex items-center justify-center relative overflow-hidden aspect-square">
+            <div className="bg-muted/30 rounded-2xl p-8 flex items-center justify-center relative overflow-hidden aspect-square max-h-[500px] mx-auto w-full">
               <img
                 src={images[selectedImage]?.node.url || productBottle}
                 alt={images[selectedImage]?.node.altText || "Prostate Miracle Advanced Formula"}
