@@ -42,7 +42,13 @@ export const Navbar = () => {
             Track Order
           </a>
         </nav>
-        <CartDrawer />
+        <div className="flex items-center gap-4">
+          <a href="tel:8779652140" className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
+            <Phone className="h-4 w-4" />
+            <span>Call Now: (877)-965-2140</span>
+          </a>
+          <CartDrawer />
+        </div>
       </div>
     </header>);
 
