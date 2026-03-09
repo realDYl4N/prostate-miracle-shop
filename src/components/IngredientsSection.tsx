@@ -8,7 +8,7 @@ const ingredients = [
   "The gold standard for prostate support — clinically studied to promote healthy urinary flow and reduce nighttime trips."
 },
 {
-  icon: Droplets,
+  icon: Sun,
   name: "Beta-Sitosterol Complex",
   description:
   "Research published in Clinical Cancer Research suggests that vitamin D levels may play a role in prostate health. Vitamin D3 supports normal cell growth and differentiation. Deficiency is increasingly common, especially in older men, men with darker skin, and those in northern climates. Each daily dose delivers 2,000 IU of cholecalciferol, the body's preferred form of vitamin D."
