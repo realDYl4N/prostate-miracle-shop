@@ -5,7 +5,7 @@ const badges = [
   "Trusted by Men Since 2003",
   "Non-GMO Ingredients",
   "Clinically-Studied Ingredients",
-  "Clinically Studied",
+  "Great Customer Service",
   "Made in the USA",
 ];
 
