@@ -28,4 +28,5 @@ export const BottomCTA = () => {
       </div>
     </div>
   </section>
-);
+  );
+};
