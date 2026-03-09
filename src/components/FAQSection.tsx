@@ -7,28 +7,28 @@ import {
 
 const faqs = [
   {
-    q: "What is Prostate Miracle Advanced Formula?",
-    a: "Prostate Miracle Advanced Formula is a dietary supplement made with clinically-studied, naturally-sourced ingredients designed to support healthy prostate function, urinary comfort, and overall wellness.",
+    q: "Why no saw palmetto?",
+    a: "Because it doesn't work at the doses found in supplements. Saw palmetto contains almost no beta-sitosterol — the active compound that actually supports prostate health. You'd need thousands of capsules of saw palmetto powder to match a single capsule of Prostate Miracle®. We skip the middleman herb and deliver the active ingredient directly.",
   },
   {
-    q: "How do I take Prostate Miracle?",
-    a: "Take two vegetable capsules daily with a meal and a full glass of water. For best results, use consistently as part of your daily routine.",
+    q: "How is this different from other prostate supplements?",
+    a: "Most prostate formulas stuff their capsules with saw palmetto, lycopene, and a dozen filler herbs at ineffective doses. Prostate Miracle® focuses on four clinically relevant ingredients at meaningful doses — led by 300mg of 99%-pure beta-sitosterol per capsule. We source our beta-sitosterol from non-GMO pine in France, not cheap soy from China. And we publish our Certificate of Analysis so you can verify it yourself.",
   },
   {
-    q: "How long does it take to see results?",
-    a: "Many users report noticing improvements in urinary comfort within the first 2–4 weeks. For optimal results, we recommend consistent daily use for at least 60–90 days.",
+    q: "How long does it take to work?",
+    a: "Most men begin noticing a difference within 30–60 days of consistent daily use. That's exactly why we offer a 60-day money-back guarantee — it gives you enough time to experience meaningful results before deciding.",
   },
   {
-    q: "Are there any side effects?",
-    a: "Prostate Miracle is made with natural ingredients and is generally well-tolerated. However, as with any supplement, we recommend consulting your healthcare provider before starting, especially if you are taking medications.",
+    q: "Is this safe to take with my current medications?",
+    a: "Prostate Miracle® contains only four well-studied, natural ingredients in a vegetable capsule with no artificial additives. However, we always recommend discussing any new supplement with your doctor, especially if you're taking prescription medications.",
   },
   {
-    q: "Is there a money-back guarantee?",
-    a: "Yes! We offer a 90-day satisfaction guarantee. If you're not completely satisfied, contact our support team for a full refund — no questions asked.",
+    q: "Why is it more expensive than drugstore brands?",
+    a: "Because the ingredients cost more. Non-GMO pine-extracted beta-sitosterol imported from France is significantly more expensive than the soy-based extracts most brands use. You're also getting 300mg per capsule vs. the 50–100mg typical in drugstore brands. When you do the math on cost per milligram of actual beta-sitosterol, Prostate Miracle® is often the better value — especially on the multi-bottle bundles. The Buy 3, Get 2 Free drops it to roughly $16/bottle.",
   },
   {
-    q: "Can I take this with other medications?",
-    a: "While our formula uses natural ingredients, we always recommend consulting your doctor or pharmacist before combining supplements with prescription medications.",
+    q: "What if it doesn't work for me?",
+    a: "Send back the two empty bottles within 60 days for a full 100% refund (less shipping). We've made this guarantee since 2003 and we stand behind it.",
   },
 ];
 
