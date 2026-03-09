@@ -3,11 +3,9 @@ import { toast } from "sonner";
 const SHOPIFY_API_VERSION = '2025-07';
 const SHOPIFY_STORE_PERMANENT_DOMAIN = import.meta.env.VITE_SHOPIFY_STORE_DOMAIN || 'prostate-miracle-store-9a6df.myshopify.com';
 const SHOPIFY_STOREFRONT_URL = `https://${SHOPIFY_STORE_PERMANENT_DOMAIN}/api/${SHOPIFY_API_VERSION}/graphql.json`;
-const SHOPIFY_STOREFRONT_TOKEN = import.meta.env.VITE_SHOPIFY_STOREFRONT_TOKEN;
-
-if (!SHOPIFY_STOREFRONT_TOKEN) {
-  throw new Error('Missing VITE_SHOPIFY_STOREFRONT_TOKEN environment variable. Set it in your project secrets.');
-}
+// Shopify Storefront Access Token — this is a publishable/public key (like Supabase anon key),
+// designed for client-side use and safe to include in source code.
+const SHOPIFY_STOREFRONT_TOKEN = '7091cadeac218857a81375cc734f46a1';
 
 export interface ShopifyProduct {
   node: {
