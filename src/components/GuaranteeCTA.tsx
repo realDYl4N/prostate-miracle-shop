@@ -7,7 +7,7 @@ export const GuaranteeCTA = () => {
       <div className="container mx-auto px-4 max-w-3xl text-center">
         <ShieldCheck className="h-16 w-16 text-primary mx-auto mb-6" />
         <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-          Real Prostate Relief<br />Or Pay Nothing!
+          We'll Prove It or Give You Every Penny Back
         </h2>
         <p className="text-muted-foreground font-body text-lg leading-relaxed mb-8">
           Try Prostate Miracle® completely risk-free. If you're not satisfied with your results, 
