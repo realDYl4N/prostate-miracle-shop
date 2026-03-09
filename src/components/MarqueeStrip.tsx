@@ -1,7 +1,7 @@
 import { Leaf } from "lucide-react";
 
 const badges = [
-  "Gentle on Stomach",
+  "Fewer Nighttime Bathroom Trips",
   "Trusted by Men Since 2003",
   "Non-GMO Ingredients",
   "Clinically-Studied Ingredients",
