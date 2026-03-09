@@ -1,31 +1,39 @@
-import { Shield, Leaf, Moon, Heart, Droplets, Zap } from "lucide-react";
+import supplementComparison from "@/assets/supplement-comparison.jpg";
 
-const benefits = [
-{ icon: Shield, title: "Prostate Health", desc: "Supports normal prostate function and healthy urinary flow." },
-{ icon: Leaf, title: "Natural Ingredients", desc: "Formulated with clinically-studied botanical extracts." },
-{ icon: Moon, title: "Restful Nights", desc: "Helps reduce nighttime bathroom trips for better sleep." },
-{ icon: Heart, title: "Overall Wellness", desc: "Promotes overall vitality and daily comfort." },
-{ icon: Droplets, title: "Urinary Comfort", desc: "Supports healthy bladder function and urinary flow." },
-{ icon: Zap, title: "Daily Energy", desc: "Helps maintain energy levels throughout the day." }];
-
-
-export const BenefitsSection = () =>
-<section id="benefits" className="py-20 bg-secondary/30">
+export const BenefitsSection = () => (
+  <section id="benefits" className="py-20 bg-secondary/30">
     <div className="container mx-auto px-4">
       <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">You've Probably Tried Everything. Here's Why Nothing Worked.
+        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+          You've Probably Tried Everything. Here's Why Nothing Worked.
         </h2>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        {benefits.map((b) =>
-      <div key={b.title} className="bg-card rounded-xl p-8 shadow-[var(--shadow-card)] border border-border/50 text-center">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 mb-5">
-              <b.icon className="h-6 w-6 text-primary" />
-            </div>
-            <h3 className="font-display text-lg font-semibold mb-2 text-foreground">{b.title}</h3>
-            <p className="text-muted-foreground font-body text-sm">{b.desc}</p>
-          </div>
-      )}
+      <div className="flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto items-center">
+        {/* Text */}
+        <div className="lg:w-3/5 space-y-5">
+          <p className="text-muted-foreground font-body text-base leading-relaxed">
+            If you've been buying saw palmetto, pygeum, lycopene, or pumpkin seed oil from the supplement aisle, you're not alone. Millions of men take these every year. The problem? They contain almost no beta-sitosterol — the one ingredient that actually matters for prostate health.
+          </p>
+          <p className="text-muted-foreground font-body text-base leading-relaxed">
+            Here's the math most brands don't want you to see: you would need to take roughly <span className="text-foreground font-semibold">2,000 to 3,000 capsules</span> of saw palmetto powder to get the same amount of beta-sitosterol in a single capsule of Prostate Miracle® Advanced Formula. Even the best saw palmetto extracts only deliver a fraction of what clinical research suggests is effective.
+          </p>
+          <p className="text-primary font-display text-lg font-semibold italic">
+            That's not a supplement — that's a rounding error.
+          </p>
+          <p className="text-muted-foreground font-body text-base leading-relaxed">
+            Prostate Miracle® cuts straight to the source: <span className="text-foreground font-semibold">300mg of pure beta-sitosterol per capsule</span>, extracted from non-GMO pine in France, guaranteed 99% pure. No middleman herbs. No fillers pretending to be active ingredients.
+          </p>
+        </div>
+        {/* Image */}
+        <div className="lg:w-2/5">
+          <img
+            src={supplementComparison}
+            alt="Comparison: thousands of saw palmetto capsules versus one Prostate Miracle capsule"
+            className="rounded-2xl shadow-[var(--shadow-card)] w-full"
+            loading="lazy"
+          />
+        </div>
       </div>
     </div>
-  </section>;
+  </section>
+);
