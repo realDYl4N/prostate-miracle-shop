@@ -11,7 +11,7 @@ export const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="/" className="flex items-center gap-2">
-          <img src={nhsLogo} alt="Nature's Health Supply" className="h-10 w-10 object-contain" />
+          <img alt="Nature's Health Supply" className="h-10 w-10 object-contain" src="/lovable-uploads/0adfc25f-c173-4602-bee0-b4f67c7ceb07.png" />
           <span className="font-display text-xl font-bold tracking-tight text-foreground">
             PROSTATE MIRACLE
           </span>
@@ -20,28 +20,28 @@ export const Navbar = () => {
           <a
             href="/"
             className={`h-full flex items-center border-b-[3px] transition-colors ${
-              isHome ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
-            }`}
-          >
+            isHome ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"}`
+            }>
+            
             Home
           </a>
           <a
             href="/prostate-miracle"
             className={`h-full flex items-center border-b-[3px] transition-colors ${
-              isProduct ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
-            }`}
-          >
+            isProduct ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"}`
+            }>
+            
             Prostate Miracle
           </a>
           <a
             href="/#benefits"
-            className="text-muted-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-transparent hover:border-primary"
-          >
+            className="text-muted-foreground hover:text-foreground transition-colors h-full flex items-center border-b-[3px] border-transparent hover:border-primary">
+            
             Benefits
           </a>
         </nav>
         <CartDrawer />
       </div>
-    </header>
-  );
+    </header>);
+
 };
