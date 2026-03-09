@@ -11,11 +11,11 @@ const ingredients = [
   icon: Droplets,
   name: "Beta-Sitosterol Complex",
   description:
-  "The star of the formula. Beta-sitosterol is a plant sterol found in trace amounts in saw palmetto, stinging nettles, and pumpkin seeds, but the concentration in those herbs is tiny. Prostate Miracle® uses a highly concentrated phytosterol complex extracted from non-GMO European pine, imported from France, guaranteed 99% pure with not less than 70% beta-sitosterol."
+  "Selenium is a trace mineral with unique biochemical properties that researchers have been investigating for its potential role in prostate health. Prostate Miracle® uses Albion® Selenium Glycinate Complex, a patented, bioavailable form that's far superior to the generic \"selenium amino acid chelates\" most brands use. Soil depletion means many men aren't getting enough selenium from food alone."
 },
 {
   icon: Shield,
-  name: "Pygeum Africanum Bark",
+  name: "Selenium",
   description:
   "Traditionally used for centuries to soothe urinary discomfort and support healthy prostate tissue."
 },
