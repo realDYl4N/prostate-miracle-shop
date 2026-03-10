@@ -169,7 +169,7 @@ export const ProductSection = () => {
               {pricingTiers.map((tier, i) =>
               <button
                 key={i}
-                onClick={() => setSelectedTier(i)}
+                onClick={() => { setSelectedTier(i); setJustAdded(false); }}
                 className={`w-full relative rounded-xl border-2 p-4 text-left transition-all ${
                 selectedTier === i ?
                 "border-primary bg-primary/5" :
