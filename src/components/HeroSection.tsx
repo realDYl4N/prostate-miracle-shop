@@ -53,9 +53,23 @@ export const HeroSection = () => {
           </div>
 
           {/* Right image */}
-          <div className="flex-1 flex justify-center">
-            <img src={productBottle} alt="Prostate Miracle supplement bottle" className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl" />
-            
+          <div className="flex-1 flex flex-col items-center gap-6">
+            <a href="/prostate-miracle">
+              <img src={productBottle} alt="Prostate Miracle supplement bottle" className="w-[320px] md:w-[420px] lg:w-[480px] drop-shadow-2xl cursor-pointer hover:scale-[1.02] transition-transform" />
+            </a>
+            <div className="flex gap-4">
+              <a href="tel:1-800-123-4567">
+                <Button variant="outline" size="lg" className="text-base font-bold px-8 py-6 rounded-lg">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call Now
+                </Button>
+              </a>
+              <a href="/prostate-miracle">
+                <Button size="lg" className="text-base font-bold px-8 py-6 rounded-lg shadow-[var(--shadow-elevated)]">
+                  Buy Now
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
