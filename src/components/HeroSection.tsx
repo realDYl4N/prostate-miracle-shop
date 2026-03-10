@@ -38,7 +38,7 @@ export const HeroSection = () => {
 
             {/* CTA */}
             <a href="/prostate-miracle">
-              <Button size="lg" className="text-base font-bold px-10 py-6 rounded-lg shadow-[var(--shadow-elevated)]">
+              <Button size="lg" className="text-base font-bold px-10 py-6 rounded-lg shadow-[0_0_20px_hsl(var(--primary)/0.4)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.6)] animate-[pulse_2s_cubic-bezier(0.4,0,0.6,1)_infinite] hover:scale-105 transition-all duration-300">
                 Buy Now
               </Button>
             </a>
