@@ -301,7 +301,7 @@ const TheSciencePage = () => {
                 <h3 className="font-display text-lg font-bold text-secondary-foreground">
                   Expert Opinion
                 </h3>
-                <blockquote className="border-l-4 border-gold pl-4 italic text-secondary-foreground/80 font-body text-sm leading-relaxed">
+                <blockquote className="border-l-4 border-primary pl-4 italic text-secondary-foreground/80 font-body text-sm leading-relaxed">
                   "Saw palmetto, pygeum africanum, stinging nettles, and pumpkin
                   seeds have no therapeutic effect and do not support prostate
                   health."
@@ -497,7 +497,7 @@ const TheSciencePage = () => {
         {/* ── 7. CTA BLOCK ── */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-3xl text-center space-y-6">
-            <blockquote className="border-l-4 border-gold pl-6 text-left">
+            <blockquote className="border-l-4 border-primary pl-6 text-left">
               <p className="font-display text-2xl md:text-3xl font-bold text-foreground italic leading-snug">
                 "No other formula comes close in quality, purity, or value."
               </p>
@@ -509,7 +509,7 @@ const TheSciencePage = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-gold-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6"
             >
               <a href="/prostate-miracle">
                 Shop Prostate Miracle® <ArrowRight className="ml-2 h-5 w-5" />
