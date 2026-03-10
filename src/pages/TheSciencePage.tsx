@@ -159,7 +159,7 @@ const badges = [
   { icon: Award, label: "GMP Certified" },
   { icon: ShieldCheck, label: "FDA Licensed Facility" },
   { icon: Leaf, label: "GMO-Free" },
-  { icon: CheckCircle, label: "99% Pure" },
+  
   { icon: CheckCircle, label: "Trusted Since 2001" },
 ];
 
