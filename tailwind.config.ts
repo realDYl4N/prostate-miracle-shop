@@ -164,7 +164,7 @@ export default {
 			'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
 			shimmer: 'shimmer 2s linear infinite',
 			marquee: 'marquee 20s linear infinite',
-			glow: 'glow 8s ease-in-out infinite'
+			glow: 'glow 14s ease-in-out infinite'
 		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
