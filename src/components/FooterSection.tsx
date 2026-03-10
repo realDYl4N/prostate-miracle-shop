@@ -99,9 +99,9 @@ export const FooterSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   title={`Ask ${ai.name}`}
-                  className="w-10 h-10 rounded-xl bg-secondary-foreground/10 hover:bg-secondary-foreground/20 flex items-center justify-center text-secondary-foreground/70 hover:text-secondary-foreground transition-all duration-200"
+                  className="w-10 h-10 rounded-xl bg-secondary-foreground/10 hover:bg-secondary-foreground/20 flex items-center justify-center overflow-hidden transition-all duration-200"
                 >
-                  {ai.icon}
+                  <img src={ai.img} alt={ai.name} className="w-7 h-7 object-contain" />
                 </a>
               ))}
             </div>
