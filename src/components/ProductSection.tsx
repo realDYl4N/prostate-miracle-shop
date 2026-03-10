@@ -49,8 +49,11 @@ export const ProductSection = () => {
   const { data: products, isLoading: productsLoading } = useProducts();
   const addItem = useCartStore((state) => state.addItem);
   const cartLoading = useCartStore((state) => state.isLoading);
+  const cartItems = useCartStore((state) => state.items);
+  const setDrawerOpen = useCartStore((state) => state.setDrawerOpen);
   const [selectedTier, setSelectedTier] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [justAdded, setJustAdded] = useState(false);
 
   const product = products?.[0];
   const variant = product?.node.variants.edges[0]?.node;
