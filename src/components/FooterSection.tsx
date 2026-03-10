@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Mail, Loader2, CheckCircle } from "lucide-react";
 import aiChatgpt from "@/assets/ai-chatgpt.jpg";
 import aiClaude from "@/assets/ai-claude.webp";
-import aiPerplexity from "@/assets/ai-perplexity.webp";
+
 import aiGrok from "@/assets/ai-grok.webp";
 import aiGemini from "@/assets/ai-gemini.webp";
 
