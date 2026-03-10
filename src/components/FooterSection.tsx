@@ -39,7 +39,7 @@ export const FooterSection = () => {
                 list: {
                   data: {
                     type: "list",
-                    id: "newsletter",
+                    id: "ULmV8d",
                   },
                 },
               },
