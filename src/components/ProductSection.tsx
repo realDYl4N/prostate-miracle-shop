@@ -82,6 +82,14 @@ export const ProductSection = () => {
       description: `${tier.quantity}x Prostate Miracle`,
       position: "top-center"
     });
+    setJustAdded(true);
+  };
+
+  // Reset justAdded when cart becomes empty
+  const hasItems = cartItems.length > 0;
+  
+  const handleViewCart = () => {
+    setDrawerOpen(true);
   };
 
   return (
