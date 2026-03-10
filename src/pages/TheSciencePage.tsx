@@ -497,7 +497,7 @@ const TheSciencePage = () => {
         {/* ── 7. CTA BLOCK ── */}
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-3xl text-center space-y-6">
-            <blockquote className="border-l-4 border-gold pl-6 text-left">
+            <blockquote className="border-l-4 border-primary pl-6 text-left">
               <p className="font-display text-2xl md:text-3xl font-bold text-foreground italic leading-snug">
                 "No other formula comes close in quality, purity, or value."
               </p>
