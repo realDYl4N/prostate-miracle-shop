@@ -1,5 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
+import { Button } from "@/components/ui/button";
+import { ShieldCheck, ArrowRight } from "lucide-react";
 
 const TheSciencePage = () => {
   return (
@@ -12,9 +14,14 @@ const TheSciencePage = () => {
             <h1 className="font-display text-4xl md:text-5xl font-bold text-secondary-foreground mb-4">
               The Science
             </h1>
-            <p className="text-lg text-secondary-foreground/70 font-body max-w-2xl mx-auto">
+            <p className="text-lg text-secondary-foreground/70 font-body max-w-2xl mx-auto mb-8">
               Peer-reviewed research and clinical studies behind Prostate Miracle's key ingredient: beta-sitosterol.
             </p>
+            <Button asChild size="lg" className="font-display font-bold uppercase tracking-wider">
+              <a href="/prostate-miracle">
+                Try Prostate Miracle <ArrowRight className="ml-2 h-4 w-4" />
+              </a>
+            </Button>
           </div>
         </section>
 
@@ -71,6 +78,29 @@ const TheSciencePage = () => {
                 </p>
               </div>
             ))}
+
+            {/* Mid-page CTA */}
+            <div className="rounded-xl bg-primary/5 border border-primary/20 p-8 md:p-10 text-center space-y-4">
+              <ShieldCheck className="h-10 w-10 text-primary mx-auto" />
+              <h3 className="font-display text-2xl font-bold text-foreground">
+                Backed by Science. Trusted Since 2003.
+              </h3>
+              <p className="text-muted-foreground font-body max-w-lg mx-auto">
+                Join thousands of men who rely on clinically-studied beta-sitosterol for prostate support.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3 justify-center pt-2">
+                <Button asChild size="lg" className="font-display font-bold uppercase tracking-wider">
+                  <a href="/prostate-miracle">
+                    Shop Prostate Miracle
+                  </a>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="font-display font-bold uppercase tracking-wider">
+                  <a href="tel:8779652140">
+                    Call (877)-965-2140
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </section>
       </main>
