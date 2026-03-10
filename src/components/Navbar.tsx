@@ -1,6 +1,6 @@
 import { CartDrawer } from "./CartDrawer";
 import { useLocation } from "react-router-dom";
-import { Phone } from "lucide-react";
+import { Phone, UserRound } from "lucide-react";
 import nhsLogo from "@/assets/nhs-logo.png";
 
 export const Navbar = () => {
@@ -46,6 +46,9 @@ export const Navbar = () => {
           <a href="tel:8779652140" className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
             <Phone className="h-4 w-4" />
             <span>Call Now: (877)-965-2140</span>
+          </a>
+          <a href="https://prostate-miracle-shop.myshopify.com/account/login" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Log in">
+            <UserRound className="h-5 w-5" />
           </a>
           <CartDrawer />
         </div>
