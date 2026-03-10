@@ -34,7 +34,7 @@ const pricingTiers = [
   price: "$33.95",
   originalPrice: "$36.95",
   quantity: 1,
-  variantOption: null,
+  variantOption: "Buy One",
   freeShipping: false
 }];
 
