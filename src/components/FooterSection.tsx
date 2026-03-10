@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Mail, Loader2, CheckCircle } from "lucide-react";
-import aiChatgpt from "@/assets/ai-chatgpt.jpg";
+import aiChatgpt from "@/assets/ai-chatgpt.png";
 import aiClaude from "@/assets/ai-claude.webp";
 
 import aiGrok from "@/assets/ai-grok.webp";
