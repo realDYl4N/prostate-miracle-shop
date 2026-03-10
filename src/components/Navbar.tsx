@@ -3,6 +3,7 @@ import { CartDrawer } from "./CartDrawer";
 import { useLocation } from "react-router-dom";
 import { Phone, UserRound } from "lucide-react";
 import nhsLogo from "@/assets/nhs-logo.png";
+import nhsLogoFull from "@/assets/nhs-logo-full.png";
 
 export const Navbar = () => {
   const location = useLocation();
