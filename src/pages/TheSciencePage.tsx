@@ -301,7 +301,7 @@ const TheSciencePage = () => {
                 <h3 className="font-display text-lg font-bold text-secondary-foreground">
                   Expert Opinion
                 </h3>
-                <blockquote className="border-l-4 border-gold pl-4 italic text-secondary-foreground/80 font-body text-sm leading-relaxed">
+                <blockquote className="border-l-4 border-primary pl-4 italic text-secondary-foreground/80 font-body text-sm leading-relaxed">
                   "Saw palmetto, pygeum africanum, stinging nettles, and pumpkin
                   seeds have no therapeutic effect and do not support prostate
                   health."
