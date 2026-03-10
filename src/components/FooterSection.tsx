@@ -1,10 +1,64 @@
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Mail } from "lucide-react";
+import { Mail, Loader2, CheckCircle } from "lucide-react";
+
+const KLAVIYO_PUBLIC_KEY = "Y69r2h";
 
 export const FooterSection = () => {
   const [email, setEmail] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const response = await fetch(
+        "https://a.klaviyo.com/client/subscriptions/?company_id=" + KLAVIYO_PUBLIC_KEY,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            revision: "2024-02-15",
+          },
+          body: JSON.stringify({
+            data: {
+              type: "subscription",
+              attributes: {
+                profile: {
+                  data: {
+                    type: "profile",
+                    attributes: { email },
+                  },
+                },
+              },
+              relationships: {
+                list: {
+                  data: {
+                    type: "list",
+                    id: "newsletter",
+                  },
+                },
+              },
+            },
+          }),
+        }
+      );
+
+      if (response.ok || response.status === 202) {
+        setStatus("success");
+        setEmail("");
+      } else {
+        throw new Error("Subscription failed");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMsg("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <footer className="bg-secondary text-secondary-foreground">
@@ -55,26 +109,37 @@ export const FooterSection = () => {
             <p className="text-sm text-secondary-foreground/70 font-body leading-relaxed">
               Promotions, new products and sales. Directly to your inbox.
             </p>
-            <form
-              onSubmit={(e) => {e.preventDefault();setEmail("");}}
-              className="space-y-3">
-              
-              <Input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Your email"
-                className="bg-transparent border-secondary-foreground/30 text-secondary-foreground placeholder:text-secondary-foreground/40 h-11"
-                required />
-              
-              <Button
-                type="submit"
-                variant="default"
-                className="font-display font-bold uppercase tracking-wider text-sm">
-                
-                Subscribe
-              </Button>
-            </form>
+            {status === "success" ? (
+              <div className="flex items-center gap-2 text-sm text-primary font-body">
+                <CheckCircle className="h-4 w-4" />
+                <span>You're subscribed!</span>
+              </div>
+            ) : (
+              <form onSubmit={handleSubscribe} className="space-y-3">
+                <Input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Your email"
+                  className="bg-transparent border-secondary-foreground/30 text-secondary-foreground placeholder:text-secondary-foreground/40 h-11"
+                  required
+                />
+                {status === "error" && (
+                  <p className="text-xs text-destructive">{errorMsg}</p>
+                )}
+                <Button
+                  type="submit"
+                  variant="default"
+                  disabled={status === "loading"}
+                  className="font-display font-bold uppercase tracking-wider text-sm">
+                  {status === "loading" ? (
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                  ) : (
+                    "Subscribe"
+                  )}
+                </Button>
+              </form>
+            )}
           </div>
         </div>
       </div>
