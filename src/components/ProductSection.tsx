@@ -49,8 +49,11 @@ export const ProductSection = () => {
   const { data: products, isLoading: productsLoading } = useProducts();
   const addItem = useCartStore((state) => state.addItem);
   const cartLoading = useCartStore((state) => state.isLoading);
+  const cartItems = useCartStore((state) => state.items);
+  const setDrawerOpen = useCartStore((state) => state.setDrawerOpen);
   const [selectedTier, setSelectedTier] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [justAdded, setJustAdded] = useState(false);
 
   const product = products?.[0];
   const variant = product?.node.variants.edges[0]?.node;
@@ -79,6 +82,14 @@ export const ProductSection = () => {
       description: `${tier.quantity}x Prostate Miracle`,
       position: "top-center"
     });
+    setJustAdded(true);
+  };
+
+  // Reset justAdded when cart becomes empty
+  const hasItems = cartItems.length > 0;
+  
+  const handleViewCart = () => {
+    setDrawerOpen(true);
   };
 
   return (
@@ -215,20 +226,25 @@ export const ProductSection = () => {
             </div>
 
             {/* Add to Cart */}
-            <Button
-              size="lg"
-              onClick={handleAddToCart}
-              disabled={cartLoading || !productsLoading && !variant}
-              className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-7 text-lg font-bold shadow-lg">
-              
-              {cartLoading ?
-              <Loader2 className="h-5 w-5 animate-spin" /> :
-
-              <>
-                  <ShoppingCart className="h-5 w-5 mr-2" /> Add To Cart
-                </>
-              }
-            </Button>
+            {justAdded && hasItems ? (
+              <Button
+                size="lg"
+                onClick={handleViewCart}
+                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 rounded-xl py-7 text-lg font-bold shadow-lg">
+                <ShoppingCart className="h-5 w-5 mr-2" /> View Cart & Checkout
+              </Button>
+            ) : (
+              <Button
+                size="lg"
+                onClick={handleAddToCart}
+                disabled={cartLoading || !productsLoading && !variant}
+                className="w-full bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl py-7 text-lg font-bold shadow-lg">
+                {cartLoading ?
+                  <Loader2 className="h-5 w-5 animate-spin" /> :
+                  <><ShoppingCart className="h-5 w-5 mr-2" /> Add To Cart</>
+                }
+              </Button>
+            )}
 
             {productsLoading &&
             <div className="flex justify-center py-4">
