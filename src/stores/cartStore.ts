@@ -35,6 +35,8 @@ export const useCartStore = create<CartStore>()(
       items: [],
       cartId: null,
       checkoutUrl: null,
+      isDrawerOpen: false,
+      setDrawerOpen: (open) => set({ isDrawerOpen: open }),
       isLoading: false,
       isSyncing: false,
 
