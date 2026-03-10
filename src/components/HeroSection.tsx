@@ -1,6 +1,6 @@
 import productBottle from "@/assets/product-box-bottle-optimized.jpg";
 import { Button } from "@/components/ui/button";
-import { Star, ShieldCheck } from "lucide-react";
+import { Star, ShieldCheck, Phone } from "lucide-react";
 
 export const HeroSection = () => {
   return (
