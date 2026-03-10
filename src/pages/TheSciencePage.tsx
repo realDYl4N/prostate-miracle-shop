@@ -283,8 +283,9 @@ const TheSciencePage = () => {
                   The Beta-Sitosterol Problem
                 </h3>
                 <p className="text-secondary-foreground/80 font-body text-sm leading-relaxed">
-                  Saw palmetto's beta-sitosterol concentration is 3,000× lower than
-                  Prostate Miracle® — too low to provide meaningful support.
+                  Saw palmetto contains beta-sitosterol, but in such tiny amounts
+                  that it can't deliver real results. Prostate Miracle® provides
+                  3,000× more beta-sitosterol per serving.
                 </p>
               </div>
               <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-3">
