@@ -14,7 +14,7 @@ export const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="/" className="flex items-center gap-2">
           
-          <span className="font-display text-xl font-bold tracking-tight text-foreground">
+          <span className="font-display text-base font-bold tracking-tight text-foreground">
             PROSTATE MIRACLE
           </span>
         </a>
