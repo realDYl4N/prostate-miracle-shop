@@ -2,6 +2,11 @@ import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Mail, Loader2, CheckCircle } from "lucide-react";
+import aiChatgpt from "@/assets/ai-chatgpt.png";
+import aiClaude from "@/assets/ai-claude.png";
+import aiPerplexity from "@/assets/ai-perplexity.png";
+import aiGrok from "@/assets/ai-grok.png";
+import aiGemini from "@/assets/ai-gemini.png";
 
 const KLAVIYO_PUBLIC_KEY = "Y69r2h";
 
