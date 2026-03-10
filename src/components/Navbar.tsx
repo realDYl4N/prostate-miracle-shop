@@ -14,7 +14,7 @@ export const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="/" className="flex items-center gap-2">
-          
+          <img src={nhsLogoFull} alt="NHS Global Distributors" className="h-10 w-auto" />
           <span className="font-display text-base font-bold tracking-tight text-foreground">
             PROSTATE MIRACLE
           </span>
