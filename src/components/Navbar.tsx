@@ -13,11 +13,11 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="/" className="flex items-center gap-2">
-          <div className="h-10 overflow-hidden">
-            <img src={nhsLogoFull} alt="NHS Global Distributors" className="h-14 w-auto -mt-0.5 object-contain" />
+        <a href="/" className="flex flex-col items-center gap-0">
+          <div className="h-8 overflow-hidden">
+            <img src={nhsLogoFull} alt="NHS Global Distributors" className="h-11 w-auto -mt-0.5 object-contain" />
           </div>
-          <span className="font-display text-base font-bold tracking-tight text-foreground">
+          <span className="font-display text-[10px] font-bold tracking-widest text-foreground leading-none">
             PROSTATE MIRACLE
           </span>
         </a>
