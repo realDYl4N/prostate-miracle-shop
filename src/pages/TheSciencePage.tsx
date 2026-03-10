@@ -509,7 +509,7 @@ const TheSciencePage = () => {
             <Button
               asChild
               size="lg"
-              className="bg-gold hover:bg-gold/90 text-gold-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6"
             >
               <a href="/prostate-miracle">
                 Shop Prostate Miracle® <ArrowRight className="ml-2 h-5 w-5" />
