@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { CartDrawer } from "./CartDrawer";
 import { useLocation } from "react-router-dom";
 import { Phone, UserRound } from "lucide-react";
@@ -47,8 +48,10 @@ export const Navbar = () => {
             <Phone className="h-4 w-4" />
             <span>Call Now: (877)-965-2140</span>
           </a>
-          <a href="https://prostate-miracle-store-9a6df.myshopify.com/account/login" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Log in">
-            <UserRound className="h-5 w-5" />
+          <a href="https://prostate-miracle-store-9a6df.myshopify.com/account/login" target="_blank" rel="noopener noreferrer" aria-label="Log in">
+            <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/40">
+              <UserRound className="h-5 w-5" />
+            </Button>
           </a>
           <CartDrawer />
         </div>
