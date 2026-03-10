@@ -42,6 +42,13 @@ export const Navbar = () => {
             }`}>
             Track Order
           </a>
+          <a
+            href="/the-science"
+            className={`h-full flex items-center border-b-[3px] transition-colors ${
+              location.pathname === "/the-science" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
+            }`}>
+            The Science
+          </a>
         </nav>
         <div className="flex items-center gap-4">
           <a href="tel:8779652140" className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors">
