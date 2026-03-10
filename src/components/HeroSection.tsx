@@ -65,6 +65,7 @@ export const HeroSection = () => {
                 </Button>
               </a>
             </div>
+            <p className="text-sm font-semibold text-muted-foreground">Call to order now!</p>
           </div>
         </div>
       </div>
