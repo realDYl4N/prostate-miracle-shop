@@ -20,13 +20,13 @@ const ProstateMiraclePage = () => {
         <ProductSection />
       </div>
       <ScrollFadeIn>
-        <HowToUseSection />
+        <ProductBenefitsChecklist />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
         <WhyYouNeedSection />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
-        <ProductBenefitsChecklist />
+        <HowToUseSection />
       </ScrollFadeIn>
       <ScrollFadeIn>
         <IngredientsSection />
