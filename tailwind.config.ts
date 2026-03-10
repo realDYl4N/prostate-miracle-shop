@@ -148,15 +148,24 @@ export default {
   				'100%': {
   					transform: 'translateX(-33.33%)'
   				}
-  			}
-  		},
-  		animation: {
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out',
-  			'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
-  			shimmer: 'shimmer 2s linear infinite',
-  			marquee: 'marquee 20s linear infinite'
-  		},
+			},
+			glow: {
+				'0%, 100%': {
+					boxShadow: '0 0 15px hsl(var(--primary) / 0.2), 0 0 30px hsl(var(--primary) / 0.1)'
+				},
+				'50%': {
+					boxShadow: '0 0 25px hsl(var(--primary) / 0.45), 0 0 50px hsl(var(--primary) / 0.2)'
+				}
+			}
+		},
+		animation: {
+			'accordion-down': 'accordion-down 0.2s ease-out',
+			'accordion-up': 'accordion-up 0.2s ease-out',
+			'fade-in-up': 'fade-in-up 0.6s ease-out forwards',
+			shimmer: 'shimmer 2s linear infinite',
+			marquee: 'marquee 20s linear infinite',
+			glow: 'glow 4s ease-in-out infinite'
+		},
   		boxShadow: {
   			'2xs': 'var(--shadow-2xs)',
   			xs: 'var(--shadow-xs)',
