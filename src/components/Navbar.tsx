@@ -47,7 +47,7 @@ export const Navbar = () => {
             <Phone className="h-4 w-4" />
             <span>Call Now: (877)-965-2140</span>
           </a>
-          <a href="https://prostate-miracle-shop.myshopify.com/account/login" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Log in">
+          <a href="https://prostate-miracle-store-9a6df.myshopify.com/account/login" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Log in">
             <UserRound className="h-5 w-5" />
           </a>
           <CartDrawer />
