@@ -17,7 +17,7 @@ export const BottomCTA = () => {
         size="lg"
         variant="secondary"
         className="text-lg px-10 py-6 font-display font-semibold shadow-lg hover:scale-105 transition-transform"
-        onClick={() => navigate("/prostate-miracle")}
+        onClick={() => { navigate("/prostate-miracle"); window.scrollTo(0, 0); }}
       >
         Try Prostate Miracle® Risk-Free
       </Button>
