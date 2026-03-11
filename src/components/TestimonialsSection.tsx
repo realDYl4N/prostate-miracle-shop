@@ -151,7 +151,7 @@ export const TestimonialsSection = () =>
               <div className="bg-card border border-border rounded-xl p-6 shadow-[var(--shadow-card)] flex flex-col h-full">
                 <div className="flex gap-0.5 mb-4">
                   {[...Array(5)].map((_, i) =>
-              <Star key={i} className="h-4 w-4 fill-accent text-accent" />
+              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
               )}
                 </div>
                 <p className="text-sm text-muted-foreground font-body leading-relaxed mb-6 flex-1">
