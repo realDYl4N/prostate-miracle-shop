@@ -75,7 +75,7 @@ export const ProductSection = () => {
       variantId: matchedVariant.id,
       variantTitle: matchedVariant.title,
       price: matchedVariant.price,
-      quantity: tier.quantity,
+      quantity: 1,
       selectedOptions: matchedVariant.selectedOptions || []
     });
     toast.success("Added to cart", {
