@@ -202,11 +202,6 @@ export const ProductSection = () => {
                             </span>
                         }
                         </div>
-                        {tier.freeShipping &&
-                      <span className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5">
-                            <Truck className="h-3 w-3" /> Free Shipping
-                          </span>
-                      }
                       </div>
                     </div>
                     <div className="text-right">
