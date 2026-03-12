@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useProducts } from "@/hooks/useProducts";
 import { useCartStore } from "@/stores/cartStore";
 import { Button } from "@/components/ui/button";
-import { Loader2, ShoppingCart, ShieldCheck, Star, Truck, Package, ChevronLeft, ChevronRight } from "lucide-react";
+import { Loader2, ShoppingCart, ShieldCheck, Star, Package, ChevronLeft, ChevronRight } from "lucide-react";
 import { toast } from "sonner";
 import productBottle from "@/assets/product-bottle.png";
 
