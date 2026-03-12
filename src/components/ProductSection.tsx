@@ -15,7 +15,6 @@ const pricingTiers = [
   originalPrice: "$110.85",
   quantity: 3,
   variantOption: "Buy Three",
-  freeShipping: true
 },
 {
   label: "Buy Two",
@@ -25,7 +24,6 @@ const pricingTiers = [
   originalPrice: "$73.90",
   quantity: 2,
   variantOption: "Buy Two",
-  freeShipping: true
 },
 {
   label: "Buy One",
@@ -35,7 +33,6 @@ const pricingTiers = [
   originalPrice: "$36.95",
   quantity: 1,
   variantOption: "Buy One",
-  freeShipping: false
 }];
 
 
