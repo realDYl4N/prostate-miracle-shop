@@ -39,18 +39,18 @@ export const Navbar = () => {
             Prostate Miracle
           </a>
           <a
-            href="/track-order"
-            className={`h-full flex items-center border-b-[3px] transition-colors ${
-              location.pathname === "/track-order" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
-            }`}>
-            Track Order
-          </a>
-          <a
             href="/the-science"
             className={`h-full flex items-center border-b-[3px] transition-colors ${
               location.pathname === "/the-science" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
             }`}>
             The Science
+          </a>
+          <a
+            href="/track-order"
+            className={`h-full flex items-center border-b-[3px] transition-colors ${
+              location.pathname === "/track-order" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
+            }`}>
+            Track Order
           </a>
         </nav>
         <div className="flex items-center gap-4">
