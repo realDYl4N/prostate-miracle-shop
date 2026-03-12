@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useProducts } from "@/hooks/useProducts";
 import { useCartStore } from "@/stores/cartStore";
 import { Button } from "@/components/ui/button";
-import { Loader2, ShoppingCart, ShieldCheck, Star, Truck, Package, ChevronLeft, ChevronRight } from "lucide-react";
+import { Loader2, ShoppingCart, ShieldCheck, Star, Package, ChevronLeft, ChevronRight } from "lucide-react";
 import { toast } from "sonner";
 import productBottle from "@/assets/product-bottle.png";
 
@@ -15,7 +15,6 @@ const pricingTiers = [
   originalPrice: "$110.85",
   quantity: 3,
   variantOption: "Buy Three",
-  freeShipping: true
 },
 {
   label: "Buy Two",
@@ -25,7 +24,6 @@ const pricingTiers = [
   originalPrice: "$73.90",
   quantity: 2,
   variantOption: "Buy Two",
-  freeShipping: true
 },
 {
   label: "Buy One",
@@ -35,7 +33,6 @@ const pricingTiers = [
   originalPrice: "$36.95",
   quantity: 1,
   variantOption: "Buy One",
-  freeShipping: false
 }];
 
 
@@ -205,11 +202,6 @@ export const ProductSection = () => {
                             </span>
                         }
                         </div>
-                        {tier.freeShipping &&
-                      <span className="text-xs text-muted-foreground flex items-center gap-1 mt-0.5">
-                            <Truck className="h-3 w-3" /> Free Shipping
-                          </span>
-                      }
                       </div>
                     </div>
                     <div className="text-right">
