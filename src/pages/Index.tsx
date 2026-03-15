@@ -9,6 +9,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { BottomCTA } from "@/components/BottomCTA";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
+import { StickyCtaBar } from "@/components/StickyCtaBar";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
       <ScrollFadeIn delay={0.05}>
         <BenefitsSection />
       </ScrollFadeIn>
+      <StickyCtaBar />
       <ScrollFadeIn delay={0.05}>
         <SocialProofStrip />
       </ScrollFadeIn>

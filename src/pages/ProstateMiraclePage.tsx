@@ -11,6 +11,7 @@ import { ComparisonTable } from "@/components/ComparisonTable";
 import { ProductPageFAQ } from "@/components/ProductPageFAQ";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
+import { StickyCtaBar } from "@/components/StickyCtaBar";
 
 const ProstateMiraclePage = () => {
   return (
@@ -28,6 +29,7 @@ const ProstateMiraclePage = () => {
       <ScrollFadeIn delay={0.05}>
         <HowToUseSection />
       </ScrollFadeIn>
+      <StickyCtaBar />
       <ScrollFadeIn>
         <IngredientsSection />
       </ScrollFadeIn>
