@@ -17,10 +17,14 @@ export const CartDrawer = () => {
   const handleCheckout = () => {
     const checkoutUrl = getCheckoutUrl();
     if (checkoutUrl) {
-      const newWindow = window.open(checkoutUrl, '_blank');
-      if (!newWindow || newWindow.closed) {
-        window.location.href = checkoutUrl;
-      }
+      // Create a temporary anchor to reliably open in new tab
+      const link = document.createElement('a');
+      link.href = checkoutUrl;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       setIsOpen(false);
     }
   };
