@@ -13,7 +13,7 @@ export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="/" className="flex flex-col items-center gap-0">
+        <a href="https://natureshealthsupply.com/" className="flex flex-col items-center gap-0">
           <div className="h-8 overflow-hidden">
             <img src={nhsLogoFull} alt="NHS Global Distributors" className="h-11 w-auto -mt-0.5 object-contain" />
           </div>
