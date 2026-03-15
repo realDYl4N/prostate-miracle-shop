@@ -29,6 +29,7 @@ const ProstateMiraclePage = () => {
       <ScrollFadeIn delay={0.05}>
         <HowToUseSection />
       </ScrollFadeIn>
+      <StickyCtaBar />
       <ScrollFadeIn>
         <IngredientsSection />
       </ScrollFadeIn>

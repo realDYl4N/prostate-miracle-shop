@@ -22,6 +22,7 @@ const Index = () => {
       <ScrollFadeIn delay={0.05}>
         <BenefitsSection />
       </ScrollFadeIn>
+      <StickyCtaBar />
       <ScrollFadeIn delay={0.05}>
         <SocialProofStrip />
       </ScrollFadeIn>
