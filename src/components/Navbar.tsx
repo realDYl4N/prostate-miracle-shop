@@ -18,7 +18,7 @@ export const Navbar = () => {
             <img src={nhsLogoFull} alt="NHS Global Distributors" className="h-11 w-auto -mt-0.5 object-contain" />
           </div>
           <span className="font-display text-[10px] font-bold tracking-widest text-foreground leading-none">
-            PROSTATE MIRACLE
+            NATURE'S HEALTH SUPPLY
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold uppercase tracking-wider h-full">
