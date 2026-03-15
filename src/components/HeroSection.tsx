@@ -1,4 +1,4 @@
-import productBottle from "@/assets/product-box-bottle-optimized.jpg";
+import productBottle from "@/assets/product-box-bottle-optimized.webp";
 import { Button } from "@/components/ui/button";
 import { Star, ShieldCheck, Phone } from "lucide-react";
 
