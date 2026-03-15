@@ -59,7 +59,7 @@ export const Navbar = () => {
             <span>Call Now: (877)-965-2140</span>
           </a>
           <a href="https://shopify.com/65829666878/account" target="_blank" rel="noopener noreferrer" aria-label="Log in">
-            <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/40">
+            <Button variant="outline" size="icon" className="border-primary/20 hover:border-primary/40" aria-label="Log in">
               <UserRound className="h-5 w-5" />
             </Button>
           </a>
