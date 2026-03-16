@@ -14,25 +14,25 @@ const pricingTiers = [
   price: "$143.70",
   originalPrice: "$203.70",
   quantity: 6,
-  variantOption: "Buy Six",
+  variantOption: "Six Bottles",
 },
 {
   label: "Buy Three",
   badge: "Most Popular",
-  savings: "Save 27%",
-  price: "$80.85",
-  originalPrice: "$110.85",
+  savings: "Save 20%",
+  price: "$80.99",
+  originalPrice: "$101.85",
   quantity: 3,
-  variantOption: "Buy Three",
+  variantOption: "Three Bottles",
 },
 {
   label: "Buy Two",
   badge: null,
-  savings: "Save 24%",
-  price: "$55.90",
-  originalPrice: "$73.90",
+  savings: "Save 21%",
+  price: "$53.99",
+  originalPrice: "$67.90",
   quantity: 2,
-  variantOption: "Buy Two",
+  variantOption: "Two Bottles",
 },
 {
   label: "Buy One",
@@ -41,7 +41,7 @@ const pricingTiers = [
   price: "$33.95",
   originalPrice: "$36.95",
   quantity: 1,
-  variantOption: "Buy One",
+  variantOption: "One Bottle",
 }];
 
 
