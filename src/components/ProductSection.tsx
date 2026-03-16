@@ -8,7 +8,7 @@ import productBottle from "@/assets/product-bottle.png";
 
 const pricingTiers = [
 {
-  label: "Buy Six",
+  label: "Six Bottles",
   badge: "Best Value",
   savings: "Save 29%",
   price: "$143.70",
@@ -17,7 +17,7 @@ const pricingTiers = [
   variantOption: "Six Bottles",
 },
 {
-  label: "Buy Three",
+  label: "Three Bottles",
   badge: "Most Popular",
   savings: "Save 20%",
   price: "$80.99",
@@ -26,7 +26,7 @@ const pricingTiers = [
   variantOption: "Three Bottles",
 },
 {
-  label: "Buy Two",
+  label: "Two Bottles",
   badge: null,
   savings: "Save 21%",
   price: "$53.99",
@@ -35,7 +35,7 @@ const pricingTiers = [
   variantOption: "Two Bottles",
 },
 {
-  label: "Buy One",
+  label: "One Bottle",
   badge: null,
   savings: null,
   price: "$33.95",
