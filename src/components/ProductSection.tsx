@@ -85,10 +85,11 @@ export const ProductSection = () => {
       selectedOptions: matchedVariant.selectedOptions || []
     });
     toast.success("Added to cart", {
-      description: `${tier.quantity}x Prostate Miracle`,
+      description: `${tier.label} — Prostate Miracle`,
       position: "top-center"
     });
     setJustAdded(true);
+    setDrawerOpen(true);
   };
 
   // Reset justAdded when cart becomes empty
