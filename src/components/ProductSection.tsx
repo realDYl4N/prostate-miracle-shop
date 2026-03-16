@@ -17,7 +17,7 @@ const pricingTiers = [
   variantOption: "Six Bottles",
 },
 {
-  label: "Buy Three",
+  label: "Three Bottles",
   badge: "Most Popular",
   savings: "Save 20%",
   price: "$80.99",
