@@ -32,7 +32,7 @@ const pricingTiers = [
   price: "$55.90",
   originalPrice: "$73.90",
   quantity: 2,
-  variantOption: "Buy Two",
+  variantOption: "Two Bottles",
 },
 {
   label: "Buy One",
