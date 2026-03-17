@@ -158,7 +158,7 @@ export const ProductSection = () => {
             </h2>
 
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              Built with beta-sitosterol and a targeted blend of plant-based ingredients backed by real clinical research. Every vegetable capsule is free from fillers, artificial additives, and the unnecessary junk most brands hide behind proprietary labels. Just clean, direct prostate support for fewer nighttime trips and better daily comfort.
+              If you're up two, three or 4+ times a night, planning your day around the nearest bathroom, or dealing with a weak, stop-and-start stream, your prostate is trying to tell you something. Prostate Miracle® Advanced Formula delivers 300mg of beta-sitosterol per capsule, extracted from non-GMO European pine.
             </p>
 
             {/* Benefit Tags */}
