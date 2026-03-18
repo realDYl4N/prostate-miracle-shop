@@ -317,25 +317,6 @@ const TheSciencePage = () => {
                     Journal of Urology 2000
                   </a>
                 </div>
-
-
-
-
-
-
-
-  
- 
-
-
-
-
-
-                
-
-
-
-
                 </p>
               </div>
               <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-3">
