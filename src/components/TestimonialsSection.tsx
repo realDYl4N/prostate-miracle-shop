@@ -43,7 +43,7 @@ const testimonials = [
 {
   name: "Donn Davenport",
   location: "USA",
-  text: "I am a 55-year-old male who had been experiencing diminished urine flow for over two years. I wasn't sure what to expect — there are so many products out there. I found your website, which compared various prostate support products, and found it very informative. It was the determining factor for me. What I experienced quickly after starting the product, I can only describe as remarkable. I plan to use Prostate Miracle as part of my ongoing prostate health routine. Thank you."
+  text: "I am a 55-year-old male who had been experiencing diminished urine flow for over two years. I wasn't sure what to expect, there are so many products out there. I found your website, which compared various prostate support products, and found it very informative. It was the determining factor for me. What I experienced quickly after starting the product, I can only describe as remarkable. I plan to use Prostate Miracle as part of my ongoing prostate health routine. Thank you."
 },
 {
   name: "Dave Osborne",
