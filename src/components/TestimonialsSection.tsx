@@ -3,8 +3,11 @@ import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem } from
+  CarouselItem,
+  CarouselPrevious,
+  CarouselNext } from
 "@/components/ui/carousel";
+import React from "react";
 
 const testimonials = [
 {
