@@ -3,7 +3,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { TrustBar } from "@/components/TrustBar";
 import { SocialProofStrip } from "@/components/SocialProofStrip";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
-
+import { MarqueeStrip } from "@/components/MarqueeStrip";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { FAQSection } from "@/components/FAQSection";
 import { BottomCTA } from "@/components/BottomCTA";
@@ -16,6 +16,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <MarqueeStrip />
       <ScrollFadeIn delay={0.05}>
         <BenefitsSection />
       </ScrollFadeIn>
