@@ -471,7 +471,8 @@ const TheSciencePage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-4">
                   <h3 className="font-display text-xl font-bold text-foreground">
-                    Prostate Miracle® — Natural Prostate Health Support
+                    Prostate Miracle® <br />
+                    Natural Prostate Health Support
                   </h3>
                   <p className="font-body text-muted-foreground text-sm leading-relaxed">
                     Beta-sitosterol is the most extensively studied nutrient for prostate health support. Prostate Miracle® is formulated with US-produced beta-sitosterol — 300 mg per capsule, making it 3,000 times more potent than saw palmetto. You would need to consume over 2 lbs. of saw palmetto berries to equal the beta-sitosterol in a single capsule.
