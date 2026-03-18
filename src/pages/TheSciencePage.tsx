@@ -305,11 +305,18 @@ const TheSciencePage = () => {
                 </h3>
                 <p className="text-secondary-foreground/80 font-body text-sm leading-relaxed">
                   Three peer-reviewed studies suggest saw palmetto may have unintended effects on prostate tissue.
-
-
-
-
-
+                </p>
+                <div className="space-y-1">
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/10420151/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-primary hover:text-primary/80 underline">
+                    Prostate 1999
+                  </a>
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/11074529/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-primary hover:text-primary/80 underline">
+                    Prostate 2000
+                  </a>
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/10953171/" target="_blank" rel="noopener noreferrer" className="block font-body text-sm text-primary hover:text-primary/80 underline">
+                    Journal of Urology 2000
+                  </a>
+                </div>
 
 
 
