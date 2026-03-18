@@ -12,7 +12,7 @@ const TrackOrderPage = () => {
     e.preventDefault();
     if (orderNumber.trim()) {
       window.open(
-        `https://www.trackmyorder.today/?order=${encodeURIComponent(orderNumber.trim())}`,
+        `https://parcelsapp.com/${encodeURIComponent(orderNumber.trim())}`,
         "_blank",
         "noopener,noreferrer"
       );
