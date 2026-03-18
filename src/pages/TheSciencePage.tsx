@@ -1,5 +1,5 @@
 import prostateDiagram from "@/assets/prostate-diagram.png";
-import productCallout from "@/assets/product-comment-callout.jpeg";
+import productCallout from "@/assets/bold-statement-callout.jpeg";
 import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
