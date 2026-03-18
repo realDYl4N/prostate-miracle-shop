@@ -26,14 +26,16 @@ export const BenefitsSection = () =>
         </div>
         {/* Image */}
         <div className="lg:w-2/5">
-          <video
+          <a href="/prostate-miracle">
+            <video
               src="/videos/The_Gold_Standard.mp4"
               autoPlay
               loop
               muted
               playsInline
-              className="rounded-2xl shadow-[var(--shadow-card)] w-full"
+              className="rounded-2xl shadow-[var(--shadow-card)] w-full cursor-pointer"
             />
+          </a>
         
         </div>
       </div>
