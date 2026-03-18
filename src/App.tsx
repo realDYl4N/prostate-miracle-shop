@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ProstateMiraclePage from "./pages/ProstateMiraclePage";
 import TrackOrderPage from "./pages/TrackOrderPage";
 import TheSciencePage from "./pages/TheSciencePage";
+import TestimonialsPage from "./pages/TestimonialsPage";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 
