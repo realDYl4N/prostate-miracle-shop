@@ -1,7 +1,7 @@
-import { Leaf, Phone, Flag, CheckCircle, DollarSign, FlaskConical, Microscope } from "lucide-react";
+import { Toilet, Phone, Flag, CheckCircle, DollarSign, FlaskConical, Leaf } from "lucide-react";
 
 const badges = [
-  { text: "Fewer Nighttime Bathroom Trips", icon: Leaf },
+  { text: "Fewer Nighttime Bathroom Trips", icon: Toilet },
   { text: "Trusted by Men Since 2003", icon: CheckCircle },
   { text: "Non-GMO Ingredients", icon: Leaf },
   { text: "Clinically-Studied Ingredients", icon: FlaskConical },
