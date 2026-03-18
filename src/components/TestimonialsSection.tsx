@@ -18,7 +18,7 @@ const testimonials = [
 {
   name: "Nick W.",
   location: "Richmond, VA",
-  text: "I finally decided to do something about the discomfort I'd been experiencing for the past 4 or 5 years — inconvenient urges, straining, waking 2-4 times every night. After skeptically researching options on the web for nearly a year, I found your website, read it carefully multiple times, compared it with just about every other site, checked with my doctor, and finally decided to try your product. I ordered a 60-day supply to give it a fair run. It sure is great to get it right the first time! I noticed improvement in the first two weeks. I kept taking it as directed and hoped for the best — and the improvement continued. I'll frankly say I feel like a completely different person. You have a convinced and satisfied life-long customer."
+  text: "I finally decided to do something about the discomfort I'd been experiencing for the past 4 or 5 years, inconvenient urges, straining, waking 2-4 times every night. After skeptically researching options on the web for nearly a year, I found your website, read it carefully multiple times, compared it with just about every other site, checked with my doctor, and finally decided to try your product. I ordered a 60-day supply to give it a fair run. It sure is great to get it right the first time! I noticed improvement in the first two weeks. I kept taking it as directed and hoped for the best — and the improvement continued. I'll frankly say I feel like a completely different person. You have a convinced and satisfied life-long customer."
 },
 {
   name: "Paul O'Brien",
