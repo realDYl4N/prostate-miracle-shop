@@ -123,20 +123,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased relative;
-  }
-
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background-image: url('/images/topo-texture.png');
-    background-repeat: repeat;
-    background-size: 600px;
-    opacity: 0.04;
-    pointer-events: none;
-    z-index: 0;
-    filter: invert(1);
+    @apply bg-background text-foreground font-body antialiased;
   }
 
   h1, h2, h3, h4, h5, h6 {
