@@ -10,7 +10,7 @@ export const HeroSection = () => {
           {/* Left content */}
           <div className="flex-1 max-w-xl text-center">
             {/* Rating bar */}
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
+            <div className="flex items-center justify-center gap-3 mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) =>
                 <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
