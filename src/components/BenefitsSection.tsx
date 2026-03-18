@@ -21,7 +21,7 @@ export const BenefitsSection = () =>
             That's not a supplement. That's a rounding error.
           </p>
           <p className="text-muted-foreground font-body text-base leading-relaxed">
-            Prostate Miracle® cuts straight to the source: <span className="text-foreground font-semibold">300mg of pure beta-sitosterol per capsule</span>, extracted from non-GMO pine in France, guaranteed 99% pure. No middleman herbs. No fillers pretending to be active ingredients.
+            Prostate Miracle® cuts straight to the source: <span className="text-foreground font-semibold">300mg of pure beta-sitosterol per capsule</span>, extracted from non-GMO pine in France, guaranteed 99% pure.
           </p>
         </div>
         {/* Image */}
