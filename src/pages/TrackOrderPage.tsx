@@ -12,7 +12,7 @@ const TrackOrderPage = () => {
     e.preventDefault();
     if (orderNumber.trim()) {
       window.open(
-        `https://parcelsapp.com/${encodeURIComponent(orderNumber.trim())}`,
+        `https://parcelsapp.com/en/tracking/${encodeURIComponent(orderNumber.trim())}`,
         "_blank",
         "noopener,noreferrer"
       );
