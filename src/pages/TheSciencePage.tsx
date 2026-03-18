@@ -477,6 +477,20 @@ const TheSciencePage = () => {
                   <p className="font-body text-muted-foreground text-sm leading-relaxed">
                     Beta-sitosterol is the most extensively studied nutrient for prostate health support. Prostate Miracle® is formulated with US-produced beta-sitosterol — 300 mg per capsule, making it 3,000 times more potent than saw palmetto. You would need to consume over 2 lbs. of saw palmetto berries to equal the beta-sitosterol in a single capsule.
                   </p>
+                  <div className="pt-4">
+                    <Button
+                      asChild
+                      size="lg"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6">
+                      <a href="/prostate-miracle">
+                        Try Prostate Miracle® Risk-Free <ArrowRight className="ml-2 h-5 w-5" />
+                      </a>
+                    </Button>
+                    <div className="flex items-center gap-2 text-muted-foreground font-body text-sm mt-4">
+                      <ShieldCheck className="h-4 w-4 text-primary" />
+                      60-day money-back guarantee
+                    </div>
+                  </div>
                   
 
                   
@@ -490,21 +504,6 @@ const TheSciencePage = () => {
                       className="rounded-xl w-full max-w-md shadow-lg hover:scale-[1.02] transition-transform cursor-pointer"
                     />
                   </a>
-                </div>
-              </div>
-
-              <div className="text-center pt-2">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6">
-                  <a href="/prostate-miracle">
-                    Try Prostate Miracle® Risk-Free <ArrowRight className="ml-2 h-5 w-5" />
-                  </a>
-                </Button>
-                <div className="flex items-center justify-center gap-2 text-muted-foreground font-body text-sm mt-4">
-                  <ShieldCheck className="h-4 w-4 text-primary" />
-                  60-day money-back guarantee
                 </div>
               </div>
             </div>
