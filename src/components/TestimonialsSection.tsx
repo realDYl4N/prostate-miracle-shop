@@ -25,7 +25,7 @@ const testimonials = [
 {
   name: "Frank D.",
   location: "Redding, CA",
-  text: "I am 60 years old and was concerned about difficulty with urination — starting and stopping, having to strain. It was getting noticeably uncomfortable. I found your site, read it thoroughly, felt confident you were a real company, and ordered. I started that day and by the 4th day I noticed a significant improvement in flow. Needless to say, I am overjoyed. You have a customer for life."
+  text: "I am 60 years old and was concerned about difficulty with urination, starting and stopping, having to strain. It was getting noticeably uncomfortable. I found your site, read it thoroughly, felt confident you were a real company, and ordered. I started that day and by the 4th day I noticed a significant improvement in flow. Needless to say, I am overjoyed. You have a customer for life."
 },
 {
   name: "Glen",
