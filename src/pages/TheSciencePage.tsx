@@ -480,26 +480,12 @@ const TheSciencePage = () => {
                   
                 </div>
 
-                <div className="space-y-5">
-                  <ul className="space-y-3">
-                    {[
-                    { nutrient: "Beta-Sitosterol", amount: "300 mg" },
-                    { nutrient: "Zinc", amount: "7.5 mg" },
-                    { nutrient: "Selenium", amount: "100 mcg" },
-                    { nutrient: "Vitamin D3", amount: "1,000 IU" }].
-                    map((item, i) =>
-                    <li key={i} className="flex items-center gap-3 font-body text-sm text-foreground">
-                        <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                        <span>
-                          <span className="font-semibold">{item.nutrient}</span>
-                          <span className="text-muted-foreground"> — {item.amount}</span>
-                        </span>
-                      </li>
-                    )}
-                  </ul>
-                  <p className="font-body text-xs text-muted-foreground leading-relaxed border-t border-border pt-4">
-                    Manufactured in the USA with pharmaceutical-grade (USP) ingredients in GMP-certified, FDA-inspected facilities.
-                  </p>
+                <div className="flex items-center justify-center">
+                  <img
+                    src={productCallout}
+                    alt="Prostate Miracle product with customer testimonial from Alan R."
+                    className="rounded-xl w-full max-w-md shadow-lg"
+                  />
                 </div>
               </div>
 
