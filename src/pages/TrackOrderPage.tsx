@@ -12,7 +12,7 @@ const TrackOrderPage = () => {
     e.preventDefault();
     if (orderNumber.trim()) {
       window.open(
-        `https://parcelsapp.com/en/tracking/${encodeURIComponent(orderNumber.trim())}`,
+        `https://www.trackmyorder.today/?order=${encodeURIComponent(orderNumber.trim())}`,
         "_blank",
         "noopener,noreferrer"
       );
@@ -38,8 +38,8 @@ const TrackOrderPage = () => {
       <div className="flex-1 container mx-auto px-4 py-12 md:py-20">
         <div className="max-w-xl mx-auto text-center space-y-6">
           <Package className="h-12 w-12 text-primary mx-auto" />
-          <p className="text-muted-foreground font-body text-base">
-            Enter your order number to track your shipment.
+          <p className="text-muted-foreground font-body text-base">Enter your tracking number to track your shipment.
+
           </p>
           <form onSubmit={handleTrack} className="flex gap-0 max-w-md mx-auto">
             <Input
@@ -48,12 +48,12 @@ const TrackOrderPage = () => {
               onChange={(e) => setOrderNumber(e.target.value)}
               placeholder="Order number"
               className="rounded-r-none h-12 text-base"
-              required
-            />
+              required />
+            
             <Button
               type="submit"
-              className="rounded-l-none h-12 px-8 font-display font-bold uppercase tracking-wider"
-            >
+              className="rounded-l-none h-12 px-8 font-display font-bold uppercase tracking-wider">
+              
               Track
             </Button>
           </form>
@@ -61,8 +61,8 @@ const TrackOrderPage = () => {
       </div>
 
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 export default TrackOrderPage;
