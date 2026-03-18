@@ -6,8 +6,8 @@ import {
   Accordion,
   AccordionContent,
   AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+  AccordionTrigger } from
+"@/components/ui/accordion";
 import {
   ArrowRight,
   ShieldCheck,
@@ -18,8 +18,8 @@ import {
   Award,
   CheckCircle,
   XCircle,
-  FlaskConical,
-} from "lucide-react";
+  FlaskConical } from
+"lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 /* ───── Animated counter hook ───── */
@@ -48,13 +48,13 @@ function StatItem({
   value,
   suffix,
   label,
-  isVisible,
-}: {
-  value: number;
-  suffix: string;
-  label: string;
-  isVisible: boolean;
-}) {
+  isVisible
+
+
+
+
+
+}: {value: number;suffix: string;label: string;isVisible: boolean;}) {
   const count = useCountUp(value, isVisible);
   return (
     <div className="text-center px-4 py-3">
@@ -65,103 +65,103 @@ function StatItem({
       <p className="text-xs md:text-sm font-body text-muted-foreground mt-1 leading-tight">
         {label}
       </p>
-    </div>
-  );
+    </div>);
+
 }
 
 /* ───── Data ───── */
 const stats = [
-  { value: 3000, suffix: "×", label: "More Beta-Sitosterol than saw palmetto" },
-  { value: 99, suffix: "%", label: "Pure phytosterol complex" },
-  { value: 70, suffix: "%+", label: "Beta-Sitosterol guaranteed" },
-  { value: 4, suffix: "", label: "Active ingredients" },
-];
+{ value: 3000, suffix: "×", label: "More Beta-Sitosterol than saw palmetto" },
+{ value: 99, suffix: "%", label: "Pure phytosterol complex" },
+{ value: 70, suffix: "%+", label: "Beta-Sitosterol guaranteed" },
+{ value: 4, suffix: "", label: "Active ingredients" }];
+
 
 const ingredients = [
-  {
-    id: "beta-sitosterol",
-    icon: Leaf,
-    tab: "Beta-Sitosterol",
-    heading: "The #1 Most Studied Prostate Health Nutrient",
-    body: "Beta-sitosterol is the miraculous common denominator found in saw palmetto, pygeum africanum, pumpkinseed oil and stinging nettles. However, the concentration of beta sitosterol in these herbs is very small at best. A mere 3,000th of the amount found in Prostate Miracle®. ",
-    points: [
-      "Most extensively studied prostate health supplement",
-      "3,000× more beta-sitosterol than saw palmetto",
-      "Sourced from non-GMO European pine (not Chinese or US soy)",
-      "Guaranteed 99% pure and ≥70% beta-sitosterol per serving",
-      "Manufactured in GMP Certified, FDA licensed & inspected US facilities",
-    ],
-  },
-  {
-    id: "zinc",
-    icon: FlaskConical,
-    tab: "Zinc",
-    heading: "The Prostate's Most Critical Mineral",
-    body: "The concentration of zinc in the prostate is higher than in any other soft tissue in the human body — a fact that makes its role in prostate health undeniable. Research shows that prostate conditions consistently correlate with dramatically reduced zinc levels.",
-    points: [
-      "Men with prostatitis: 90% lower zinc in the prostate vs. healthy men",
-      "Men with prostate cancer: 83% lower zinc vs. healthy men",
-      "Men with BPH: 61% lower zinc vs. healthy men",
-      "15 mg Zinc Citrate per serving — 100% Daily Value",
-    ],
-  },
-  {
-    id: "selenium",
-    icon: Beaker,
-    tab: "Selenium",
-    heading: "The Trace Mineral That Most Doctors Overlook",
-    body: "An essential trace mineral with unique biochemical properties that support healthy cellular response to oxidative stress. Soil depletion means many men are deficient even on a balanced diet.",
-    points: [
-      "Uses Albion® Selenium Glycinate Complex — the gold standard",
-      "70 mcg per serving — 100% Daily Value",
-      "Superior to generic 'selenium amino acid chelate'",
-      "Supports the body's defenses against oxidative stress",
-    ],
-  },
-  {
-    id: "vitamin-d3",
-    icon: Sun,
-    tab: "Vitamin D3",
-    heading: "Low D Levels Linked to More Aggressive Prostate Cancer",
-    body: "Research published in Clinical Cancer Research (2014) suggests vitamin D may play a role in normal prostate cell differentiation and healthy cell growth rates. Deficiency risk increases with age, low sun exposure, and darker skin tones.",
-    points: [
-      "2,000 IU cholecalciferol per serving — 500% Daily Value",
-      "Regulates normal differentiation of cells",
-      "Regulates growth rate of both normal and cancer cells",
-      "Deficiency more common in older men & low-sunlight regions",
-    ],
-  },
-];
+{
+  id: "beta-sitosterol",
+  icon: Leaf,
+  tab: "Beta-Sitosterol",
+  heading: "The #1 Most Studied Prostate Health Nutrient",
+  body: "Beta-sitosterol is the miraculous common denominator found in saw palmetto, pygeum africanum, pumpkinseed oil and stinging nettles. However, the concentration of beta sitosterol in these herbs is very small at best. A mere 3,000th of the amount found in Prostate Miracle®. ",
+  points: [
+  "Most extensively studied prostate health supplement",
+  "3,000× more beta-sitosterol than saw palmetto",
+  "Sourced from non-GMO European pine (not Chinese or US soy)",
+  "Guaranteed 99% pure and ≥70% beta-sitosterol per serving",
+  "Manufactured in GMP Certified, FDA licensed & inspected US facilities"]
+
+},
+{
+  id: "zinc",
+  icon: FlaskConical,
+  tab: "Zinc",
+  heading: "The Prostate's Most Critical Mineral",
+  body: "The concentration of zinc in the prostate is higher than in any other soft tissue in the human body — a fact that makes its role in prostate health undeniable. Research shows that prostate conditions consistently correlate with dramatically reduced zinc levels.",
+  points: [
+  "Men with prostatitis: 90% lower zinc in the prostate vs. healthy men",
+  "Men with prostate cancer: 83% lower zinc vs. healthy men",
+  "Men with BPH: 61% lower zinc vs. healthy men",
+  "15 mg Zinc Citrate per serving — 100% Daily Value"]
+
+},
+{
+  id: "selenium",
+  icon: Beaker,
+  tab: "Selenium",
+  heading: "The Trace Mineral That Most Doctors Overlook",
+  body: "An essential trace mineral with unique biochemical properties that support healthy cellular response to oxidative stress. Soil depletion means many men are deficient even on a balanced diet.",
+  points: [
+  "Uses Albion® Selenium Glycinate Complex — the gold standard",
+  "70 mcg per serving — 100% Daily Value",
+  "Superior to generic 'selenium amino acid chelate'",
+  "Supports the body's defenses against oxidative stress"]
+
+},
+{
+  id: "vitamin-d3",
+  icon: Sun,
+  tab: "Vitamin D3",
+  heading: "Low D Levels Linked to More Aggressive Prostate Cancer",
+  body: "Research published in Clinical Cancer Research (2014) suggests vitamin D may play a role in normal prostate cell differentiation and healthy cell growth rates. Deficiency risk increases with age, low sun exposure, and darker skin tones.",
+  points: [
+  "2,000 IU cholecalciferol per serving — 500% Daily Value",
+  "Regulates normal differentiation of cells",
+  "Regulates growth rate of both normal and cancer cells",
+  "Deficiency more common in older men & low-sunlight regions"]
+
+}];
+
 
 const sourceRows = [
-  {
-    source: "Chinese Soy Extract",
-    quality: "Low purity, low potency",
-    gmo: false,
-    highlight: false,
-  },
-  {
-    source: "US Soy Extract",
-    quality: "Moderate purity",
-    gmo: false,
-    highlight: false,
-  },
-  {
-    source: "European Pine (France)",
-    quality: "99% pure, ≥70% beta-sitosterol",
-    gmo: true,
-    highlight: true,
-  },
-];
+{
+  source: "Chinese Soy Extract",
+  quality: "Low purity, low potency",
+  gmo: false,
+  highlight: false
+},
+{
+  source: "US Soy Extract",
+  quality: "Moderate purity",
+  gmo: false,
+  highlight: false
+},
+{
+  source: "European Pine (France)",
+  quality: "99% pure, ≥70% beta-sitosterol",
+  gmo: true,
+  highlight: true
+}];
+
 
 const badges = [
-  { icon: Flag, label: "Made in USA" },
-  { icon: Award, label: "GMP Certified" },
-  { icon: ShieldCheck, label: "FDA Licensed Facility" },
-  { icon: Leaf, label: "GMO-Free" },
-  
-  { icon: CheckCircle, label: "Trusted Since 2001" },
-];
+{ icon: Flag, label: "Made in USA" },
+{ icon: Award, label: "GMP Certified" },
+{ icon: ShieldCheck, label: "FDA Licensed Facility" },
+{ icon: Leaf, label: "GMO-Free" },
+
+{ icon: CheckCircle, label: "Trusted Since 2001" }];
+
 
 /* ───── Component ───── */
 const TheSciencePage = () => {
@@ -203,13 +203,13 @@ const TheSciencePage = () => {
         {/* ── Stat Bar ── */}
         <div
           ref={statRef}
-          className="bg-card border-y border-border"
-        >
+          className="bg-card border-y border-border">
+          
           <div className="container mx-auto px-4 py-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-0 md:divide-x divide-border max-w-4xl mx-auto">
-              {stats.map((s, i) => (
-                <StatItem key={i} {...s} isVisible={statsVisible} />
-              ))}
+              {stats.map((s, i) =>
+              <StatItem key={i} {...s} isVisible={statsVisible} />
+              )}
             </div>
           </div>
         </div>
@@ -231,19 +231,19 @@ const TheSciencePage = () => {
                       <TabsTrigger
                         key={ing.id}
                         value={ing.id}
-                        className="flex items-center gap-2 py-3 text-sm font-body font-semibold data-[state=active]:text-primary"
-                      >
+                        className="flex items-center gap-2 py-3 text-sm font-body font-semibold data-[state=active]:text-primary">
+                        
                         <Icon className="h-4 w-4" />
                         {ing.tab}
-                      </TabsTrigger>
-                    );
+                      </TabsTrigger>);
+
                   })}
                 </TabsList>
-                {ingredients.map((ing) => (
-                  <TabsContent key={ing.id} value={ing.id}>
+                {ingredients.map((ing) =>
+                <TabsContent key={ing.id} value={ing.id}>
                     <IngredientPanel ing={ing} />
                   </TabsContent>
-                ))}
+                )}
               </Tabs>
             </div>
 
@@ -263,8 +263,8 @@ const TheSciencePage = () => {
                       <AccordionContent>
                         <IngredientPanel ing={ing} />
                       </AccordionContent>
-                    </AccordionItem>
-                  );
+                    </AccordionItem>);
+
                 })}
               </Accordion>
             </div>
@@ -283,9 +283,20 @@ const TheSciencePage = () => {
                   The Beta-Sitosterol Problem
                 </h3>
                 <p className="text-secondary-foreground/80 font-body text-sm leading-relaxed">
-                  Saw palmetto contains beta-sitosterol, but in such tiny amounts
-                  that it can't deliver real results. Prostate Miracle® provides
-                  3,000× more beta-sitosterol per serving.
+                  Saw palmetto has a long history of traditional use, but the beta-sitosterol content in saw palmetto is just 1/3,000 of what's in a single caplet of Prostate Miracle®. You'd need to consume over a pound of saw palmetto berries, to match one serving.
+
+
+
+
+
+
+
+
+
+
+
+
+                
                 </p>
               </div>
               <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-3">
@@ -335,74 +346,63 @@ const TheSciencePage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {sourceRows.map((row, i) => (
-                    <tr
-                      key={i}
-                      className={
-                        row.highlight
-                          ? "bg-primary/5 border-l-4 border-l-primary"
-                          : "border-t border-border"
-                      }
-                    >
+                  {sourceRows.map((row, i) => <tr key={i} className={row.highlight ? "bg-primary/5 border-l-4 border-l-primary" : "border-t border-border"}>
+                    
                       <td className="px-6 py-4 font-body text-sm text-foreground font-medium">
                         {row.source}
-                        {row.highlight && (
-                          <span className="ml-2 inline-block text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                        {row.highlight && <span className="ml-2 inline-block text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
                             Prostate Miracle® Source
-                          </span>
-                        )}
+                          </span>}
                       </td>
                       <td className="px-6 py-4 font-body text-sm text-muted-foreground">
                         {row.quality}
                       </td>
                       <td className="px-6 py-4">
-                        {row.gmo ? (
-                          <span className="flex items-center gap-1 text-primary font-body text-sm font-semibold">
+                        {row.gmo ? <span className="flex items-center gap-1 text-primary font-body text-sm font-semibold">
                             <CheckCircle className="h-4 w-4" /> GMO-Free
-                          </span>
-                        ) : (
-                          <span className="flex items-center gap-1 text-destructive font-body text-sm">
+                          </span> :
+                        <span className="flex items-center gap-1 text-destructive font-body text-sm">
                             <XCircle className="h-4 w-4" /> Often GMO
                           </span>
-                        )}
+                        }
                       </td>
                     </tr>
-                  ))}
+                  )}
                 </tbody>
               </table>
             </div>
 
             {/* Mobile cards */}
             <div className="md:hidden space-y-4">
-              {sourceRows.map((row, i) => (
-                <div
-                  key={i}
-                  className={`rounded-xl border p-5 space-y-2 ${
-                    row.highlight
-                      ? "border-primary bg-primary/5"
-                      : "border-border bg-card"
-                  }`}
-                >
+              {sourceRows.map((row, i) =>
+              <div
+                key={i}
+                className={`rounded-xl border p-5 space-y-2 ${
+                row.highlight ?
+                "border-primary bg-primary/5" :
+                "border-border bg-card"}`
+                }>
+                
                   <p className="font-display font-bold text-foreground">
                     {row.source}
-                    {row.highlight && (
-                      <span className="ml-2 inline-block text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
+                    {row.highlight &&
+                  <span className="ml-2 inline-block text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">
                         Our Source
                       </span>
-                    )}
+                  }
                   </p>
                   <p className="font-body text-sm text-muted-foreground">{row.quality}</p>
-                  {row.gmo ? (
-                    <span className="flex items-center gap-1 text-primary font-body text-sm font-semibold">
+                  {row.gmo ?
+                <span className="flex items-center gap-1 text-primary font-body text-sm font-semibold">
                       <CheckCircle className="h-4 w-4" /> GMO-Free ✅
-                    </span>
-                  ) : (
-                    <span className="flex items-center gap-1 text-destructive font-body text-sm">
+                    </span> :
+
+                <span className="flex items-center gap-1 text-destructive font-body text-sm">
                       <XCircle className="h-4 w-4" /> Often GMO
                     </span>
-                  )}
+                }
                 </div>
-              ))}
+              )}
             </div>
           </div>
         </section>
@@ -441,20 +441,20 @@ const TheSciencePage = () => {
                 </thead>
                 <tbody className="font-body text-sm">
                   {[
-                    {
-                      name: "Phytosterol Complex (non-GMO Pine, ≥99% phytosterols, ≥70% Beta-Sitosterol)",
-                      amount: "600 mg",
-                      dv: "*",
-                    },
-                    { name: "Vitamin D3 (as cholecalciferol)", amount: "2,000 IU", dv: "500%" },
-                    { name: "Zinc (as Zinc Citrate)", amount: "15 mg", dv: "100%" },
-                    {
-                      name: "Selenium (as Albion® Selenium Glycinate Complex)",
-                      amount: "70 mcg",
-                      dv: "100%",
-                    },
-                  ].map((row, i) => (
-                    <tr key={i} className="border-b border-border">
+                  {
+                    name: "Phytosterol Complex (non-GMO Pine, ≥99% phytosterols, ≥70% Beta-Sitosterol)",
+                    amount: "600 mg",
+                    dv: "*"
+                  },
+                  { name: "Vitamin D3 (as cholecalciferol)", amount: "2,000 IU", dv: "500%" },
+                  { name: "Zinc (as Zinc Citrate)", amount: "15 mg", dv: "100%" },
+                  {
+                    name: "Selenium (as Albion® Selenium Glycinate Complex)",
+                    amount: "70 mcg",
+                    dv: "100%"
+                  }].
+                  map((row, i) =>
+                  <tr key={i} className="border-b border-border">
                       <td className="px-6 py-2 text-foreground">
                         {row.name}
                         <span className="ml-2 text-muted-foreground">{row.amount}</span>
@@ -463,7 +463,7 @@ const TheSciencePage = () => {
                         {row.dv}
                       </td>
                     </tr>
-                  ))}
+                  )}
                 </tbody>
               </table>
               <div className="px-6 py-3 space-y-1">
@@ -487,8 +487,8 @@ const TheSciencePage = () => {
                   <div key={i} className="flex items-center gap-2 text-foreground">
                     <Icon className="h-5 w-5 text-primary" />
                     <span className="font-body text-sm font-semibold">{b.label}</span>
-                  </div>
-                );
+                  </div>);
+
               })}
             </div>
           </div>
@@ -509,8 +509,8 @@ const TheSciencePage = () => {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6"
-            >
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6">
+              
               <a href="/prostate-miracle">
                 Shop Prostate Miracle® <ArrowRight className="ml-2 h-5 w-5" />
               </a>
@@ -527,12 +527,12 @@ const TheSciencePage = () => {
         </div>
       </main>
       <FooterSection />
-    </div>
-  );
+    </div>);
+
 };
 
 /* ───── Ingredient Panel (shared by tabs & accordion) ───── */
-function IngredientPanel({ ing }: { ing: (typeof ingredients)[number] }) {
+function IngredientPanel({ ing }: {ing: (typeof ingredients)[number];}) {
   const Icon = ing.icon;
   return (
     <div className="rounded-xl border border-border bg-card p-6 md:p-8 space-y-4">
@@ -544,15 +544,15 @@ function IngredientPanel({ ing }: { ing: (typeof ingredients)[number] }) {
       </div>
       <p className="font-body text-muted-foreground leading-relaxed">{ing.body}</p>
       <ul className="space-y-2">
-        {ing.points.map((pt, i) => (
-          <li key={i} className="flex items-start gap-2 font-body text-sm text-foreground">
+        {ing.points.map((pt, i) =>
+        <li key={i} className="flex items-start gap-2 font-body text-sm text-foreground">
             <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
             {pt}
           </li>
-        ))}
+        )}
       </ul>
-    </div>
-  );
+    </div>);
+
 }
 
 export default TheSciencePage;
