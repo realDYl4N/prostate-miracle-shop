@@ -98,7 +98,7 @@ const testimonials = [
 {
   name: "Steve L. Wilson",
   location: "USA",
-  text: "I was skeptical — even thought of returning it. Then around week four I noticed a change in urinary urgency. After another week I was sleeping through the night. Now I feel normal."
+  text: "I was skeptical, even thought of returning it. Then around week four I noticed a change in urinary urgency. After another week I was sleeping through the night. Now I feel normal."
 },
 {
   name: "Frank Evans",
