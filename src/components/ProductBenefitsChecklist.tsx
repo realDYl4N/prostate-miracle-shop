@@ -9,7 +9,7 @@ const benefits = [
   "Enhances bladder emptying for lasting comfort",
   "Protects prostate cells from oxidative stress",
   "Supports hormonal balance naturally",
-  "Relieves urgency and frequency discomfort",
+  "Supports comfortable urinary frequency",
   
 ];
 
