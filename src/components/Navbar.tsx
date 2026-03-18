@@ -46,6 +46,13 @@ export const Navbar = () => {
             The Science
           </a>
           <a
+            href="/testimonials"
+            className={`h-full flex items-center border-b-[3px] transition-colors ${
+              location.pathname === "/testimonials" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
+            }`}>
+            Testimonials
+          </a>
+          <a
             href="/track-order"
             className={`h-full flex items-center border-b-[3px] transition-colors ${
               location.pathname === "/track-order" ? "text-foreground border-primary" : "text-muted-foreground border-transparent hover:border-primary hover:text-foreground"
