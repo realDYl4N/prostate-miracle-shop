@@ -1,12 +1,13 @@
-import { Leaf } from "lucide-react";
+import { Leaf, Phone, Flag, CheckCircle, DollarSign, FlaskConical, Microscope } from "lucide-react";
 
 const badges = [
-  "Fewer Nighttime Bathroom Trips",
-  "Trusted by Men Since 2003",
-  "Non-GMO Ingredients",
-  "Clinically-Studied Ingredients",
-  "Great Customer Service",
-  "Made in the USA",
+  { text: "Fewer Nighttime Bathroom Trips", icon: Leaf },
+  { text: "Trusted by Men Since 2003", icon: CheckCircle },
+  { text: "Non-GMO Ingredients", icon: Leaf },
+  { text: "Clinically-Studied Ingredients", icon: FlaskConical },
+  { text: "24/7 Support", icon: Phone },
+  { text: "Made in the USA", icon: Flag },
+  { text: "Money-Back Guarantee", icon: DollarSign },
 ];
 
 export const MarqueeStrip = () => (
