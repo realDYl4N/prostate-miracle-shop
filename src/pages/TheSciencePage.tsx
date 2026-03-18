@@ -483,11 +483,13 @@ const TheSciencePage = () => {
                 </div>
 
                 <div className="flex items-center justify-center">
-                  <img
-                    src={productCallout}
-                    alt="Prostate Miracle product with customer testimonial from Alan R."
-                    className="rounded-xl w-full max-w-md shadow-lg"
-                  />
+                  <a href="/prostate-miracle">
+                    <img
+                      src={productCallout}
+                      alt="Prostate Miracle product with customer testimonial from Alan R."
+                      className="rounded-xl w-full max-w-md shadow-lg hover:scale-[1.02] transition-transform cursor-pointer"
+                    />
+                  </a>
                 </div>
               </div>
 
