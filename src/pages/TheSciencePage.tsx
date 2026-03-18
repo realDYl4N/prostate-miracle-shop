@@ -1,3 +1,4 @@
+import prostateDiagram from "@/assets/prostate-diagram.png";
 import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
 import { Button } from "@/components/ui/button";
