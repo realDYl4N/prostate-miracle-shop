@@ -219,7 +219,7 @@ const TheSciencePage = () => {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground text-center mb-12">
-              4 Ingredients. Zero Filler. Every One Earns Its Spot.
+              4 Ingredients. Every One Earns Its Spot.
             </h2>
 
             {/* Desktop: Tabs */}
