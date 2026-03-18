@@ -83,7 +83,7 @@ const ingredients = [
     icon: Leaf,
     tab: "Beta-Sitosterol",
     heading: "The #1 Most Studied Prostate Health Nutrient",
-    body: "Beta-sitosterol is the active compound found in saw palmetto, pygeum africanum, pumpkin seed oil, and stinging nettles — but at concentrations so low they offer little therapeutic value. Prostate Miracle® delivers 600 mg per day of a 99% pure, GMO-free phytosterol complex (containing not less than 70% beta-sitosterol), imported from France and extracted from non-GMO pine.",
+    body: "Beta-sitosterol is the miraculous common denominator found in saw palmetto, pygeum africanum, pumpkinseed oil and stinging nettles. However, the concentration of beta sitosterol in these herbs is very small at best. A mere 3,000th of the amount found in Prostate Miracle®. ",
     points: [
       "Most extensively studied prostate health supplement",
       "3,000× more beta-sitosterol than saw palmetto",
