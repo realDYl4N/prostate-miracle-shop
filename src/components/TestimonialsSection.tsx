@@ -53,7 +53,7 @@ const testimonials = [
 {
   name: "Bart Palamaro",
   location: "Newbury Park, CA",
-  text: "I can't believe the difference I've noticed since starting Prostate Miracle. I've gone from dealing with the typical discomforts of an aging prostate, reduced stream, dribbling, frequent urges, to feeling closer to normal than I have in a long time. Each day has been better, all within about two weeks. I'm very appreciative of this product and plan to share it with my doctor."
+  text: "I can't believe the difference I've noticed since starting Prostate Miracle. I've gone from dealing with the typical discomforts of an aging prostate, reduced stream, dribbling, frequent urges — to feeling closer to normal than I have in a long time. Each day has been better, all within about two weeks. I'm very appreciative of this product and plan to share it with my doctor."
 },
 {
   name: "Jack C. Moore",
