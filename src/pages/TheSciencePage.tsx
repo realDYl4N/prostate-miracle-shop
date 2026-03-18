@@ -110,7 +110,7 @@ const ingredients = [
   icon: Beaker,
   tab: "Selenium",
   heading: "The Trace Mineral That Most Doctors Overlook",
-  body: "An essential trace mineral with unique biochemical properties that support healthy cellular response to oxidative stress. Soil depletion means many men are deficient even on a balanced diet.",
+  body: "Most doctors assume we get enough selenium through diet. But in many parts of the U.S., China, and Russia, acid rain has depleted selenium from the soil, reducing the amount available for absorption into the plants we eat.\n\nResearchers have been actively investigating selenium's health-supporting potential, including its possible role in conditions involving oxidative stress and inflammation.",
   points: [
   "Uses Albion® Selenium Glycinate Complex — the gold standard",
   "70 mcg per serving — 100% Daily Value",
