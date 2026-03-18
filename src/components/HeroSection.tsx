@@ -4,13 +4,13 @@ import { Star, ShieldCheck, Phone } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="pt-24 pb-12 md:pt-28 md:pb-16 bg-background">
+    <section className="pt-28 pb-12 md:pt-32 md:pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Left content */}
-          <div className="flex-1 max-w-xl text-center md:text-left">
+          <div className="flex-1 max-w-xl text-center">
             {/* Rating bar */}
-            <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
+            <div className="flex items-center justify-center gap-3 mb-6">
               <div className="flex gap-0.5">
                 {[...Array(5)].map((_, i) =>
                 <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
@@ -26,7 +26,7 @@ export const HeroSection = () => {
             </h1>
 
             {/* Description */}
-            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 mx-auto md:mx-0 max-w-md md:text-base">
+            <p className="text-base text-muted-foreground font-body leading-relaxed mb-8 mx-auto max-w-md md:text-base">
               Prostate Miracle® Advanced Formula is our 2nd generation upgrade to the original Prostate Miracle®. This highly effective, natural, time-tested formula, supports healthy urinary flow and prostate health. Trusted by thousands of men since 2003!
             </p>
 
@@ -38,7 +38,7 @@ export const HeroSection = () => {
             </a>
 
             {/* Guarantee line */}
-            <div className="flex items-center justify-center md:justify-start gap-2 mt-5">
+            <div className="flex items-center justify-center gap-2 mt-5">
               <ShieldCheck className="h-5 w-5 text-primary flex-shrink-0" />
               <span className="text-sm font-medium text-foreground">
                 60-Day Satisfaction Guarantee 
