@@ -6,7 +6,7 @@ const benefits = [
   "Reduces nighttime bathroom trips",
   "Supports healthy urinary flow and comfort",
   "Promotes normal prostate size and function",
-  "Enhances bladder emptying for lasting relief",
+  "Enhances bladder emptying for lasting comfort",
   "Protects prostate cells from oxidative stress",
   "Supports hormonal balance naturally",
   "Relieves urgency and frequency discomfort",
