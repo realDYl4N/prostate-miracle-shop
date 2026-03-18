@@ -3,7 +3,7 @@ import { useProducts } from "@/hooks/useProducts";
 import productBottle from "@/assets/product-bottle.png";
 
 const benefits = [
-  "Reduces nighttime bathroom trips in as little as 2 weeks",
+  "Reduces nighttime bathroom trips",
   "Supports healthy urinary flow and comfort",
   "Promotes normal prostate size and function",
   "Enhances bladder emptying for lasting relief",
