@@ -30,7 +30,7 @@ const testimonials = [
 {
   name: "Glen",
   location: "Valencia, CA",
-  text: "Prostate Miracle is amazing — I noticed improvements quickly after starting! Thanks for making such an outstanding product."
+  text: "Prostate Miracle is amazing, I noticed improvements quickly after starting! Thanks for making such an outstanding product."
 },
 {
   name: "CG",
