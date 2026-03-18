@@ -16,8 +16,8 @@ export const MarqueeStrip = () => (
       <div className="flex animate-marquee whitespace-nowrap gap-8">
         {[...badges, ...badges, ...badges].map((badge, i) => (
           <div key={i} className="flex items-center gap-2 px-2">
-            <Leaf className="h-4 w-4 text-primary flex-shrink-0" />
-            <span className="text-sm font-medium text-foreground">{badge}</span>
+            <badge.icon className="h-4 w-4 text-primary flex-shrink-0" />
+            <span className="text-sm font-medium text-foreground">{badge.text}</span>
           </div>
         ))}
       </div>
