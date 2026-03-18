@@ -4,17 +4,7 @@ import { Star, ShieldCheck, Phone } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative pt-28 pb-12 md:pt-32 md:pb-16 bg-background overflow-hidden">
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage: "url('/images/topo-texture.png')",
-          backgroundRepeat: "repeat",
-          backgroundSize: "600px",
-          opacity: 0.04,
-          filter: "invert(1)",
-        }}
-      />
+    <section className="pt-28 pb-12 md:pt-32 md:pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Left content */}
