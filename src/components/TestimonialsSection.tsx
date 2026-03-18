@@ -88,7 +88,7 @@ const testimonials = [
 {
   name: "Roy M. S.",
   location: "USA",
-  text: "I have been using Prostate Miracle since 1999 and have had marvelous results. I was experiencing urinary discomfort and had been evaluated for prostate size concerns. After taking the recommended dosage consistently, all symptoms were alleviated. My most recent urologist visit showed meaningful improvement in prostate size. I am ecstatic with the success of Prostate Miracle."
+  text: "I have been using Prostate Miracle since 2003 and have had marvelous results. I was experiencing urinary discomfort and had been evaluated for prostate size concerns. After taking the recommended dosage consistently, all symptoms were alleviated. My most recent urologist visit showed meaningful improvement in prostate size. I am ecstatic with the success of Prostate Miracle."
 },
 {
   name: "Jeff Gentry",
