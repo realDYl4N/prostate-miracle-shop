@@ -38,7 +38,7 @@ export const HeroSection = () => {
             </a>
 
             {/* Guarantee line */}
-            <div className="flex items-center justify-center md:justify-start gap-2 mt-5">
+            <div className="flex items-center justify-center gap-2 mt-5">
               <ShieldCheck className="h-5 w-5 text-primary flex-shrink-0" />
               <span className="text-sm font-medium text-foreground">
                 60-Day Satisfaction Guarantee 
