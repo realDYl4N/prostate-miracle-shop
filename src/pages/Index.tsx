@@ -16,9 +16,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ScrollFadeIn>
-        <TrustBar />
-      </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
         <BenefitsSection />
       </ScrollFadeIn>
@@ -30,7 +27,7 @@ const Index = () => {
         <TestimonialsSection />
       </ScrollFadeIn>
       <ScrollFadeIn>
-        <MarqueeStrip />
+        <TrustBar />
       </ScrollFadeIn>
       <ScrollFadeIn delay={0.05}>
         <FAQSection />
