@@ -399,44 +399,56 @@ const TheSciencePage = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Symptoms */}
-              <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-4">
-                <h3 className="font-display text-lg font-bold text-secondary-foreground">
-                  Common Symptoms Men Report
-                </h3>
-                <ul className="space-y-3">
-                  {[
-                    "Difficulty initiating urination",
-                    "Weak urinary stream",
-                    "Frequent urination, sometimes with urgency",
-                    "Waking at night to urinate",
-                    "Changes in sexual function",
-                  ].map((symptom, i) => (
-                    <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
-                      <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      {symptom}
-                    </li>
-                  ))}
-                </ul>
+              {/* Left: stacked boxes */}
+              <div className="space-y-6">
+                {/* Symptoms */}
+                <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-4">
+                  <h3 className="font-display text-lg font-bold text-secondary-foreground">
+                    Common Symptoms Men Report
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      "Difficulty initiating urination",
+                      "Weak urinary stream",
+                      "Frequent urination, sometimes with urgency",
+                      "Waking at night to urinate",
+                      "Changes in sexual function",
+                    ].map((symptom, i) => (
+                      <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
+                        <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        {symptom}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Facts */}
+                <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-4">
+                  <h3 className="font-display text-lg font-bold text-secondary-foreground">
+                    Prostate Facts
+                  </h3>
+                  <ul className="space-y-3">
+                    {[
+                      "Nearly 30 million American men experience prostate-related concerns",
+                      "Over 400,000 men in the U.S. undergo prostate procedures each year",
+                      "Two key screenings used by physicians are the digital rectal exam (DRE) and the PSA test",
+                    ].map((fact, i) => (
+                      <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
+                        <ShieldCheck className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                        {fact}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
 
-              {/* Facts */}
-              <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-4">
-                <h3 className="font-display text-lg font-bold text-secondary-foreground">
-                  Prostate Facts
-                </h3>
-                <ul className="space-y-3">
-                  {[
-                    "Nearly 30 million American men experience prostate-related concerns",
-                    "Over 400,000 men in the U.S. undergo prostate procedures each year",
-                    "Two key screenings used by physicians are the digital rectal exam (DRE) and the PSA test",
-                  ].map((fact, i) => (
-                    <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
-                      <ShieldCheck className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
-                      {fact}
-                    </li>
-                  ))}
-                </ul>
+              {/* Right: diagram image */}
+              <div className="flex items-center justify-center">
+                <img
+                  src={prostateDiagram}
+                  alt="Prostate gland anatomy diagram showing location, common symptoms, and conditions"
+                  className="rounded-xl max-w-full h-auto"
+                />
               </div>
             </div>
           </div>
