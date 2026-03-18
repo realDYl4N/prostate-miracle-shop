@@ -38,7 +38,7 @@ This highly effective, natural, time-tested formula, supports healthy urinary fl
 
             {/* CTA */}
             <a href="/prostate-miracle">
-              <Button size="lg" className="text-base font-bold px-10 py-6 rounded-lg hover:scale-105 transition-all duration-300">
+              <Button size="lg" className="text-lg font-bold px-14 py-7 rounded-xl hover:scale-105 transition-all duration-300">
                 Try Prostate Miracle® Risk-Free
               </Button>
             </a>
