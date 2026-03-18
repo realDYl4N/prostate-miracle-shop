@@ -20,7 +20,7 @@ const testimonials = [
   { name: "Ray E. Hammack", location: "USA", text: "I had some discomfort in the prostate area after long hours at my desk. Since I believe in preventative maintenance, I started taking Prostate Miracle about 3 months ago. After only three days, I noticed a very definite sense of comfort and well-being throughout the prostate area. I was genuinely surprised at how well it supported me. What else can I say, buy it, try it, you'll like it and you'll never be without it." },
   { name: "Roy M. S.", location: "USA", text: "I have been using Prostate Miracle since 1999 and have had marvelous results. I was experiencing urinary discomfort and looking for long-term prostate support. After taking the recommended dosage consistently, I noticed significant improvement in my overall comfort. I am ecstatic with the results of Prostate Miracle." },
   { name: "Jeff Gentry", location: "USA", text: "I was waking up frequently through the night. After starting Prostate Miracle, I noticed a dramatic improvement in how well I sleep. Continuing to see great results." },
-  { name: "Steve L. Wilson", location: "USA", text: "I was skeptical — even thought of returning it. Then around week four I noticed a positive change. After another week I was sleeping more soundly through the night. Now I feel like myself again." },
+  { name: "Steve L. Wilson", location: "USA", text: "I was skeptical, even thought of returning it. Then around week four I noticed a positive change. After another week I was sleeping more soundly through the night. Now I feel like myself again." },
   { name: "Frank Evans", location: "USA", text: "Urgency, frequency, low flow, dribbling — I've noticed significant improvement across the board since starting the product." },
 ];
 
