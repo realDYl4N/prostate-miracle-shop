@@ -8,7 +8,7 @@ interface ScrollFadeInProps {
 }
 
 export const ScrollFadeIn = ({ children, className = "", delay = 0 }: ScrollFadeInProps) => {
-  const { ref, isVisible } = useScrollFadeIn(0.12);
+  const { ref, isVisible } = useScrollFadeIn(0.03);
 
   return (
     <div
@@ -16,8 +16,8 @@ export const ScrollFadeIn = ({ children, className = "", delay = 0 }: ScrollFade
       className={className}
       style={{
         opacity: isVisible ? 1 : 0,
-        transform: isVisible ? "translateY(0)" : "translateY(32px)",
-        transition: `opacity 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s, transform 0.7s cubic-bezier(0.16,1,0.3,1) ${delay}s`,
+        transform: isVisible ? "translateY(0)" : "translateY(16px)",
+        transition: `opacity 0.4s cubic-bezier(0.16,1,0.3,1) ${delay}s, transform 0.4s cubic-bezier(0.16,1,0.3,1) ${delay}s`,
       }}
     >
       {children}
