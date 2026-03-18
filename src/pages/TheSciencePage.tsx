@@ -304,8 +304,16 @@ const TheSciencePage = () => {
                   May Harm Prostate Cells
                 </h3>
                 <p className="text-secondary-foreground/80 font-body text-sm leading-relaxed">
-                  Three independent studies found saw palmetto may negatively affect
-                  prostate tissue, impacting both healthy and unhealthy cells.
+                  Three peer-reviewed studies suggest saw palmetto may have unintended effects on prostate tissue.*
+
+Prostate (Nov 2000): Researchers observed damage to nuclear and mitochondrial membranes, and cell death in both epithelial and stromal cells.
+
+Journal of Urology (Nov 2000): Cell damage appeared specific to prostate tissue, no similar effects were observed in kidney, skin, breast, or other cell types tested.
+
+Prostate (Sep 1999): Researchers observed widespread intracellular membrane damage in prostate tissue.
+
+
+
                 </p>
               </div>
               <div className="rounded-xl border border-border/30 bg-secondary-foreground/5 p-6 space-y-3">
@@ -360,28 +368,20 @@ const TheSciencePage = () => {
                       <td className="px-6 py-4">
                         {row.gmo ? <span className="flex items-center gap-1 text-primary font-body text-sm font-semibold">
                             <CheckCircle className="h-4 w-4" /> GMO-Free
-                          </span> :
-                        <span className="flex items-center gap-1 text-destructive font-body text-sm">
+                          </span> : <span className="flex items-center gap-1 text-destructive font-body text-sm">
                             <XCircle className="h-4 w-4" /> Often GMO
-                          </span>
-                        }
+                          </span>}
                       </td>
-                    </tr>
-                  )}
+                    </tr>)}
                 </tbody>
               </table>
             </div>
 
             {/* Mobile cards */}
             <div className="md:hidden space-y-4">
-              {sourceRows.map((row, i) =>
-              <div
-                key={i}
-                className={`rounded-xl border p-5 space-y-2 ${
-                row.highlight ?
-                "border-primary bg-primary/5" :
-                "border-border bg-card"}`
-                }>
+              {sourceRows.map((row, i) => <div key={i} className={`rounded-xl border p-5 space-y-2 ${row.highlight ? "border-primary bg-primary/5" :
+              "border-border bg-card"}`
+              }>
                 
                   <p className="font-display font-bold text-foreground">
                     {row.source}
