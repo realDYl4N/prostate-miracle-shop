@@ -212,6 +212,11 @@ export const ProductSection = () => {
                             </span>
                         }
                         </div>
+                        {tier.quantity > 1 && (
+                          <span className="text-xs text-muted-foreground">
+                            ${(parseFloat(tier.price.replace('$', '')) / tier.quantity).toFixed(2)} per bottle
+                          </span>
+                        )}
                       </div>
                     </div>
                     <div className="text-right">
