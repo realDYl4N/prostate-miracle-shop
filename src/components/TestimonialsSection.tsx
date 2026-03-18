@@ -107,60 +107,70 @@ const testimonials = [
 }];
 
 
-export const TestimonialsSection = () =>
-<section className="py-20 bg-background">
-    <div className="container mx-auto px-4">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
-          Trusted By <span className="text-primary">Thousands</span>
-        </h2>
-      </div>
+export const TestimonialsSection = () => {
+  const autoplayPlugin = React.useRef(
+    Autoplay({ delay: 3500, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
 
-      <div className="text-center mb-10">
-        <div className="flex items-center justify-center gap-1 mb-2">
-          {[...Array(5)].map((_, i) =>
-        <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
-        )}
+  return (
+    <section className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+            Trusted By <span className="text-primary">Thousands</span>
+          </h2>
         </div>
-        <p className="text-sm font-medium text-foreground">Rated 4.8 / 5</p>
-        <p className="text-sm text-muted-foreground">Trusted by 100K+ Happy Customers </p>
-      </div>
 
-      <Carousel
-      opts={{ align: "start", loop: true }}
-      plugins={[Autoplay({ delay: 3500, stopOnInteraction: false })]}>
-      
-        <CarouselContent className="-ml-4">
-          {testimonials.map((t) =>
-        <CarouselItem
-          key={t.name}
-          className="pl-4 basis-[75%] sm:basis-[40%] lg:basis-[28%]">
-          
-              <div className="bg-card border border-border rounded-lg p-4 shadow-[var(--shadow-card)] flex flex-col h-full">
-                <div className="flex gap-0.5 mb-2">
-                  {[...Array(5)].map((_, i) =>
-              <Star key={i} className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
-              )}
-                </div>
-                <p className="text-xs text-muted-foreground font-body leading-relaxed mb-4 flex-1 line-clamp-6">
-                  "{t.text}"
-                </p>
-                <div className="flex items-center gap-2">
-                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
-                    <span className="text-xs font-bold text-primary">
-                      {t.name.charAt(0)}
-                    </span>
+        <div className="text-center mb-10">
+          <div className="flex items-center justify-center gap-1 mb-2">
+            {[...Array(5)].map((_, i) =>
+              <Star key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
+            )}
+          </div>
+          <p className="text-sm font-medium text-foreground">Rated 4.8 / 5</p>
+          <p className="text-sm text-muted-foreground">Trusted by 100K+ Happy Customers </p>
+        </div>
+
+        <Carousel
+          opts={{ align: "start", loop: true }}
+          plugins={[autoplayPlugin.current]}
+          className="relative px-12"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonials.map((t) =>
+              <CarouselItem
+                key={t.name}
+                className="pl-4 basis-[75%] sm:basis-[40%] lg:basis-[28%]"
+              >
+                <div className="bg-card border border-border rounded-lg p-4 shadow-[var(--shadow-card)] flex flex-col h-full">
+                  <div className="flex gap-0.5 mb-2">
+                    {[...Array(5)].map((_, i) =>
+                      <Star key={i} className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400" />
+                    )}
                   </div>
-                  <div>
-                    <p className="font-semibold text-foreground text-xs">{t.name}</p>
-                    <p className="text-[11px] text-muted-foreground">{t.location}</p>
-                    <p className="text-[11px] text-primary font-medium">✓ Verified Buyer</p>
+                  <p className="text-xs text-muted-foreground font-body leading-relaxed mb-4 flex-1 line-clamp-6">
+                    "{t.text}"
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                      <span className="text-xs font-bold text-primary">
+                        {t.name.charAt(0)}
+                      </span>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground text-xs">{t.name}</p>
+                      <p className="text-[11px] text-muted-foreground">{t.location}</p>
+                      <p className="text-[11px] text-primary font-medium">✓ Verified Buyer</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </CarouselItem>
-        )}
-        </CarouselContent>
-      </Carousel>
-    </div>
-  </section>;
+              </CarouselItem>
+            )}
+          </CarouselContent>
+          <CarouselPrevious className="-left-0 md:-left-4" />
+          <CarouselNext className="-right-0 md:-right-4" />
+        </Carousel>
+      </div>
+    </section>
+  );
+};
