@@ -4,11 +4,11 @@ import { Star, ShieldCheck, Phone } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="pt-24 pb-12 md:pt-28 md:pb-16 bg-background">
+    <section className="pt-28 pb-12 md:pt-32 md:pb-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           {/* Left content */}
-          <div className="flex-1 max-w-xl text-center md:text-left">
+          <div className="flex-1 max-w-xl text-center">
             {/* Rating bar */}
             <div className="flex items-center justify-center md:justify-start gap-3 mb-6">
               <div className="flex gap-0.5">
