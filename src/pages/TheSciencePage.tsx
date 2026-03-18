@@ -408,17 +408,17 @@ const TheSciencePage = () => {
                   </h3>
                   <ul className="space-y-3">
                     {[
-                      "Difficulty initiating urination",
-                      "Weak urinary stream",
-                      "Frequent urination, sometimes with urgency",
-                      "Waking at night to urinate",
-                      "Changes in sexual function",
-                    ].map((symptom, i) => (
-                      <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
+                    "Difficulty initiating urination",
+                    "Weak urinary stream",
+                    "Frequent urination, sometimes with urgency",
+                    "Waking at night to urinate",
+                    "Changes in sexual function"].
+                    map((symptom, i) =>
+                    <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
                         <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                         {symptom}
                       </li>
-                    ))}
+                    )}
                   </ul>
                 </div>
 
@@ -429,15 +429,15 @@ const TheSciencePage = () => {
                   </h3>
                   <ul className="space-y-3">
                     {[
-                      "Nearly 30 million American men experience prostate-related concerns",
-                      "Over 400,000 men in the U.S. undergo prostate procedures each year",
-                      "Two key screenings used by physicians are the digital rectal exam (DRE) and the PSA test",
-                    ].map((fact, i) => (
-                      <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
+                    "Nearly 30 million American men experience prostate-related concerns",
+                    "Over 400,000 men in the U.S. undergo prostate procedures each year",
+                    "Two key screenings used by physicians are the digital rectal exam (DRE) and the PSA test"].
+                    map((fact, i) =>
+                    <li key={i} className="flex items-start gap-2 font-body text-sm text-secondary-foreground/80">
                         <ShieldCheck className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
                         {fact}
                       </li>
-                    ))}
+                    )}
                   </ul>
                 </div>
               </div>
@@ -447,8 +447,8 @@ const TheSciencePage = () => {
                 <img
                   src={prostateDiagram}
                   alt="Prostate gland anatomy diagram showing location, common symptoms, and conditions"
-                  className="rounded-xl max-w-full h-auto"
-                />
+                  className="rounded-xl max-w-full h-auto" />
+                
               </div>
             </div>
           </div>
@@ -462,8 +462,8 @@ const TheSciencePage = () => {
                 <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground leading-tight">
                   Are You Prepared to Deal with Incontinence or a Diminished Sex Life?
                 </h2>
-                <p className="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                  These are real concerns for many men as they age. The good news is that nature provides powerful nutrients that support healthy prostate function — and Prostate Miracle® delivers them in the amounts that matter.
+                <p className="font-body text-muted-foreground max-w-3xl mx-auto leading-relaxed">These are real concerns for many men as they age. The good news is that nature provides powerful nutrients that support healthy prostate function, and Prostate Miracle® delivers them in the amounts that matter.
+
                 </p>
               </div>
 
@@ -483,19 +483,19 @@ const TheSciencePage = () => {
                 <div className="space-y-5">
                   <ul className="space-y-3">
                     {[
-                      { nutrient: "Beta-Sitosterol", amount: "300 mg" },
-                      { nutrient: "Zinc", amount: "7.5 mg" },
-                      { nutrient: "Selenium", amount: "100 mcg" },
-                      { nutrient: "Vitamin D3", amount: "1,000 IU" },
-                    ].map((item, i) => (
-                      <li key={i} className="flex items-center gap-3 font-body text-sm text-foreground">
+                    { nutrient: "Beta-Sitosterol", amount: "300 mg" },
+                    { nutrient: "Zinc", amount: "7.5 mg" },
+                    { nutrient: "Selenium", amount: "100 mcg" },
+                    { nutrient: "Vitamin D3", amount: "1,000 IU" }].
+                    map((item, i) =>
+                    <li key={i} className="flex items-center gap-3 font-body text-sm text-foreground">
                         <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
                         <span>
                           <span className="font-semibold">{item.nutrient}</span>
                           <span className="text-muted-foreground"> — {item.amount}</span>
                         </span>
                       </li>
-                    ))}
+                    )}
                   </ul>
                   <p className="font-body text-xs text-muted-foreground leading-relaxed border-t border-border pt-4">
                     Manufactured in the USA with pharmaceutical-grade (USP) ingredients in GMP-certified, FDA-inspected facilities.
