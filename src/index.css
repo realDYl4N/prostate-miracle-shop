@@ -124,6 +124,10 @@
 
   body {
     @apply bg-background text-foreground font-body antialiased;
+    background-image: url('/images/topo-texture.png');
+    background-repeat: repeat;
+    background-size: 600px;
+    background-blend-mode: soft-light;
   }
 
   h1, h2, h3, h4, h5, h6 {
