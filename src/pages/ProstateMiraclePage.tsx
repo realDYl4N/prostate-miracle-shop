@@ -12,6 +12,9 @@ import { ProductPageFAQ } from "@/components/ProductPageFAQ";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 import { StickyCtaBar } from "@/components/StickyCtaBar";
+import { PageHead } from "@/components/PageHead";
+import { useMemo } from "react";
+import { faqSchema, productSchema } from "@/lib/seo-schemas";
 
 const ProstateMiraclePage = () => {
   return (
