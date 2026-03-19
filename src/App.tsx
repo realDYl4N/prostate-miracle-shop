@@ -33,6 +33,7 @@ const AppContent = () => {
         <Route path="/refund-policy" element={<RefundPolicyPage />} />
         <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
         <Route path="/shipping-policy" element={<ShippingPolicyPage />} />
+        <Route path="/terms-of-service" element={<TermsOfServicePage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
