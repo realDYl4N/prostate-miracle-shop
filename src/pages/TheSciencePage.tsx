@@ -483,7 +483,7 @@ const TheSciencePage = () => {
                       size="lg"
                       className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6">
                       <a href="/prostate-miracle">
-                        Buy Prostate Miracle® Risk-Free <ArrowRight className="ml-2 h-5 w-5" />
+                        Buy Prostate Miracle® <ArrowRight className="ml-2 h-5 w-5" />
                       </a>
                     </Button>
                     <div className="flex items-center gap-2 text-muted-foreground font-body text-sm mt-4">
@@ -546,7 +546,7 @@ const TheSciencePage = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-display font-bold uppercase tracking-wider text-base px-10 py-6">
               
               <a href="/prostate-miracle">
-                Buy Prostate Miracle® Risk-Free <ArrowRight className="ml-2 h-5 w-5" />
+                Buy Prostate Miracle® <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
           </div>

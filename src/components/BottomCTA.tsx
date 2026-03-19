@@ -18,7 +18,7 @@ export const BottomCTA = () => {
           variant="secondary"
           className="w-full sm:w-auto text-base md:text-lg px-10 py-6 font-display font-semibold shadow-lg hover:scale-105 transition-transform"
           onClick={() => {navigate("/prostate-miracle");window.scrollTo(0, 0);}}>
-        Buy Prostate Miracle® Risk-Free
+        Buy Prostate Miracle®
       </Button>
       <div className="mt-6 flex flex-wrap justify-center gap-x-4 md:gap-x-6 gap-y-2 text-xs md:text-sm text-primary-foreground/70 font-body">
         <span className="flex items-center gap-1.5"><Shield className="w-4 h-4" /> 60-day money-back guarantee</span>
