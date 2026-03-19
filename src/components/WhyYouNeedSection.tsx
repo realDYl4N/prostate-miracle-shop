@@ -1,8 +1,8 @@
 export const WhyYouNeedSection = () => {
   return (
-    <section className="py-16 bg-background">
+    <section className="py-10 md:py-16 bg-background">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
+        <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-4 md:mb-6">
           Why You Need Prostate Miracle?
         </h2>
         <p className="text-muted-foreground font-body leading-relaxed text-base md:text-lg">
