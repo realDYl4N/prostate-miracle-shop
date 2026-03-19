@@ -1,10 +1,32 @@
 import { useEffect } from "react";
 
+interface BreadcrumbItem {
+  name: string;
+  path: string;
+}
+
 interface PageHeadProps {
   title: string;
   description: string;
   canonicalPath: string;
   jsonLd?: object[];
+  breadcrumbs?: BreadcrumbItem[];
+}
+
+function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prostatemiracle.com/" },
+      ...items.map((item, i) => ({
+        "@type": "ListItem",
+        "position": i + 2,
+        "name": item.name,
+        "item": `https://prostatemiracle.com${item.path}`,
+      })),
+    ],
+  };
 }
 
 export const PageHead = ({ title, description, canonicalPath, jsonLd }: PageHeadProps) => {
