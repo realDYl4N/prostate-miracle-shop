@@ -122,9 +122,9 @@ export const FooterSection = () => {
             <h4 className="font-display font-semibold text-base">Information</h4>
             <nav className="flex flex-col gap-2.5">
               <a href="mailto:support@prostatemiracle.com" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Contact Information</a>
-              <a href="#" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Privacy Policy</a>
-              <a href="#" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Refund Policy</a>
-              <a href="#" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Shipping Policy</a>
+              <a href="/privacy-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Privacy Policy</a>
+              <a href="/refund-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Refund Policy</a>
+              <a href="/shipping-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Shipping Policy</a>
               <a href="#" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Terms of Service</a>
             </nav>
           </div>
