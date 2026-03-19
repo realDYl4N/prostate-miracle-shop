@@ -11,6 +11,9 @@ import TrackOrderPage from "./pages/TrackOrderPage";
 import TheSciencePage from "./pages/TheSciencePage";
 import TestimonialsPage from "./pages/TestimonialsPage";
 import ProductDetail from "./pages/ProductDetail";
+import RefundPolicyPage from "./pages/RefundPolicyPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
+import ShippingPolicyPage from "./pages/ShippingPolicyPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
