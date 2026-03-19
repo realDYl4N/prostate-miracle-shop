@@ -1,6 +1,9 @@
 import { Star } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
+import { PageHead } from "@/components/PageHead";
+import { useMemo } from "react";
+import { testimonialsSchema } from "@/lib/seo-schemas";
 
 const testimonials = [
   { name: "Victor Stevens, Ph.D.", location: "Sahuarita, AZ", text: "Prostate Miracle is terrific! I will be 74 next month and my urine flow had become noticeably slow. I started researching natural options and gave Prostate Miracle a try. Wow! My urine flow feels so much better and all I do is take 2 capsules a day, 7 days a week. It's all natural. I can't say enough about how great Prostate Miracle is. Never stop making this stuff! Thank you!" },
@@ -25,16 +28,23 @@ const testimonials = [
 ];
 
 const TestimonialsPage = () => {
+  const jsonLd = useMemo(() => [testimonialsSchema], []);
   return (
     <div className="min-h-screen bg-background">
+      <PageHead
+        title="Prostate Miracle® Reviews — Real Results from 100,000+ Men"
+        description="Read verified reviews from men who use Prostate Miracle® Advanced Formula for prostate health, urinary flow, and fewer nighttime bathroom trips."
+        canonicalPath="/testimonials"
+        jsonLd={jsonLd}
+      />
       <Navbar />
       <div className="pt-16">
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
-                Trusted By <span className="text-primary">Thousands</span>
-              </h2>
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+                What 100,000+ Men Are Saying About <span className="text-primary">Prostate Miracle®</span>
+              </h1>
             </div>
 
             <div className="text-center mb-10">

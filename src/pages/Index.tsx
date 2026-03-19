@@ -10,10 +10,20 @@ import { BottomCTA } from "@/components/BottomCTA";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 import { StickyCtaBar } from "@/components/StickyCtaBar";
+import { PageHead } from "@/components/PageHead";
+import { useMemo } from "react";
+import { organizationSchema, faqSchema } from "@/lib/seo-schemas";
 
 const Index = () => {
+  const jsonLd = useMemo(() => [organizationSchema, faqSchema], []);
   return (
     <div className="min-h-screen bg-background">
+      <PageHead
+        title="Best Prostate Supplement | Prostate Miracle® Advanced Formula"
+        description="100,000+ men rely on Prostate Miracle® for fewer nighttime trips and stronger urinary flow. 300mg pure beta-sitosterol per capsule. 60-day guarantee. Starting at $23.95/bottle."
+        canonicalPath="/"
+        jsonLd={jsonLd}
+      />
       <Navbar />
       <HeroSection />
       <MarqueeStrip />
