@@ -168,7 +168,7 @@ export const ProductSection = () => {
 
             {/* Urgency */}
             <div className="text-center mb-4">
-              <span className="text-sm font-bold text-destructive">60-Day Money-Back Guarantee — Try It Risk-Free</span>
+              <span className="text-sm font-bold text-destructive">60-Day Money-Back Guarantee</span>
             </div>
 
             {/* Pricing Tiers */}
