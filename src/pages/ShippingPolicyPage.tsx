@@ -49,7 +49,7 @@ const ShippingPolicyPage = () => {
             <h2 className="text-xl font-display font-semibold text-foreground">Contact Us</h2>
             <p>
               For shipping questions, please reach out:<br />
-              Email: <a href="mailto:support@prostatemiracle.com" className="text-primary hover:underline">support@prostatemiracle.com</a><br />
+              Email: <a href="mailto:hello@prostatemiracle.com" className="text-primary hover:underline">hello@prostatemiracle.com</a><br />
               Phone: <a href="tel:8779652140" className="text-primary hover:underline">(877) 965-2140</a>
             </p>
           </div>
