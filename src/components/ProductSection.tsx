@@ -264,7 +264,7 @@ export const ProductSection = () => {
               <ShieldCheck className="h-10 w-10 text-primary-foreground flex-shrink-0 mt-0.5" />
               <div>
                 <p className="font-display font-bold text-primary-foreground text-lg">
-                  Try Now Risk-Free for 60 Days
+                  60-Day Money-Back Guarantee
                 </p>
                 <p className="text-primary-foreground/80 text-sm font-body">
                   We want you to shop with confidence. Every order is backed by a 60-day satisfaction guarantee. If you're not happy, we'll refund you, no questions asked.
