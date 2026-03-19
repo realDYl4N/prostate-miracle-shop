@@ -27,7 +27,7 @@ export const HeroSection = () => {
 
             {/* Description */}
             <p className="text-sm md:text-base text-muted-foreground font-body leading-relaxed mb-6 md:mb-8 mx-auto max-w-md">
-              Prostate Miracle® Advanced Formula is our 2nd generation upgrade to the original Prostate Miracle®. This highly effective, natural, time-tested formula, supports healthy urinary flow and prostate health. Trusted by thousands of men since 2003!
+              Prostate Miracle® Advanced Formula is our 2nd generation upgrade to the original Prostate Miracle®. This highly effective, natural, time-tested formula, supports healthy urinary flow and prostate health. Trusted by thousands of men since 2001!
             </p>
 
             {/* CTA */}
