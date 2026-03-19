@@ -72,20 +72,18 @@ export const PageHead = ({ title, description, canonicalPath, jsonLd, breadcrumb
 
     // JSON-LD
     const scriptIds: string[] = [];
-    if (jsonLd) {
-      jsonLd.forEach((schema, i) => {
-        const id = `json-ld-${i}`;
-        scriptIds.push(id);
-        let script = document.getElementById(id) as HTMLScriptElement | null;
-        if (!script) {
-          script = document.createElement("script");
-          script.id = id;
-          script.type = "application/ld+json";
-          document.head.appendChild(script);
-        }
-        script.textContent = JSON.stringify(schema);
-      });
-    }
+    allSchemas.forEach((schema, i) => {
+      const id = `json-ld-${i}`;
+      scriptIds.push(id);
+      let script = document.getElementById(id) as HTMLScriptElement | null;
+      if (!script) {
+        script = document.createElement("script");
+        script.id = id;
+        script.type = "application/ld+json";
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(schema);
+    });
 
     // OG tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
