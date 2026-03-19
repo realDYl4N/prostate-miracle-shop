@@ -32,7 +32,7 @@ export const HeroSection = () => {
 
             {/* CTA */}
             <a href="/prostate-miracle" className="block">
-              <Button size="lg" className="w-full sm:w-auto text-lg md:text-xl font-extrabold px-10 md:px-16 py-7 md:py-8 rounded-xl hover:scale-105 transition-all duration-300">
+              <Button size="lg" className="w-full sm:w-auto text-xl md:text-2xl font-extrabold px-12 md:px-20 py-8 md:py-10 rounded-xl hover:scale-105 transition-all duration-300">
                 Buy Prostate Miracle®
               </Button>
             </a>
