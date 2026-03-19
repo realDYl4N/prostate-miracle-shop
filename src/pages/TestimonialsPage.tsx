@@ -36,6 +36,7 @@ const TestimonialsPage = () => {
         description="Read verified reviews from men who use Prostate Miracle® Advanced Formula for prostate health, urinary flow, and fewer nighttime bathroom trips."
         canonicalPath="/testimonials"
         jsonLd={jsonLd}
+        breadcrumbs={[{ name: "Testimonials", path: "/testimonials" }]}
       />
       <Navbar />
       <div className="pt-16">

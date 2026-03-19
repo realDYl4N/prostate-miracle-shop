@@ -25,6 +25,7 @@ const ProstateMiraclePage = () => {
         description="Order Prostate Miracle® Advanced Formula — 300mg pure beta-sitosterol per capsule, sourced from non-GMO European pine. 60-day guarantee. Free shipping on 3+ bottles."
         canonicalPath="/prostate-miracle"
         jsonLd={jsonLd}
+        breadcrumbs={[{ name: "Prostate Miracle®", path: "/prostate-miracle" }]}
       />
       <Navbar />
       <div className="pt-16">
