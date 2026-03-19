@@ -10,6 +10,9 @@ import { BottomCTA } from "@/components/BottomCTA";
 import { FooterSection } from "@/components/FooterSection";
 import { ScrollFadeIn } from "@/components/ScrollFadeIn";
 import { StickyCtaBar } from "@/components/StickyCtaBar";
+import { PageHead } from "@/components/PageHead";
+import { useMemo } from "react";
+import { organizationSchema, faqSchema } from "@/lib/seo-schemas";
 
 const Index = () => {
   return (
