@@ -21,7 +21,7 @@ const RefundPolicyPage = () => {
 
             <h2 className="text-xl font-display font-semibold text-foreground">How to Request a Refund</h2>
             <ol className="list-decimal pl-5 space-y-2">
-              <li>Contact our customer support team at <a href="mailto:support@prostatemiracle.com" className="text-primary hover:underline">support@prostatemiracle.com</a> or call <a href="tel:8779652140" className="text-primary hover:underline">(877) 965-2140</a>.</li>
+              <li>Contact our customer support team at <a href="mailto:hello@prostatemiracle.com" className="text-primary hover:underline">hello@prostatemiracle.com</a> or call <a href="tel:8779652140" className="text-primary hover:underline">(877) 965-2140</a>.</li>
               <li>Provide your order number and reason for the return.</li>
               <li>Ship the product (including empty bottles) back to the address provided by our support team.</li>
               <li>Once we receive and inspect the return, your refund will be processed within 5–10 business days.</li>
