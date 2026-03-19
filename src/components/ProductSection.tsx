@@ -8,40 +8,32 @@ import productBottle from "@/assets/product-bottle.png";
 
 const pricingTiers = [
 {
-  label: "Six Bottles",
-  badge: "Best Value",
-  savings: "Save 29%",
-  price: "$143.70",
-  originalPrice: "$203.70",
-  quantity: 6,
-  variantOption: "Six Bottles",
-},
-{
-  label: "Three Bottles",
-  badge: "Most Popular",
-  savings: "Save 20%",
-  price: "$80.99",
-  originalPrice: "$101.85",
-  quantity: 3,
-  variantOption: "Three Bottles",
+  label: "One Bottle",
+  badge: null,
+  price: "$33.95",
+  quantity: 1,
+  variantOption: "One Bottle",
 },
 {
   label: "Two Bottles",
   badge: null,
-  savings: "Save 21%",
   price: "$53.99",
-  originalPrice: "$67.90",
   quantity: 2,
   variantOption: "Two Bottles",
 },
 {
-  label: "One Bottle",
-  badge: null,
-  savings: null,
-  price: "$33.95",
-  originalPrice: "$36.95",
-  quantity: 1,
-  variantOption: "One Bottle",
+  label: "Three Bottles",
+  badge: "Most Popular",
+  price: "$80.99",
+  quantity: 3,
+  variantOption: "Three Bottles",
+},
+{
+  label: "Six Bottles",
+  badge: "Best Value",
+  price: "$143.70",
+  quantity: 6,
+  variantOption: "Six Bottles",
 }];
 
 
