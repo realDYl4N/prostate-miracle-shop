@@ -29,6 +29,9 @@ const AppContent = () => {
         <Route path="/the-science" element={<TheSciencePage />} />
         <Route path="/testimonials" element={<TestimonialsPage />} />
         <Route path="/product/:handle" element={<ProductDetail />} />
+        <Route path="/refund-policy" element={<RefundPolicyPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+        <Route path="/shipping-policy" element={<ShippingPolicyPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
