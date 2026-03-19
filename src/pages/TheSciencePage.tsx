@@ -196,6 +196,7 @@ const TheSciencePage = () => {
         description="Why beta-sitosterol outperforms saw palmetto for prostate health — and why source purity from non-GMO European pine makes all the difference. Peer-reviewed evidence."
         canonicalPath="/the-science"
         jsonLd={jsonLd}
+        breadcrumbs={[{ name: "The Science", path: "/the-science" }]}
       />
       <Navbar />
       <main className="pt-16">

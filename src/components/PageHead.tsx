@@ -1,13 +1,39 @@
 import { useEffect } from "react";
 
+interface BreadcrumbItem {
+  name: string;
+  path: string;
+}
+
 interface PageHeadProps {
   title: string;
   description: string;
   canonicalPath: string;
   jsonLd?: object[];
+  breadcrumbs?: BreadcrumbItem[];
 }
 
-export const PageHead = ({ title, description, canonicalPath, jsonLd }: PageHeadProps) => {
+function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://prostatemiracle.com/" },
+      ...items.map((item, i) => ({
+        "@type": "ListItem",
+        "position": i + 2,
+        "name": item.name,
+        "item": `https://prostatemiracle.com${item.path}`,
+      })),
+    ],
+  };
+}
+
+export const PageHead = ({ title, description, canonicalPath, jsonLd, breadcrumbs }: PageHeadProps) => {
+  const allSchemas = [
+    ...(jsonLd || []),
+    ...(breadcrumbs ? [buildBreadcrumbSchema(breadcrumbs)] : []),
+  ];
   useEffect(() => {
     document.title = title;
 
@@ -46,20 +72,18 @@ export const PageHead = ({ title, description, canonicalPath, jsonLd }: PageHead
 
     // JSON-LD
     const scriptIds: string[] = [];
-    if (jsonLd) {
-      jsonLd.forEach((schema, i) => {
-        const id = `json-ld-${i}`;
-        scriptIds.push(id);
-        let script = document.getElementById(id) as HTMLScriptElement | null;
-        if (!script) {
-          script = document.createElement("script");
-          script.id = id;
-          script.type = "application/ld+json";
-          document.head.appendChild(script);
-        }
-        script.textContent = JSON.stringify(schema);
-      });
-    }
+    allSchemas.forEach((schema, i) => {
+      const id = `json-ld-${i}`;
+      scriptIds.push(id);
+      let script = document.getElementById(id) as HTMLScriptElement | null;
+      if (!script) {
+        script = document.createElement("script");
+        script.id = id;
+        script.type = "application/ld+json";
+        document.head.appendChild(script);
+      }
+      script.textContent = JSON.stringify(schema);
+    });
 
     // OG tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
@@ -78,7 +102,7 @@ export const PageHead = ({ title, description, canonicalPath, jsonLd }: PageHead
         if (el) el.remove();
       });
     };
-  }, [title, description, canonicalPath, jsonLd]);
+  }, [title, description, canonicalPath, jsonLd, breadcrumbs]);
 
   return null;
 };
