@@ -10,7 +10,7 @@ export const HowToUseSection = () => {
             How To Use
           </h2>
         </div>
-        <p className="text-muted-foreground font-body leading-relaxed text-lg">
+        <p className="text-muted-foreground font-body leading-relaxed text-base md:text-lg">
           <strong>Take one capsule in the morning and one in the evening</strong> with water, ideally with food. That's it, two capsules a day, every day. Most men notice a difference within the first 30 days.
         </p>
       </div>

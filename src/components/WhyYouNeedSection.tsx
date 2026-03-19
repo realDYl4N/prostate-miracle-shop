@@ -5,7 +5,7 @@ export const WhyYouNeedSection = () => {
         <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-6">
           Why You Need Prostate Miracle?
         </h2>
-        <p className="text-muted-foreground font-body leading-relaxed text-lg">
+        <p className="text-muted-foreground font-body leading-relaxed text-base md:text-lg">
           If you're dealing with frequent nighttime bathroom trips, weak urinary flow, uncomfortable 
           pressure, or feel like your bladder never fully empties, your prostate needs support. As men 
           age, the prostate naturally enlarges, putting pressure on the urethra and disrupting daily 

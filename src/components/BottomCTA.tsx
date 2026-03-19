@@ -10,7 +10,7 @@ export const BottomCTA = () => {
       <h2 className="text-3xl md:text-5xl font-display font-bold leading-tight mb-6">
         Ready to Stop Planning Your Day Around a Bathroom?
       </h2>
-      <p className="text-primary-foreground/80 font-body text-lg leading-relaxed mb-10 max-w-2xl mx-auto">
+      <p className="text-primary-foreground/80 font-body text-sm md:text-lg leading-relaxed mb-8 md:mb-10 max-w-2xl mx-auto">
         Join thousands of men who've switched to Prostate Miracle® Advanced Formula, the most concentrated beta-sitosterol formula on the market, backed by a 60-day guarantee and 20+ years of trust.
       </p>
       <Button

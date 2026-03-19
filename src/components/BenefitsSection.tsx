@@ -1,10 +1,10 @@
 
 
 export const BenefitsSection = () =>
-<section id="benefits" className="py-20 bg-secondary/30">
+<section id="benefits" className="py-12 md:py-20 bg-secondary/30">
     <div className="container mx-auto px-4">
-      <div className="text-center mb-14">
-        <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+      <div className="text-center mb-8 md:mb-14">
+        <h2 className="text-2xl md:text-5xl font-display font-bold text-foreground">
           You've Probably Tried Everything. Here's Why Nothing Worked.
         </h2>
       </div>

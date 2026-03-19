@@ -48,9 +48,9 @@ export const StatsSection = () => {
   }, []);
 
   return (
-    <section ref={ref} className="py-20 bg-primary">
+    <section ref={ref} className="py-12 md:py-20 bg-primary">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-primary-foreground text-center mb-12">
+        <h2 className="text-2xl md:text-4xl font-display font-bold text-primary-foreground text-center mb-8 md:mb-12">
           The Numbers Speak For Themselves
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
