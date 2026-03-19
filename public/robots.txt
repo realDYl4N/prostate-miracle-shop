@@ -1,16 +1,33 @@
+User-agent: *
+Allow: /
+Sitemap: https://prostatemiracle.com/sitemap.xml
+
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
 Allow: /
 
-User-agent: Twitterbot
+User-agent: GPTBot
 Allow: /
 
-User-agent: facebookexternalhit
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: *
+User-agent: ChatGPT-User
 Allow: /
 
-Sitemap: https://prostatemiracle.com/sitemap.xml
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
