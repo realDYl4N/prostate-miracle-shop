@@ -22,7 +22,8 @@ import {
   XCircle,
   FlaskConical } from
 "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { PageHead } from "@/components/PageHead";
 
 /* ───── Animated counter hook ───── */
 function useCountUp(target: number, isVisible: boolean, duration = 1400) {
