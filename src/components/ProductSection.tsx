@@ -17,14 +17,14 @@ const pricingTiers = [
 {
   label: "Two Bottles",
   badge: null,
-  price: "$53.99",
+  price: "$59.90",
   quantity: 2,
   variantOption: "Two Bottles",
 },
 {
   label: "Three Bottles",
   badge: "Most Popular",
-  price: "$80.99",
+  price: "$80.85",
   quantity: 3,
   variantOption: "Three Bottles",
 },
