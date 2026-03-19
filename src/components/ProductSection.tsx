@@ -65,6 +65,11 @@ export const ProductSection = () => {
   const variant = product?.node.variants.edges[0]?.node;
   const images = product?.node.images.edges || [];
 
+  // Reset to first image whenever the product/images change
+  useEffect(() => {
+    setSelectedImage(0);
+  }, [product?.node.id]);
+
   const handleAddToCart = async () => {
     if (!product) return;
     const tier = pricingTiers[selectedTier];
