@@ -1,6 +1,9 @@
 import { Star } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { FooterSection } from "@/components/FooterSection";
+import { PageHead } from "@/components/PageHead";
+import { useMemo } from "react";
+import { testimonialsSchema } from "@/lib/seo-schemas";
 
 const testimonials = [
   { name: "Victor Stevens, Ph.D.", location: "Sahuarita, AZ", text: "Prostate Miracle is terrific! I will be 74 next month and my urine flow had become noticeably slow. I started researching natural options and gave Prostate Miracle a try. Wow! My urine flow feels so much better and all I do is take 2 capsules a day, 7 days a week. It's all natural. I can't say enough about how great Prostate Miracle is. Never stop making this stuff! Thank you!" },
