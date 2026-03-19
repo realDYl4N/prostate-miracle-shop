@@ -8,40 +8,32 @@ import productBottle from "@/assets/product-bottle.png";
 
 const pricingTiers = [
 {
-  label: "Six Bottles",
-  badge: "Best Value",
-  savings: "Save 29%",
-  price: "$143.70",
-  originalPrice: "$203.70",
-  quantity: 6,
-  variantOption: "Six Bottles",
-},
-{
-  label: "Three Bottles",
-  badge: "Most Popular",
-  savings: "Save 20%",
-  price: "$80.99",
-  originalPrice: "$101.85",
-  quantity: 3,
-  variantOption: "Three Bottles",
+  label: "One Bottle",
+  badge: null,
+  price: "$33.95",
+  quantity: 1,
+  variantOption: "One Bottle",
 },
 {
   label: "Two Bottles",
   badge: null,
-  savings: "Save 21%",
   price: "$53.99",
-  originalPrice: "$67.90",
   quantity: 2,
   variantOption: "Two Bottles",
 },
 {
-  label: "One Bottle",
-  badge: null,
-  savings: null,
-  price: "$33.95",
-  originalPrice: "$36.95",
-  quantity: 1,
-  variantOption: "One Bottle",
+  label: "Three Bottles",
+  badge: "Most Popular",
+  price: "$80.99",
+  quantity: 3,
+  variantOption: "Three Bottles",
+},
+{
+  label: "Six Bottles",
+  badge: "Best Value",
+  price: "$143.70",
+  quantity: 6,
+  variantOption: "Six Bottles",
 }];
 
 
@@ -57,7 +49,7 @@ export const ProductSection = () => {
   const cartLoading = useCartStore((state) => state.isLoading);
   const cartItems = useCartStore((state) => state.items);
   const setDrawerOpen = useCartStore((state) => state.setDrawerOpen);
-  const [selectedTier, setSelectedTier] = useState(1);
+  const [selectedTier, setSelectedTier] = useState(2);
   const [selectedImage, setSelectedImage] = useState(0);
   const [justAdded, setJustAdded] = useState(false);
 
@@ -211,11 +203,6 @@ export const ProductSection = () => {
                           <span className="font-semibold text-foreground text-sm">
                             {tier.label}
                           </span>
-                          {tier.savings &&
-                        <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-0.5 rounded">
-                              {tier.savings}
-                            </span>
-                        }
                         </div>
                         {tier.quantity > 1 && (
                           <span className="text-xs text-muted-foreground">
@@ -226,11 +213,6 @@ export const ProductSection = () => {
                     </div>
                     <div className="text-right">
                       <span className="font-bold text-foreground text-lg">{tier.price}</span>
-                      {tier.originalPrice &&
-                    <span className="text-sm text-muted-foreground line-through ml-2">
-                          {tier.originalPrice}
-                        </span>
-                    }
                     </div>
                   </div>
                 </button>
