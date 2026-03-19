@@ -203,11 +203,6 @@ export const ProductSection = () => {
                           <span className="font-semibold text-foreground text-sm">
                             {tier.label}
                           </span>
-                          {tier.savings &&
-                        <span className="bg-accent/20 text-accent-foreground text-xs font-bold px-2 py-0.5 rounded">
-                              {tier.savings}
-                            </span>
-                        }
                         </div>
                         {tier.quantity > 1 && (
                           <span className="text-xs text-muted-foreground">
@@ -218,11 +213,6 @@ export const ProductSection = () => {
                     </div>
                     <div className="text-right">
                       <span className="font-bold text-foreground text-lg">{tier.price}</span>
-                      {tier.originalPrice &&
-                    <span className="text-sm text-muted-foreground line-through ml-2">
-                          {tier.originalPrice}
-                        </span>
-                    }
                     </div>
                   </div>
                 </button>
