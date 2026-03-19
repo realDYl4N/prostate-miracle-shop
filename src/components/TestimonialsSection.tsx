@@ -117,7 +117,7 @@ export const TestimonialsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
-            Trusted By <span className="text-primary">Thousands</span>
+            Trusted By <span className="text-primary">100K+</span>
           </h2>
         </div>
 
