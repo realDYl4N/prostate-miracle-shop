@@ -125,7 +125,7 @@ export const FooterSection = () => {
               <a href="/privacy-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Privacy Policy</a>
               <a href="/refund-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Refund Policy</a>
               <a href="/shipping-policy" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Shipping Policy</a>
-              <a href="#" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Terms of Service</a>
+              <a href="/terms-of-service" className="text-sm text-secondary-foreground/70 hover:text-secondary-foreground transition-colors font-body">Terms of Service</a>
             </nav>
           </div>
 
