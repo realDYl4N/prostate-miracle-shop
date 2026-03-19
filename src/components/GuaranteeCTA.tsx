@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 export const GuaranteeCTA = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4 max-w-3xl text-center">
-        <ShieldCheck className="h-16 w-16 text-primary mx-auto mb-6" />
-        <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
+        <ShieldCheck className="h-12 w-12 md:h-16 md:w-16 text-primary mx-auto mb-4 md:mb-6" />
+        <h2 className="text-2xl md:text-4xl font-display font-bold text-foreground mb-3 md:mb-4">
           Real Prostate Relief<br />Or Pay Nothing!
         </h2>
         <p className="text-muted-foreground font-body text-lg leading-relaxed mb-8">
