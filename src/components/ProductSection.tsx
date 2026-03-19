@@ -153,7 +153,7 @@ export const ProductSection = () => {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-foreground mb-3 whitespace-nowrap">Prostate Miracle Advanced Formula</h2>
 
             <p className="text-muted-foreground font-body leading-relaxed mb-4">
-              If you're up two, three or 4+ times a night, planning your day around the nearest bathroom, or dealing with a weak, stop-and-start stream, your prostate is trying to tell you something. Prostate Miracle® Advanced Formula delivers 300mg of beta-sitosterol per capsule, extracted from non-GMO European pine.
+              If you're up two, three or 4+ times a night, planning your day around the nearest bathroom, or dealing with a weak, stop-and-start stream, your prostate is trying to tell you something.<br /><br />Prostate Miracle® Advanced Formula delivers 300mg of beta-sitosterol per capsule, extracted from non-GMO European pine.
             </p>
 
             {/* Benefit Tags */}
