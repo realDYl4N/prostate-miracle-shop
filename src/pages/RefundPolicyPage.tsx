@@ -37,7 +37,7 @@ const RefundPolicyPage = () => {
 
             <h2 className="text-xl font-display font-semibold text-foreground">Damaged or Defective Products</h2>
             <p>
-              If you receive a damaged or defective product, please contact us immediately at <a href="mailto:support@prostatemiracle.com" className="text-primary hover:underline">support@prostatemiracle.com</a>. We will arrange a replacement or full refund at no additional cost to you.
+              If you receive a damaged or defective product, please contact us immediately at <a href="mailto:hello@prostatemiracle.com" className="text-primary hover:underline">hello@prostatemiracle.com</a>. We will arrange a replacement or full refund at no additional cost to you.
             </p>
 
             <h2 className="text-xl font-display font-semibold text-foreground">Contact Us</h2>
