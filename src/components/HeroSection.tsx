@@ -22,18 +22,18 @@ export const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl lg:text-[3.4rem] font-display font-bold leading-[1.1] mb-3 md:mb-5 text-muted-foreground">
-              The Prostate Formula <span className="text-primary">100,000+</span> Men Keep Reordering
+              The Prostate Formula <span className="text-primary">100,000+</span> Men Won't Stop Reordering
             </h1>
 
             {/* Description */}
-            <p className="text-sm md:text-base text-muted-foreground font-body leading-relaxed mb-6 md:mb-8 mx-auto max-w-md">
-              Prostate Miracle® Advanced Formula is our 2nd generation upgrade to the original Prostate Miracle®. This highly effective, natural, time-tested formula, supports healthy urinary flow and prostate health. Trusted by thousands of men since 2001!
+            <p className="text-sm md:text-base text-muted-foreground font-body leading-relaxed mb-6 md:mb-8 mx-auto max-w-md">Prostate Miracle® Advanced Formula is our 2nd generation upgrade to the original Prostate Miracle®. This highly effective, natural, time-tested formula, supports healthy urinary flow and prostate health. Trusted by thousands of men since 2001!
+
             </p>
 
             {/* CTA */}
             <a href="/prostate-miracle" className="block">
-              <Button size="lg" className="w-full sm:w-auto text-xl md:text-2xl font-extrabold px-12 md:px-20 py-8 md:py-10 rounded-xl hover:scale-105 transition-all duration-300">
-                Buy Prostate Miracle®
+              <Button size="lg" className="w-full sm:w-auto text-lg md:text-xl font-extrabold px-10 md:px-16 py-7 md:py-8 rounded-xl hover:scale-105 transition-all duration-300">
+                Buy Prostate Miracle® Risk-Free
               </Button>
             </a>
 
@@ -63,6 +63,6 @@ export const HeroSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
