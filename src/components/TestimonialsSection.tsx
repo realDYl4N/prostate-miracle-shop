@@ -171,6 +171,9 @@ export const TestimonialsSection = () => {
           <CarouselNext className="-right-0 md:-right-4" />
         </Carousel>
       </div>
+      <p className="text-xs text-muted-foreground text-center mt-8 max-w-2xl mx-auto font-body">
+        Individual results may vary. These testimonials are not intended to represent or guarantee that anyone will achieve the same or similar results.
+      </p>
     </section>
   );
 };
