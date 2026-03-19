@@ -28,16 +28,23 @@ const testimonials = [
 ];
 
 const TestimonialsPage = () => {
+  const jsonLd = useMemo(() => [testimonialsSchema], []);
   return (
     <div className="min-h-screen bg-background">
+      <PageHead
+        title="Prostate Miracle® Reviews — Real Results from 100,000+ Men"
+        description="Read verified reviews from men who use Prostate Miracle® Advanced Formula for prostate health, urinary flow, and fewer nighttime bathroom trips."
+        canonicalPath="/testimonials"
+        jsonLd={jsonLd}
+      />
       <Navbar />
       <div className="pt-16">
         <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-display font-bold text-foreground">
-                Trusted By <span className="text-primary">Thousands</span>
-              </h2>
+              <h1 className="text-4xl md:text-5xl font-display font-bold text-foreground">
+                What 100,000+ Men Are Saying About <span className="text-primary">Prostate Miracle®</span>
+              </h1>
             </div>
 
             <div className="text-center mb-10">

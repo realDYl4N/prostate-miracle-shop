@@ -17,10 +17,18 @@ import { useMemo } from "react";
 import { faqSchema, productSchema } from "@/lib/seo-schemas";
 
 const ProstateMiraclePage = () => {
+  const jsonLd = useMemo(() => [faqSchema, productSchema], []);
   return (
     <div className="min-h-screen bg-background">
+      <PageHead
+        title="Buy Prostate Miracle® Advanced Formula | Beta-Sitosterol Prostate Supplement"
+        description="Order Prostate Miracle® Advanced Formula — 300mg pure beta-sitosterol per capsule, sourced from non-GMO European pine. 60-day guarantee. Free shipping on 3+ bottles."
+        canonicalPath="/prostate-miracle"
+        jsonLd={jsonLd}
+      />
       <Navbar />
       <div className="pt-16">
+        <h1 className="sr-only">Prostate Miracle® Advanced Formula — Order Today</h1>
         <ProductSection />
       </div>
       <ScrollFadeIn>
