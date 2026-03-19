@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useProducts } from "@/hooks/useProducts";
 import { useCartStore } from "@/stores/cartStore";
 import { Button } from "@/components/ui/button";
@@ -64,6 +64,11 @@ export const ProductSection = () => {
   const product = products?.[0];
   const variant = product?.node.variants.edges[0]?.node;
   const images = product?.node.images.edges || [];
+
+  // Reset to first image whenever the product/images change
+  useEffect(() => {
+    setSelectedImage(0);
+  }, [product?.node.id]);
 
   const handleAddToCart = async () => {
     if (!product) return;
