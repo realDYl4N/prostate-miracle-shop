@@ -102,7 +102,7 @@ export const PageHead = ({ title, description, canonicalPath, jsonLd, breadcrumb
         if (el) el.remove();
       });
     };
-  }, [title, description, canonicalPath, jsonLd]);
+  }, [title, description, canonicalPath, jsonLd, breadcrumbs]);
 
   return null;
 };
