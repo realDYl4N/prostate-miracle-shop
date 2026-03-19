@@ -29,7 +29,11 @@ function buildBreadcrumbSchema(items: BreadcrumbItem[]): object {
   };
 }
 
-export const PageHead = ({ title, description, canonicalPath, jsonLd }: PageHeadProps) => {
+export const PageHead = ({ title, description, canonicalPath, jsonLd, breadcrumbs }: PageHeadProps) => {
+  const allSchemas = [
+    ...(jsonLd || []),
+    ...(breadcrumbs ? [buildBreadcrumbSchema(breadcrumbs)] : []),
+  ];
   useEffect(() => {
     document.title = title;
 
