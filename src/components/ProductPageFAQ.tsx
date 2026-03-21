@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "What if it doesn't work for me?",
-    a: "Send back the two empty bottles within 60 days for a full 100% refund (less shipping). We've made this guarantee since 2003 and we stand behind it.",
+    a: "Send back the two empty bottles within 60 days for a full 100% refund (less shipping). We've made this guarantee since 2001 and we stand behind it.",
   },
 ];
 

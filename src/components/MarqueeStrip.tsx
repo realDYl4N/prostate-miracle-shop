@@ -2,7 +2,7 @@ import { Toilet, Phone, Flag, CheckCircle, DollarSign, FlaskConical, Leaf } from
 
 const badges = [
   { text: "Fewer Nighttime Bathroom Trips", icon: Toilet },
-  { text: "Trusted by Men Since 2003", icon: CheckCircle },
+  { text: "Trusted by Men Since 2001", icon: CheckCircle },
   { text: "Non-GMO Ingredients", icon: Leaf },
   { text: "Clinically-Studied Ingredients", icon: FlaskConical },
   { text: "24/7 Support", icon: Phone },

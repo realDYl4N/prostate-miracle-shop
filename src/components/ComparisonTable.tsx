@@ -9,7 +9,7 @@ const rows = [
   { label: "Filler Ingredients", miracle: "None", competitor: "Multiple" },
   { label: "Capsules per Bottle", miracle: "60 (30-day supply)", competitor: "30–60" },
   { label: "Money-Back Guarantee", miracle: "60-day, 100% refund", competitor: "Varies / None" },
-  { label: "Years on Market", miracle: "20+ years (since 2003)", competitor: "Often <5 years" },
+  { label: "Years on Market", miracle: "24+ years (since 2001)", competitor: "Often <5 years" },
   
 ];
 

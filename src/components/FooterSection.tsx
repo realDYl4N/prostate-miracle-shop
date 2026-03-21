@@ -76,7 +76,7 @@ export const FooterSection = () => {
               PROSTATE MIRACLE
             </h3>
             <p className="text-sm text-secondary-foreground/70 font-body leading-relaxed">
-              Clinically-studied beta-sitosterol from non-GMO European pine, supporting prostate health since 2003.
+              Clinically-studied beta-sitosterol from non-GMO European pine, supporting prostate health since 2001.
             </p>
             <div className="flex items-center gap-2 text-sm text-secondary-foreground/70">
               <Mail className="h-4 w-4" />
