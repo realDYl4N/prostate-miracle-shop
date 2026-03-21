@@ -22,7 +22,7 @@ export const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-3xl md:text-5xl lg:text-[3.4rem] font-display font-bold leading-[1.1] mb-3 md:mb-5 text-muted-foreground">
-              The Prostate Formula <span className="text-primary">100,000+</span> Men Won't Stop Reordering
+              The Prostate Formula <span className="text-primary">100,000+</span> Men Have Trusted Since 2001
             </h1>
 
             {/* Description */}
