@@ -40,7 +40,7 @@ const pricingTiers = [
 const benefitTags = [
 "Clinically-Studied Ingredients",
 "Fewer Nighttime Bathroom Trips",
-"Trusted by Men Since 2003"];
+"Trusted by Men Since 2001"];
 
 
 export const ProductSection = () => {
